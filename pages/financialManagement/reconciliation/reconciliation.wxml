@@ -1,0 +1,17 @@
+<!--pages/financialManagement/reconciliation/reconciliation.wxml-->
+<import src="../../template/wechatSettlement/wechatSettlement.wxml" />
+<import src="../../template/anSettlement/anSettlement.wxml" />
+<view wx:if="{{payMethod == 1 ? true : false}}">
+  <template is="wechatSettlement" data="{{WxSettleList}}"></template>
+</view>
+<view wx:if="{{payMethod == 2 ? true : false}}">
+  <template is="anSettlement" data="{{SettleList}}"></template>
+  <view class="container-column" catchtouchmove="preventTouchMove" wx:if="{{viewShow}}">
+    <view class="container-column buydes-dialog-container">
+      <view class='useTicket'>
+        <view class='cancel' bindtap='cancel'>×</view>
+          <view class='order-tips'>请访问智慧支付商户门户网站，按开通自动提现功能时提供给您的商户账号密码登录查看结算详情</view>
+      </view>
+    </view>
+  </view>
+</view>

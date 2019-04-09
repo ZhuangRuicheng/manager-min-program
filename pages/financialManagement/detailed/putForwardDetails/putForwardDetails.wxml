@@ -1,0 +1,51 @@
+<!--pages/financialManagement/detailed/putForwardDetails/putForwardDetails.wxml-->
+<view class='box'>
+<view class='propress'>
+<view class='progress1'>
+  <view class='completeImg'>
+    <image src='../../../images/complete.png' class='complete'></image>
+  </view>
+  <view class='submit' style="color: {{submitColor}};font-size:{{submitSize}}rpx;">发起提现申请</view>
+</view>
+ <view class='date'>11.21 12:36</view>
+ <view class='hr1' style=" background-color: {{hr1Color}};"></view>
+ <view class='progress2'>
+  <view class='completeImg'>
+    <image src='../../../images/handle.png' class='complete'></image>
+  </view>
+  <view class='handle' style="color: {{handleColor}};font-size:{{handleSize}}rpx;">处理中</view>
+</view>
+ <view class='date'>(预计7个工作日内受理)</view>
+ <view class='hr2' style=" background-color: {{hr2Color}};"></view>
+ <view class='progress2'>
+  <view class='completeImg'>
+    <image src='../../../images/success_no.png' class='complete'></image>
+  </view>
+  <view class='handle' style="color: {{successColor}};font-size:{{successSize}}rpx;">到账成功</view>
+</view>
+ <!-- <view class='date'>11.21 12:36</view> -->
+</view>
+<view class='order'>
+   <view class='orderContent'>
+     <view class='order-no'>交易单号</view>
+     <view class='num'>{{payInfo.flowNumber}}</view>
+   </view>
+   <view class='orderContent'>
+     <view class='order-no'>提现时间</view>
+     <view class='num'>{{payInfo.createTime}}</view>
+   </view>
+   <view class='orderContent'>
+     <view class='order-no'>提现金额</view>
+     <view class='num'>￥{{payInfo.withdrawCashMoney}}</view>
+   </view>
+   <view class='orderContent'>
+     <view class='order-no'>对公账户名称</view>
+     <view class='num'>{{payInfo.enterpriseName}}</view>
+   </view>
+   <view class='orderContent'>
+     <view class='order-no'>备注</view>
+     <view class='num'>{{!payInfo.remarks?'--':payInfo.remarks}}</view>
+   </view>
+</view>
+<button class='btn' bindtap='downLoadBill'>下载对账单</button>
+</view>

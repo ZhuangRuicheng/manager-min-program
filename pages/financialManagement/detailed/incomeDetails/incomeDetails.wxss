@@ -1,0 +1,65 @@
+/* pages/financialManagement/detailed/incomeDetails/incomeDetails.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.header{
+  background-color: white;
+  margin-bottom: 30rpx;
+}
+.tr1{
+  display: flex;
+  font-size: 30rpx;
+  color: #666666;
+}
+.transaction-No{
+  padding-top: 45rpx;
+  padding-left: 30rpx;
+  padding-bottom: 40rpx;
+}
+.num{
+  color: #333333;
+  position: absolute;
+  right: 30rpx;
+  top: 45rpx;
+}
+.Time{
+  padding: 0rpx 0rpx 40rpx 30rpx;
+}
+.time{
+  position: absolute;
+  right: 30rpx;
+  color: #333333;
+}
+/* .service{
+  padding-bottom: 14rpx;
+} */
+.tips{
+  font-size: 24rpx;
+  color: #ff6600;
+  padding-left: 30rpx;
+  padding-bottom: 30rpx;
+}
+.title{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  color: #333333;
+  padding-left: 30rpx;
+  border-bottom: 0.5rpx #cccccc solid; 
+}
+.orderContent{
+  background-color: white;
+}
+.tr7{
+  padding-top: 34rpx;
+}
+.btn{
+  width: 620rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #ea5415;
+  color: white;
+  font-size: 32rpx;
+  margin-top: 54rpx;
+}

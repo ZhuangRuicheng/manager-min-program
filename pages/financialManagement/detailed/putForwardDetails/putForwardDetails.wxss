@@ -1,0 +1,78 @@
+/* pages/financialManagement/detailed/putForwardDetails/putForwardDetails.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.propress{
+  background-color: white;
+  padding-top: 38rpx;
+  padding-left: 50rpx;
+  padding-bottom: 50rpx;
+  border-bottom: 0.5rpx #cccccc solid;
+}
+.progress1{
+  display: flex;
+  font-size: 30rpx;
+
+}
+.complete{
+  width: 35rpx;
+  height: 35rpx;
+
+}
+.submit{
+  margin-left: 20rpx;
+}
+.date{
+  font-size: 24rpx;
+  color: #999999;
+  /* margin-top: 14rpx; */
+  padding-left: 55rpx;
+}
+.hr1{
+  height: 84rpx;
+  width: 5rpx;
+  margin: -60rpx -15rpx 0rpx 17rpx;
+}
+.handle{
+  margin-left: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.progress2{
+  display: flex;
+  font-size: 30rpx;
+}
+.hr2{
+  height: 84rpx;
+  width: 5rpx;
+  margin: -60rpx -15rpx 0rpx 17rpx;
+}
+.order{
+  background-color: white;
+  padding-top: 50rpx;
+  padding-left: 30rpx;
+}
+.orderContent{
+  font-size: 30rpx;
+  display: flex;
+  padding-bottom: 40rpx;
+}
+.order-no{
+  color: #999999;
+}
+.num{
+  color: #333333;
+  position: absolute;
+  right: 30rpx;
+}
+.btn{
+  margin-top: 54rpx;
+  background-color: #ea5415;
+  color: white;
+  width: 620rpx;
+  height: 80rpx;
+  font-size: 32rpx;
+  border-radius: 12rpx;
+  line-height: 80rpx;
+  text-align: center;
+}

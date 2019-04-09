@@ -1,0 +1,244 @@
+/* pages/dataInput/modelInput/modelInput.wxss */
+.box1{
+  position: fixed;
+}
+.box2{
+  position: fixed;
+}
+.addImages{
+  height: 88rpx;
+  background-color: #f7f7f7;
+  padding: 30rpx 135rpx 30rpx 135rpx;
+}
+.tips1{
+  font-size: 32rpx;
+  width: 480rpx;
+  height: 88rpx;
+  border: 1rpx #cccccc solid;
+  text-align: center;
+  line-height: 88rpx;
+  border-radius: 16rpx;
+  background-color: white;
+  font-weight: bold;
+
+  
+}
+
+.contents{
+  height: 212rpx;
+  border-bottom: 1rpx #cccccc solid;
+}
+.roomImg{
+  width: 200rpx;
+  height: 150rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+/* .showImg{
+  width: 200rpx;
+  height: 150rpx;
+  margin-left: 230rpx;
+} */
+.tr{
+  display: flex;
+  position: absolute;
+  left: 254rpx;
+  margin-top: -150rpx;
+  
+}
+ .title{
+  font-size: 30rpx;
+}
+.state{
+  font-size: 26rpx;
+  color: #333333;
+  margin-top: 5rpx;
+}
+.state2{
+  font-size: 26rpx;
+  color: #999999;
+  margin-top: 5rpx; 
+}
+.state3{
+  font-size: 26rpx;
+  color: #ff3333;
+  margin-top: 5rpx; 
+}
+.hr{
+  height: 26rpx;
+  width: 2rpx;
+  background-color: #cccccc;
+  margin-left: 27rpx;
+  margin-right: 27rpx;
+  margin-top: 10rpx;
+}
+.price{
+  position: absolute;
+  left: 260rpx;
+  margin-top: -100rpx;
+  font-size: 34rpx;
+  color: #ff3333;
+  font-weight: bold;
+}
+.room-manager{
+  font-size: 24rpx;
+  color: white;
+  width: 130rpx;
+  height: 44rpx;
+  text-align: center;
+  line-height: 44rpx;
+  background-color: #ea5415;
+  border-radius: 12rpx;
+  position: absolute;
+  left: 260rpx;
+  margin-top: -50rpx;
+}
+
+ /* 弹出层样式 */
+    .buydes-dialog-container{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color:rgba(15, 15, 26, 0.7);
+    position: fixed;
+    z-index: 999;
+    /* position: absolute; */
+    top: 0rpx;
+}
+.buydes-dialog-container-top{
+    flex-grow: 1;
+}
+ 
+.buydes-dialog-container-bottom{
+    display: flex;
+    flex-grow: 0;
+}
+
+.popup{
+  margin: 20rpx 0rpx 80rpx 60rpx;
+  background-color: white;
+}
+.ticketShow{
+  /* height: 750rpx; */
+  padding-bottom: 50rpx;
+  width: 640rpx;
+  border-bottom: 1rpx #dfdfdf dotted;
+}
+.cancel{
+  width: 80rpx;
+  color: #ea5415;
+  font-size: 28rpx;
+  padding: 20rpx 0rpx 28rpx 16rpx;
+}
+.hotelName{
+  font-size: 32rpx;
+  margin: -41rpx 245rpx 22rpx 265rpx;
+}
+.modelImg{
+   border: 1rpx #cccccc solid;
+  text-align: center;
+  font-size: 30rpx;
+  width: 264rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 188rpx;
+  margin-bottom: 22rpx;
+}
+.modelName{
+  font-size: 30rpx;
+  display: flex;
+}
+.content{
+  margin: 0rpx 30rpx 0rpx 30rpx;
+}
+input{
+  width: 421rpx;
+  font-size: 30rpx;
+  height: 45rpx;
+  border: 1rpx #cccccc solid;
+}
+
+.rentType{
+  display: flex;
+  font-size: 30rpx;
+   margin-top: 20rpx;
+}
+.radio-group{
+  margin-left: 40rpx;
+}
+radio{
+  transform: scale(0.7);
+}
+.roomPrice{
+  display: flex;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.area{
+  display: flex;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.areaInput{
+  margin-left: 57rpx;
+}
+.describe{
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+textarea{
+  margin: 0rpx 30rpx 20rpx 0rpx; 
+  border: 1rpx #cccccc solid;
+  font-size: 28rpx;
+  height: 120rpx;
+  width: 580rpx;
+}
+.showBtn{
+  width: 360rpx;
+  height: 80rpx;
+  text-align: center;
+  background-color: #ea5415;
+  color: white;
+  line-height: 80rpx;
+}
+/* .room-type{
+  font-size: 24rpx;
+  background-color:rgba(0, 0, 0, 0.3);
+  width: 200rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  color: white;
+  margin-left: 30rpx;
+  margin-top: -40rpx;
+  z-index: 1000;
+}
+.room-type-text{
+  display: flex;
+} */
+.room-text{
+  margin-left: 53rpx;
+}
+.roomType{
+  width: 200rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  position: absolute;
+  margin-top: -45rpx;
+  background-color:rgba(0, 0, 0, 0.3);
+  color: white;
+  left: 30rpx;
+  display: flex;
+}
+.icon-img{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 36rpx;
+}
+.showImgs{
+  text-align: center;
+}
+.showImg{
+  width: 200rpx;
+  height: 150rpx;
+}
+

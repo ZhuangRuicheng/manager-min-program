@@ -1,0 +1,42 @@
+/* pages/template/template.wxss */
+.title{
+  font-size: 28rpx;
+  color: #ea5415;
+  margin-top: 7rpx;
+  margin-left: 10rpx;
+}
+.img{
+  width: 39rpx;
+  height: 35rpx;
+}
+.contentTitle{
+  height: 84rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  display: flex;
+  line-height: 84rpx;
+  padding-left: 30rpx;
+  border-bottom:1rpx #cccccc solid; 
+}
+.type{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+.time{
+  font-size: 28rpx;
+  position: absolute;
+  right: 30rpx;
+  color: #999999;
+}
+.bottom{
+  height: 100rpx;
+  background-color: white;
+  display: flex;
+  font-size: 30rpx;
+  padding: 44rpx 0rpx 0rpx 30rpx;  
+}
+
+.state{
+  position: absolute;
+  right: 30rpx;
+}

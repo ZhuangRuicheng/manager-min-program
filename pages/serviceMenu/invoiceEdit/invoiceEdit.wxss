@@ -1,0 +1,78 @@
+/* pages/hotelInfoEdit/invoiceEdit/invoiceEdit.wxss */
+.box{
+  background-color: white;
+}
+.header{
+  height:120rpx;
+  line-height: 120rpx; 
+  background-color: white;
+  display: flex;
+  margin-top: 30rpx;
+  border-bottom: 1rpx #cccccc solid;
+}
+.title{
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 30rpx;
+}
+.btn{
+  width: 260rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  position: absolute;
+  right: 30rpx;
+  color: white;
+  top: 50rpx;
+  background-color: #ea5415;
+}
+.content{
+  background-color: white;
+  padding-bottom: 100rpx;
+  padding-top: 34rpx;
+  display: flex;
+  width: 720rpx;
+}
+
+.choose{
+  width: 200rpx;
+  height: 75rpx;
+
+}
+.type{
+margin-left: 39rpx;
+ word-break: keep-all;
+  word-wrap: break-word;
+  display: inline-block;
+  margin-bottom: 40rpx;
+
+}
+.text{
+  width: 110rpx;
+  margin: -65rpx 0rpx 0rpx 60rpx;
+  font-size: 26rpx;
+  overflow: hidden;
+  height: 34rpx;
+  text-overflow:ellipsis;
+  white-space:nowrap;  
+}
+.InvoiceText{
+  border: 1rpx #ea5415 solid;
+  font-size: 26rpx;
+  height: 60rpx;
+  width: 180rpx;
+  line-height: 60rpx;
+  text-align: center;
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+  color: #ea5415;
+}
+.modal{
+ position: absolute;
+ top: 50rpx;
+}
+
+
+page{
+  background-color: #f7f7f7;
+}

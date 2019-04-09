@@ -1,0 +1,70 @@
+/* pages/dataInput/modelInput/editMode/editMode.wxss */
+.hr{
+  height: 30rpx;
+  background-color: #f7f7f7;
+}
+.mode-image{
+  height: 172rpx;
+  line-height: 172rpx;
+  display: flex;
+  margin-top: 30rpx;
+}
+.img-text{
+  font-size: 30rpx;
+  color: #333333;
+  padding-left: 30rpx;
+  padding-right: 85rpx;
+}
+.show-img{
+  width: 180rpx;
+  height: 120rpx;
+}
+.img{
+  margin-top: 24rpx;
+}
+.room-type{
+  font-size: 30rpx;
+  color: #333333;
+  padding-left: 30rpx;
+  display: flex;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-bottom: 28rpx;
+}
+.type-name{
+  padding-right: 55rpx;
+}
+input{
+  width: 520rpx;
+  height: 70rpx;
+  border: 1rpx #cccccc solid;
+  border-radius: 10rpx;
+}
+.arem{
+  padding-right: 114rpx;
+}
+.describe{
+  font-size: 30rpx;
+  color: #333333;
+  padding-left: 30rpx;
+}
+textarea{
+  width: 690rpx;
+  height: 145rpx;
+  margin: 40rpx 30rpx 15rpx 0rpx;
+  border: 1rpx #cccccc solid;
+}
+.btn{
+margin-bottom: 12rpx;
+text-align: center;
+}
+.save{
+  font-size: 32rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
+  background-color: #ea5415;
+  border-radius: 16rpx;
+  width: 640rpx;
+
+}

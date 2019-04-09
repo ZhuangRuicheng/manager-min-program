@@ -1,0 +1,13 @@
+<!--pages/hotelInfoEdit/managerOnline/managerOnline.wxml-->
+<view class='box'>
+  <view class='content'>
+  <view class='text'>请输入客人的留言信息：
+  <text class='tips' bindtap='mode'>填入模板文字</text>
+  </view>
+     <form bindsubmit="formSubmit">
+       <textarea placeholder='{{placeholder}}' placeholder-class='styles' class='textarea' bindinput='feedBackInput' value='{{feedBackContent}}' bindinput='textareaInput' maxlength='97'>
+       </textarea>
+       <button form-type='submit'>提交</button>
+    </form>
+  </view>
+</view>

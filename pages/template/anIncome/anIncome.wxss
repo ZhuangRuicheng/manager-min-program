@@ -1,0 +1,54 @@
+/* pages/template/anIncome/anIncome.wxss */
+.headers{
+  background-color: #ea5415;
+  border-top: 1rpx #dcdcdc solid;
+  padding-bottom: 80rpx;
+  
+  padding-top: 80rpx;
+}
+.th1{
+display: flex;
+margin-bottom: 50rpx;
+}
+.th2{
+  display: flex;
+}
+.remains{
+  flex: 1;
+  width: 300rpx;
+  text-align: center;
+}
+.remain-labels{
+  font-size: 32rpx;
+  color: white;
+}
+.remain-moneys{
+  font-size: 52rpx;
+  font-weight: bold;
+  color: white;
+}
+.btns{
+  margin-top: 30rpx;
+  width: 380rpx;
+  color: white;
+  background-color: #ea5415;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.btn1s{
+  margin-top: 80rpx;
+  width: 380rpx;
+  background-color: white;
+  color: black;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.wx-tips{
+  font-size: 26rpx;
+  color: red;
+  margin: 200rpx 50rpx 0rpx 50rpx;
+}

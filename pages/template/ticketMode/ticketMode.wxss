@@ -1,0 +1,65 @@
+/* pages/template/ticketMode/ticketMode.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.pay-ticket{
+  background-color: white;
+  height: 200rpx;
+  margin-bottom: 2rpx;
+}
+.content{
+  display: flex;
+}
+.name{
+  font-size: 32rpx;
+  color: #333333;
+  padding-left: 30rpx;
+  padding-top: 33rpx;
+
+}
+.par-img{
+  background-color: #ea5415;
+  width: 88rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  margin-left: 22rpx;
+  margin-top: 33rpx;
+}
+.ticket-type{
+  font-size: 24rpx;
+  color: white;
+  
+}
+.exchange-time{
+  margin-top: 25rpx;
+  font-size: 26rpx;
+  color: #666666;
+  margin-left: 30rpx;
+}
+.write-off{
+  margin-top: 17rpx;
+  font-size: 26rpx;
+  color: #666666;
+  margin-left: 30rpx;
+}
+.not-used-img{
+  margin-top: -110rpx;
+}
+.not_use{
+  width: 128rpx;
+  height: 91rpx;
+  z-index: 1;
+  margin-left: 598rpx;
+}
+.free-img{
+  background-color: #69a32f;
+  width: 88rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  margin-left: 22rpx;
+  margin-top: 33rpx;
+}

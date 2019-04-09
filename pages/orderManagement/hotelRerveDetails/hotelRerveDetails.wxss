@@ -1,0 +1,218 @@
+/* pages/orderManagement/hotelRerveDetails/hotelRerveDetails.wxss */
+@import "../../template/evaluate/evaluate.wxss";
+.box{
+  padding-bottom: 160rpx;
+}
+.header{
+  height: 88rpx;
+  background-color: white;
+  line-height: 88rpx;
+  display: flex;
+  padding-left: 30rpx;
+  border-bottom: 1rpx #cccccc solid;
+}
+.clearImg{
+  width: 39rpx;
+  height: 35rpx;
+}
+.text{
+  font-size: 30rpx;
+    margin-left: 10rpx;
+}
+.time{
+  font-size: 26rpx;
+  position: absolute;
+  right: 30rpx;
+  color: #999999;
+}
+.guide{
+  background: white;
+  border-bottom: 1rpx #cccccc solid;
+  padding-bottom: 30rpx;
+}
+.madeGuide{
+  font-size: 26rpx;
+  color: #999999;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+}
+.guideContent{
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-right: 30rpx;
+}
+.content{
+   background-color: white;
+   font-size: 30rpx;
+   margin-bottom: 30rpx;
+}
+.state{
+  position: absolute;
+  right: 30rpx;
+  font-size: 28rpx;
+  color: red;
+  margin-top: -100rpx;
+}
+.invoiceType{
+
+  padding: 30rpx 0rpx 0rpx 30rpx;
+}
+.invoiceItem{
+padding: 30rpx 0rpx 0rpx 30rpx;
+}
+.invoiceTitle{
+
+  padding: 30rpx 0rpx 0rpx 30rpx;
+}
+.invoiceAddress{
+padding: 30rpx 0rpx 0rpx 30rpx;
+}
+.invoicePhone{
+padding: 30rpx 0rpx 0rpx 30rpx;
+}
+.invoiceBank{
+padding: 30rpx 0rpx 0rpx 30rpx;
+}
+.invoiceBankNum{
+padding: 30rpx 0rpx 0rpx 30rpx;
+}
+.remarks{
+  padding: 44rpx 0rpx 50rpx 30rpx;
+  font-size: 30rpx;
+  color: #999999;
+}
+.orderTitle{
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: white;
+  font-size: 30rpx;
+  border-bottom: 1rpx #cccccc solid;
+  padding-left: 30rpx;
+}
+.orderInfo{
+  height: 330rpx;
+  background-color: white;
+  font-size: 26rpx;
+  padding-top: 24rpx;
+  padding-left: 30rpx;
+}
+.num{
+  color: #999999;
+  margin-bottom: 20rpx;
+}
+
+.hotelName{
+  font-size: 34rpx;
+  line-height: 88rpx;
+  padding-left: 30rpx;
+}
+.hotelNum{
+  font-size: 34rpx;
+  line-height: 88rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.vip-show{
+  padding-left: 30rpx;
+}
+.vip-type{
+  padding-top: 30rpx;
+}
+.ID{
+  padding-top: 30rpx;
+}
+page{
+  background-color: #f7f7f7;
+}
+.btn{
+  width: 350rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
+  background-color: #ea5415;
+  position: fixed;
+  bottom: 30rpx;
+  left: 200rpx;
+}
+.state-btn{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  bottom: 0rpx;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  font-size: 32rpx;
+  z-index: 9999;
+}
+.refuse{
+  flex: 1;
+}
+.refuse-btn{
+  width: 280rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 12rpx;
+  background-color: white;
+  color: #ea5415;
+  border: 1rpx #dcdcdc solid;
+}
+.accept{
+  flex: 1;
+}
+.accept-btn{
+  width: 280rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  border-radius: 12rpx;
+  background-color: #ea5415;
+  color: white;
+}
+.bottomCss{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 481rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  z-index: 9999;
+}
+.refuse-so{
+  font-size: 32rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-bottom: 1rpx #dcdcdc solid;
+  border-top: 1rpx #dcdcdc solid;
+  color: #666666;
+}
+icon{
+  position: absolute;
+  right: 30rpx;
+  margin-top: 16rpx;
+}
+.refuse1{
+  text-align: center;
+  width: 640rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+  border: 1rpx #cccccc solid;
+  border-radius: 8rpx;
+  color: #333333;
+  margin-left: 55rpx;
+  margin-top: 26rpx;
+  padding-top: 28rpx;
+}
+.refuse2{
+  text-align: center;
+  width: 600rpx;
+  font-size: 28rpx;
+  height: 76rpx;
+  border: 1rpx #cccccc solid;
+  border-radius: 8rpx;
+  color: #333333;
+  margin-left: 55rpx;
+  margin-top: 26rpx;
+  padding: 12rpx 20rpx 0rpx 20rpx;
+}

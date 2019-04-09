@@ -1,0 +1,31 @@
+<!--pages/template/evaluate/evaluate.wxml-->
+<template name="evaluate">
+<view class='customer-evaluate' wx:if="{{orderDetail.status == 'FINISH' ? true : false}}">
+  <view class='title'>顾客评价</view>
+  <view class='hr'></view>
+  <view class='containers'>
+  <view class='evaluate-img'>
+    <image src="{{!finishUserInfo.personalImage ? headerImage : finishUserInfo.personalImage}}" class='headerImg'></image>
+  </view>
+  <view class='flex1'>
+  <view class='name'>{{finishUserInfo.userName}}</view>
+  <view class='position'>{{finishUserInfo.position}}</view>
+  <view class='comment'>
+  <view class='comment-title'>点评:</view>
+  <view class='evaluate' wx:if="{{orderDetail.customerEvaluate == 'SATISFIED' ? true :false}}"><image src="../../images/satisfied.png" class='evaluate-icon'></image></view>
+  <view class='evaluate' wx:if="{{orderDetail.customerEvaluate == 'DISSATISFIED' ? true :false}}"><image src="../../images/NotSatisfiedImg_s.png" class='evaluate-icon'></image></view>
+  <view class='evaluate' wx:if="{{orderDetail.customerEvaluate == '' ? true :false}}">暂无评价</view>
+  </view>
+  </view>
+</view>
+<view class='color'>
+ <view class='flex2'>
+    <view class='evaluate-title'>满意度:<text class='percent'>{{finishUserInfo.satisfactionDegree}}%</text></view>
+      <view class='reword-title'>打赏:<text class="{{!orderDetail.rewardMoney ? 'reword-money-no' : 'reword-money'}}"> {{!orderDetail.rewardMoney ? '暂无打赏' : '￥'+orderDetail.rewardMoney}}</text></view>
+  </view>
+  <view class='feedback'>
+  <view class='ll'>留言: <text class='feedback-content'> {{!orderDetail.message ? '暂无留言' : orderDetail.message}}</text></view>
+  </view>
+</view>
+</view>
+</template>

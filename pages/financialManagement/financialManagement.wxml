@@ -1,0 +1,9 @@
+<!--pages/financialManagement/financialManagement.wxml-->
+<import src="../template/wechatIncome/wechatIncome.wxml"/>
+<import src="../template/anIncome/anIncome.wxml"/>
+<view wx-if="{{payMethod == 1 ? true : false}}">
+ <template is="wechatIncome" data="{{money,yesterdayIncome,totalIncome}}" ></template>
+</view>
+<view wx-if="{{payMethod == 2 ? true : false}}">
+ <template is="anIncome" data="{{money,toDayInAmount,withdrawAmount,toDayOutAmount}}" ></template>
+</view>

@@ -1,0 +1,63 @@
+/* pages/serviceMenu/breakfastEdit/breakfastSetting/writeOff/numWriteOff/numWriteOff.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.title{
+  font-size: 28rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  background-color: white;
+  text-align: center;
+  color: #666666;
+  margin-top: 30rpx;
+
+}
+.input-number{
+  display: flex;
+  padding-bottom: 32rpx;
+  text-align: center;
+  padding-left: 178rpx;
+  background-color: white;
+}
+.input{
+  width: 70rpx;
+  height: 70rpx;
+  border: 1rpx #dcdcdc solid;
+  margin-right: 38rpx;
+}
+.ipt{
+  position: absolute;
+  top: 150rpx;
+ width: 0rpx;
+ height: 0rpx;
+}
+.red{
+  color: green;
+  font-size: 28rpx;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 23rpx;
+}
+.tips{
+  font-size: 28rpx;
+  color: #ff0000;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 23rpx;
+
+}
+.btn-view{
+  background-color: white;
+  padding-top: 80rpx;
+  padding-bottom: 28rpx;
+}
+.btn{
+   width: 360rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  background-color: #ea5415;
+  color: white;
+  border-radius: 16rpx;
+}

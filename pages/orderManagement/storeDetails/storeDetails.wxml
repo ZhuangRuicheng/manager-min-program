@@ -1,0 +1,54 @@
+<!--pages/orderManagement/storeDetails/storeDetails.wxml-->
+<import src="../../template/evaluate/evaluate.wxml"/>
+<view class='box'>
+   <view class='header'>
+    <view class='img'>
+      <image src='../../images/storeImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>在线迷你吧</view>
+    <view class='time'>{{orderDetail.createTime}}</view>
+  </view>
+  <view class='guide'>
+    <view class='madeGuide'>操作指引:</view>
+    <view class='guideContent'>客人已下单，请安排服务人员送迷你吧物品至房间</view>
+  </view>
+  <view class='content1'>
+  <view class='states'>
+  <view class='statesTitle'>状态：<text class='pay'>已支付</text></view>
+  <view class='goodsTitle'>商品详情：</view>
+  </view>
+    <view class='goods' wx:for='{{orderInfo.items}}'>
+  <text class='storeName'>{{item.name}}</text>
+  <text class='number'>×{{item.quantity}}</text>
+  <text class='money'>￥{{item.fee*item.quantity}}</text>
+</view>
+<view class='count1'>
+  <text class='storeName'>合计:</text>
+  <text class='number countNumber'>{{orderInfo.quantity}}</text>
+  <text class='money countMoney'>￥{{orderInfo.totalFee}}</text>
+</view>
+  <view class='remarks'>备注：{{!orderDetail.remarks?'--':orderDetail.remarks}}</view>
+    </view>
+    <view class='allStatus'>
+  <view class='room'>房间号：{{orderDetail.roomNum}}</view>
+    <view class='state' wx-if="{{orderDetail.status == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{orderDetail.status == 'OVERDUE'?true:false}}">已过期</view>
+       </view>
+       <!-- 点评 -->
+    <template is="evaluate" data="{{finishUserInfo,orderDetail,headerImage}}"></template>
+    <!-- 点评 -->
+  <!-- <view class='orderTitle'>订单信息：</view> -->
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{orderDetail.orderNo}}</view>
+    <view class='name num'>姓名：{{orderDetail.customerName}}</view>
+    <view class='connect num'>联系方式:{{orderDetail.phoneNumber}}</view>
+    <view class='downOrderTime num'>下单时间:{{orderDetail.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{orderDetail.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{orderDetail.finishTime}}</view>
+  </view>
+  <view class='state-btn'>
+        <button class='btn' bindtap='accept' disabled="{{disableds}}" style='background-color:{{color}};'>{{value}}</button>
+        </view>
+</view>

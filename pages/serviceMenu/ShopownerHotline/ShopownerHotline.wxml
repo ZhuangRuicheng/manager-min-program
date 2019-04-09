@@ -1,0 +1,15 @@
+<!--pages/hotelInfoEdit/ShopownerHotline/ShopownerHotline.wxml-->
+<view class='box'>
+<!-- 表单头 -->
+<form bindsubmit="formSubmit">
+  <view class='header'>
+    <text class='title'>店长联系方式:</text>
+  </view>
+   <view class='input'>
+    <input placeholder='请输入店长联系方式' placeholder-class='placeholder' value='{{phone}}' bindinput='inputChanged' id='phone' type='text' maxlength='20'></input>
+    </view>
+  <button class='btn' form-type='submit'>保存</button>
+  </form>
+  <!-- 表单尾 -->
+</view>
+

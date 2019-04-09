@@ -1,0 +1,49 @@
+<!--pages/hotelInfoEdit/storeEdit/goodsClassify/goodsClassify.wxml-->
+
+<view class='box'>
+ <view class='addImages' bindtap='getImage'>
+    <view class='tips1' bindtap="showModal" bindload="imageLoad">+添加分类名称</view>
+  </view>
+  <view class='content'>
+    <view class='title'>当前分类</view>
+    <view class='goodsName'>
+       <view class='name' wx:for='{{categories}}' bindlongpress="deleteImage" data-index="{{index}}" wx:key="*this" data-id='{{item.id}}' data-idx='{{idx}}'>{{item.name}}</view>
+    </view>
+  </view>
+    <!-- 弹出层添加类别 -->
+  <view class="container-column">
+<view animation="{{animationData}}" class="container-column buydes-dialog-container" wx:if="{{showModalStatus}}" catchtouchmove='true'>
+        <view class="buydes-dialog-container-top" bindtap="hideModal"></view>
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+      <view class='cancel' bindtap="hideModal">取消</view>
+      <view class='hotelName'>添加商品分类名称</view>
+      <view class='type'>请点选商品分类</view>
+      <!-- 表单头 -->
+      <form bindsubmit="formSubmit">
+      <view class='showGoodsName' style=' border-color:{{border1}};color:{{color1}}' bindtap='nochooseGoods1' wx:if='{{noSelect1}}'>{{value1}}</view>
+      <view class='showGoodsName' style=' border-color:{{selectborder1}};color:{{selectcolor1}}' bindtap='selectchooseGoods1' wx:if='{{select1}}'>{{value1}}</view>
+      <view class='showGoodsName' style=' border-color:{{border2}};color:{{color2}}' bindtap='nochooseGoods2' wx:if='{{noSelect2}}'>{{value2}}</view>
+      <view class='showGoodsName' style=' border-color:{{selectborder2}};color:{{selectcolor2}}' bindtap='selectchooseGoods2' wx:if='{{select2}}'>{{value2}}</view>
+      <view class='showGoodsName' style=' border-color:{{border3}};color:{{color3}}' bindtap='nochooseGoods3' wx:if='{{noSelect3}}'>{{value3}}</view>
+       <view class='showGoodsName' style=' border-color:{{selectborder3}};color:{{selectcolor3}}' bindtap='selectchooseGoods3' wx:if='{{select3}}'>{{value3}}</view>
+      <view class='showGoodsName' style=' border-color:{{border4}};color:{{color4}}' bindtap='nochooseGoods4' wx:if='{{noSelect4}}'>{{value4}}</view>
+      <view class='showGoodsName' style=' border-color:{{selectborder4}};color:{{selectcolor4}}' bindtap='selectchooseGoods4' wx:if='{{select4}}'>{{value4}}</view>
+      <view class='showGoodsName' style=' border-color:{{border5}};color:{{color5}}' bindtap='nochooseGoods5' wx:if='{{noSelect5}}'>{{value5}}</view>
+      <view class='showGoodsName' style=' border-color:{{selectborder5}};color:{{selectcolor5}}' bindtap='selectchooseGoods5' wx:if='{{select5}}'>{{value5}}</view>
+      <view class='showGoodsName' style=' border-color:{{border6}};color:{{color6}}' bindtap='nochooseGoods6' wx:if='{{noSelect6}}'>{{value6}}</view>
+      <view class='showGoodsName' style=' border-color:{{selectborder6}};color:{{selectcolor6}}' bindtap='selectchooseGoods6' wx:if='{{select6}}'>{{value6}}</view>
+      <view class='showGoodsName' style=' border-color:{{border7}};color:{{color7}}' bindtap='nochooseGoods7' wx:if='{{noSelect7}}'>{{value7}}</view>
+      <view class='showGoodsName' style=' border-color:{{selectborder7}};color:{{selectcolor7}}' bindtap='selectchooseGoods7' wx:if='{{select7}}'>{{value7}}</view>
+       <view class='codetips'>自定义商品分类请直接输入名称</view>
+       <input type='text' value='{{inputValue}}' bindinput='inputChange' maxlength='5'></input>
+       <button class='showBtn' form-type='submit'>提交</button>
+       <!-- 表单尾 -->
+       </form>
+    </view>
+    </view>
+        </view>
+    </view>
+</view>
+</view>

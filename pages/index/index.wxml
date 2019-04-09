@@ -1,0 +1,106 @@
+<!--index.wxml-->
+<view class='box'>
+
+      <view class='header'>
+        <view class='header-top'>
+         <view class='hotelName'>{{hotelName}}</view>
+         <view class='cameraImg' bindtap='getImage'><image src='../images/camera.png' class='camera'></image></view>
+        </view>
+        <view class='window'><image src='../images/window.png' class='window-bottom'></image></view>
+        <view class='header-image'><image src='{{headerImage}}' class='headerImage'></image></view>
+        <view class='classifiy'>
+          <text class='name'>{{name}}</text>
+          <text class='department'>{{position}}</text>
+        </view>
+       
+        <view class='threeCss'>
+        <view class='satisfied'>
+          <view class='satisfied-percent'>{{satisfactionDegree}}%</view>
+          <view class='satisfied-text'>满意度</view>
+        </view>
+        <view class='hr1'></view>
+        <view class='ranking'>
+          <view class='ranking-num satisfied-percent'>{{ranking}}</view>
+          <view class='ranking-text satisfied-text'>酒店排名</view>
+        </view>
+        </view>
+         <view class='hr2'></view>
+        <view class='order'>
+           <view class='order-num satisfied-percent'>{{handleOrder}}</view>
+           <view class='order-text satisfied-text'>处理订单</view>
+        </view>
+      </view>
+      <!-- <view class='income'>
+        <view class='income-text'>我的收入</view>
+        <view class='income-money'>￥156.45</view>
+        <view class='leftImg'>
+          <image src='../images/right.png' class='right'></image>
+        </view>
+      </view> -->
+      <view class='contont'>
+        <view class='hh'>
+      <view class='hotelInfoEdit' bindtap='hotelInfoEdit' wx:if='{{hotelInfo}}' id='FUN_HOTEL_INFO_EDIT'>
+      <image src='../images/hotelInfo.png' class='hotelInfo'></image>
+      <view class='text'>酒店信息编辑</view>
+    </view>
+  </view>
+  <!-- 房型管理 -->
+  <view class='hh' bindtap='modelInput'>
+    <view class='hotelInfoEdit' wx:if='{{roomType}}' id='FUN_SET'>
+      <image src='../images/roomManager.png' class='hotelInfo'></image>
+      <view class='text'>房型管理</view>
+    </view>
+  </view>
+  <!-- 房型管理 -->
+  <!-- 服务订单管理 -->
+     <view class='hh'>
+    <view class='hotelInfoEdit' wx:if='{{order}}' id='FUN_CUSTOMER_MANAGE' bindtap='orderManagement'>
+      <image src='../images/note.png' class='note'></image>
+      <view class='text'>服务订单</view>
+    </view>
+      </view>
+  <!-- 服务订单管理 -->
+  <view class='hh' bindtap='serviceMenu'>
+    <view class='hotelInfoEdit' wx:if='{{FUN_SET}}' id='FUN_SET'>
+      <image src='../images/order.png' class='hotelInfo'></image>
+      <view class='text'>菜单管理</view>
+    </view>
+  </view>
+  <!-- 运营数据 -->
+   <view class='hh'>
+    <view class='hotelInfoEdit' wx:if='{{dataCount}}' id='FUN_DATA_STATISTICS' bindtap='dataStatistics'>
+      <image src='../images/dataCount.png' class='hotelInfo'></image>
+      <view class='text'>运营数据</view>
+    </view>
+  </view>
+   <!-- 运营数据 -->
+   <!-- 票券核销 -->
+     <view class='hh'>
+    <view class='hotelInfoEdit' bindtap='ticketWriteOff' wx:if='{{writeOff}}' id='FUN_FINANCE_MANAGE'>
+      <image src='../images/scan.png' class='hotelInfo'></image>
+      <view class='text'>票券核销</view>
+    </view>
+  </view>
+  <!-- 票券核销 -->
+    <view class='hh'>
+    <view class='hotelInfoEdit' bindtap='financial' wx:if='{{financial}}' id='FUN_FINANCE_MANAGE'>
+      <image src='../images/financial.png' class='hotelInfo'></image>
+      <view class='text'>财务明细</view>
+    </view>
+  </view>
+ 
+  <view class='hh'>
+    <view class='hotelInfoEdit' wx:if='{{user}}' id='FUN_CUSTOMER_MANAGE' bindtap='userManagement'>
+      <image src='../images/user.png' class='hotelInfo'></image>
+      <view class='text'>用户管理</view>
+    </view>
+      </view>
+    <view class='hh'>
+    <view class='hotelInfoEdit' wx:if='{{jurisdiction}}' id='FUN_PERMISSION_SET' bindtap='jurisdiction'>
+      <image src='../images/jurisdiction.png' class='jurisdiction'></image>
+      <view class='text'>账号授权</view>
+    </view>
+  </view>
+</view>
+
+</view>

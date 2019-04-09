@@ -1,0 +1,24 @@
+<!--pages/template/meals/mealsEdit/mealsEdit.wxml-->
+<template name="Edit">
+<view class='box'>
+  <view class='header'>{{headerTitle}}</view>
+  <view class='add-img'>
+    <view class='add-title' bindtap='addImage'>{{addImg}}</view>
+    <view class='img' wx:if="{{img == ''?false:true}}"><image src='{{img}}' class='show-img'></image></view>
+  </view>
+  <view class='introduce'>
+  <view class='catering-title'>{{introduceTitle}}</view>
+  <view class='introduce-content'>
+   <textarea placeholder='{{textarea}}' bindblur='textareaContent' maxlength='50' value='{{introduceContent}}'></textarea>
+  </view>
+  </view>
+  <view class='line1' bindtap='mealsClassify'>
+  <view class='store-classify'>{{storeClassify}}</view>
+  <view class='right-img'><image src='../../images/right.png' class='sign-img'></image></view>
+  </view>
+  <view class='line2' bindtap='mealsContent'>
+  <view class='store-classify'>{{storeEdit}}</view>
+  <view class='right-img'><image src='../../images/right.png' class='sign-img'></image></view>
+  </view>
+</view>
+</template>

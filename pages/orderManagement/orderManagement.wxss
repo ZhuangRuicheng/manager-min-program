@@ -1,0 +1,97 @@
+/* pages/orderManagement /orderManagement .wxss */
+.header{
+  height: 120rpx;
+  background-color:white;
+  padding-top: 34rpx;
+  display: flex;
+  /* position: fixed;
+  width: 100%; */
+}
+picker{
+  margin-left: -10rpx;
+}
+.businessPicker{
+  font-size: 28rpx;
+  width: 190rpx;
+  height: 50rpx;
+  border: 1rpx #999999 solid;
+  line-height: 50rpx;
+  margin-left: 30rpx;
+  padding-left: 10rpx;
+}
+.tip{
+  width: 19rpx;
+  height: 12rpx;
+  position: absolute;
+  top: 57rpx;
+  left: 188rpx;
+}
+.tip2{
+   width: 19rpx;
+  height: 12rpx;
+  position: absolute;
+  top: 57rpx;
+  left: 410rpx;
+}
+.input{
+   width: 190rpx;
+  height: 50rpx;
+  border: 1rpx #999999 solid;
+  line-height: 50rpx;
+  margin-left: 15rpx;
+}
+.inputRoom{
+  font-size: 28rpx;
+}
+.title{
+  font-size: 28rpx;
+  color: #ea5415;
+  margin-top: 7rpx;
+  margin-left: 10rpx;
+}
+.img{
+  width: 39rpx;
+  height: 35rpx;
+}
+.contentTitle{
+  height: 84rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  display: flex;
+  line-height: 84rpx;
+  padding-left: 30rpx;
+  border-bottom:1rpx #cccccc solid; 
+}
+.type{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+.time{
+  font-size: 28rpx;
+  position: absolute;
+  right: 30rpx;
+  color: #999999;
+}
+.bottom{
+  height: 100rpx;
+  background-color: white;
+  display: flex;
+  font-size: 30rpx;
+  padding: 44rpx 0rpx 0rpx 30rpx;  
+}
+
+.state{
+  position: absolute;
+  right: 30rpx;
+  width: 100rpx;
+  color: red;
+}
+.box{
+  padding-bottom: 20rpx;
+}
+/* .contair{
+  margin-top: 120rpx;
+} */
+page{
+  background-color: #f7f7f7;
+}

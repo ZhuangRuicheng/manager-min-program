@@ -1,0 +1,60 @@
+<!--pages/financialManagement/detailed/putForwardDetails/downLoadBill/downLoadBill.wxml-->
+<view class='box'>
+  <view class='header'>
+    <view class='warningImg'>
+      <image src='../../../../images/warning.png' class='warn'></image>
+    </view>
+    <view class='warnText'>下载对账单日期最长跨度为31天</view>
+  </view>
+<!-- <calendar calendar-style="calendar" header-style="headers" board-style="board" prev="{{false}}" show-more-days="{{true}}" /> -->
+  <!-- 时间选择头部 -->
+  <view class='reconciliationsTime'>
+    <view class='Title'>选择对账单时间</view>
+    <view class='allSection'>
+    <!-- 开始选择时间 -->
+    <view class="section">
+  <picker mode="date" value="{{BeginDate}}" start="2015-09-01" end="3030-09-01" bindchange="bindBeginDate">
+    <view class="picker">
+      {{BeginDate}}
+    </view>
+  </picker>
+  <view class='timeImg'>
+      <image src='../../../../images/timeImg.png' class='time' ></image>
+    </view>
+  </view>
+   <!-- 开始选择时间 -->
+   <view class='to'>至</view>
+   <!-- 结束选择时间 -->
+  <view class="section">
+    <picker mode="date" value="{{EndDate}}" start="2015-09-01" end="3030-09-01" bindchange="bindEndDate">
+      <view class="picker">
+        {{EndDate}}
+      </view>
+   </picker>
+    <view class='timeImg'>
+      <image src='../../../../images/timeImg.png' class='time'></image>
+    </view>
+    </view>
+    <!-- 结束选择时间 -->
+</view>
+  </view>
+  <!-- 时间选择尾部 -->
+  <button class='btn' bindtap='downLoad'>下载对账单</button>
+  <!-- 弹出层发送文件到邮箱wxml -->
+  <view class="container-column" wx:if="{{QrModalStatus}}">
+<view animation="{{animationData}}" class="container-column buydes-dialog-container" >
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+          <view bindtap='clear'>
+          <icon type='clear' size='20'></icon>
+          </view>
+          <view class='text'>账单发送到邮箱</view>
+          <view class='showContent'><input class='input' placeholder='请输入您的邮箱地址' bindinput='inputMail' value='{{mail}}'></input></view>
+       <button class='showBtn' bindtap="sed">发送</button>
+    </view>
+    </view>
+        </view>
+    </view>
+</view>
+</view>

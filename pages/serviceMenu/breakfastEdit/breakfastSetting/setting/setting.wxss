@@ -1,0 +1,78 @@
+/* pages/serviceMenu/breakfastEdit/breakfastSetting/setting/setting.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.tr-one{
+  display: flex;
+  height: 100rpx;
+  background-color: white;
+  line-height: 100rpx;
+  margin-top: 30rpx;
+  font-size: 34rpx;
+  color: #333333;
+  border-top: 1rpx #dcdcdc solid;
+}
+.price{
+  padding-left: 30rpx;
+}
+.input{
+  position: absolute;
+  right: 30rpx;
+}
+.price-input{
+  border: 1rpx #dcdcdc solid;
+  margin-top: 20rpx;
+  width: 220rpx;
+  height: 56rpx;
+  border-radius: 2rpx;
+  font-size: 24rpx;
+}
+.hr{
+  height: 1rpx;
+  background-color: #dcdcdc;
+  margin-left: 30rpx;
+}
+.tr-two{
+  display: flex;
+  height: 120rpx;
+  background-color: white;
+  font-size: 34rpx;
+  color: #333333;
+}
+.orCharge{
+  padding-left: 30rpx;
+  padding-top: 32rpx;
+  padding-bottom: 0rpx;
+}
+.tips{
+  font-size: 24rpx;
+  color: #ff0000;
+  padding-left: 30rpx;
+}
+.switch{
+  position: absolute;
+  right: 30rpx;
+  margin-top: 35rpx;
+}
+switch{
+  transform: scale(0.9);
+}
+.hr-two{
+  height: 2rpx;
+  background-color: #dcdcdc;
+  margin-left: 30rpx;
+}
+.tr-three{
+  border-bottom: 1rpx #dcdcdc solid;
+}
+.btn{
+  width: 360rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  background-color: #ea5415;
+  color: white;
+  margin-top: 80rpx;
+  border-radius: 16rpx;
+}

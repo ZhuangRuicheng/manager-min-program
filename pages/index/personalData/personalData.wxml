@@ -1,0 +1,55 @@
+<!--pages/index/personalData/personalData.wxml-->
+<view class='box'>
+<view class='all'>
+  <view class='tr-one'>
+  <view class='title'>头像</view>
+    <view class='header-image'>
+      <image src="{{personalImage == '' ?headerImage : personalImage}}" class='headerImage' bindtap='getImage'></image>
+    </view>
+  </view>
+  <view class='tips'>好看的头像会给客人留下好的印象哦~</view>
+  </view>
+  
+  <view class='tr-two'>
+  <view class='title'>姓名</view>
+  <view class='name'>{{name}}</view>
+  </view>
+    <view class='hr'></view>
+    <view class='hr'></view>
+  <view class='tr-two tr-three'>
+  <view class='title'>职位</view>
+  <view class='position name'>{{position}}</view>
+  </view>
+  <view class='hr'></view>
+  <view class='hr'></view>
+  <view class='tr-two tr-four'>
+  <view class='title'>授权码手机号</view>
+  <view class='name'>{{phone}}</view>
+  </view>
+  <view class='hr'></view>
+  <view class='jurisdiction'>
+  <view class='account'>账号权限:</view>
+  <view class='service-order-all'>
+  <image src='../../images/selection.jpg' class='set' wx:if="{{ORDER_ACCEPT ? true:false}}"></image>
+  <image src='../../images/cha.png' class='set' wx:if="{{ORDER_ACCEPT ? false:true}}"></image>
+  <view class='service-order'>服务订单受理分发权限</view>
+  </view>
+  <view class='have-jurisdiction'>
+    <view class='self-help' wx:if="{{CONTINUE_STAY}}">自助续住</view>
+    <view class='store' wx:if="{{MINI_BAR}}">迷你吧</view>
+    <view class='clear-room store' wx:if="{{CLEAN_ROOM}}">清扫房间</view>
+    <view class='invoice store' wx:if="{{INVOICE}}">预约发票</view>
+    <view class='checkOut store' wx:if="{{CHECKOUT}}">退房</view>
+    <view class='vip store' wx:if="{{VIP}}">办理会员</view>
+    <view class='feedback store' wx:if="{{FEEDBACK}}">投诉建议</view>
+    <view class='feedback store' wx:if="{{HOTEL_RESERVE}}">酒店预订</view>
+  </view>
+  </view>
+  <view class='all3' bindtap='changePassword'>
+  <view class='changePassword'>修改密码</view>
+  <view class='right'>
+    <image src='../../images/right.png' class='img'></image>
+  </view>
+  </view>
+  <button class='btn' bindtap='close'>退出登录</button>
+</view>

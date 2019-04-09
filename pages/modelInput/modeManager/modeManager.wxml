@@ -1,0 +1,25 @@
+<!--pages/dataInput/modelInput/modeManager/modeManager.wxml-->
+<view class='box'>
+<view class='hr'></view>
+  <view class='type'>
+    <label class='type-title'>类型</label>
+     <view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <view class='hh'>
+    <view class="picker">{{array[index]}}</view>
+    <view class='picker-img'><image src='../../images/tip.png' class='lower'></image></view>
+  </view> 
+  </picker>
+</view>
+  </view>
+  <form bindsubmit="formSubmit">
+  <view class='door-price'><label class='door-title'>当前门市价</label><input bindinput='inputChange' id='doorprice' value="{{doorprice}}"></input></view>
+   <view class='door-price'><label class='door-title'>酒店直销价</label><input bindinput='inputChange' id='sellprice' value="{{sellprice}}"></input></view>
+    <view class='door-price'><label class='door-title day-num'>每日房量限制</label><input bindinput='inputChange' id='roomnum' value="{{roomnum}}"></input></view>
+    <view class='switch'>
+     <label>房型开关</label>
+     <view class='switch-img' bindtap='switchEvent'><image src="{{switchOr?switchOff:switchOn}}" class='switchImg'></image></view>
+    </view>
+    <view class='btn'><button class='save' form-type='submit'>保存</button></view>
+    </form>
+</view>

@@ -1,0 +1,74 @@
+/* pages/template/wechatIncome/wechatIncome.wxss */
+.header{
+  background-color: #ea5415;
+  border-top: 1rpx #dcdcdc solid;
+  padding-bottom: 30rpx;
+}
+.title{
+  text-align: center;
+  font-size: 32rpx;
+  color: white;
+  padding-top: 50rpx;
+  padding-bottom: 20rpx;
+}
+.money{
+  font-size: 52rpx;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.num{
+  display: flex;
+}
+.yesterday{
+    padding-left: 80rpx;
+}
+.yesterday-title{
+  font-size: 32rpx;
+  color: white;
+}
+.yester-money{
+  font-size: 52rpx;
+  color: white;
+  font-weight: bold;
+}
+.hr{
+  width: 2rpx;
+  height: 60rpx;
+  margin-left: 80rpx;
+  margin-top: 20rpx;
+  background-color: #dcdcdc;
+}
+/* image{
+  width: 153rpx;
+  height: 153rpx;
+  margin: 90rpx 298rpx 34rpx 298rpx;
+}
+.money{
+  font-size: 88rpx;
+  font-weight: bold;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+} */
+.btn{
+  margin-top: 30rpx;
+  width: 380rpx;
+  color: white;
+  background-color: #ea5415;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.btn1{
+  margin-top: 80rpx;
+  width: 380rpx;
+  background-color: white;
+  color: black;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}

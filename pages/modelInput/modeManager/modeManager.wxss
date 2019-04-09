@@ -1,0 +1,87 @@
+/* pages/dataInput/modelInput/modeManager/modeManager.wxss */
+.hr{
+  height: 30rpx;
+  background-color: #f7f7f7;
+}
+.type{
+  font-size: 30rpx;
+  color: #333333;
+  display: flex;
+  line-height: 120rpx;
+  padding-left: 30rpx;
+}
+.section{
+  border: 1rpx #cccccc solid;
+  border-radius: 10rpx;
+  padding-left: 22rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  margin-top: 20rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.hh{
+  width: 458rpx;
+  display: flex;
+}
+.picker-img{
+  margin-top: -5rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.lower{
+  width: 17rpx;
+  height: 8rpx;
+}
+.door-price{
+  display: flex;
+  font-size: 30rpx;
+  color: #333333;
+  padding-left: 30rpx;
+  margin-bottom: 28rpx;
+}
+.door-title{
+  line-height: 70rpx;
+  padding-right: 64rpx;
+}
+input{
+  width: 480rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  border:  1rpx #cccccc solid;
+  border-radius: 10rpx;
+}
+.day-num{
+  padding-right: 34rpx;
+}
+.switch{
+  font-size: 30rpx;
+  display: flex;
+  color: #333333;
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+}
+.switchImg{
+  width: 120rpx;
+  height: 48rpx;
+}
+.switch-img{
+  position: absolute;
+  right: 30rpx;
+}
+.save{
+  font-size: 32rpx;
+  color: white;
+  width: 640rpx;
+  height: 80rpx;
+  background-color: #ea5415;
+  line-height: 80rpx;
+  border-radius: 16rpx;
+}
+.btn{
+  width: 100%;
+  position: fixed;
+  bottom: 18rpx;
+  text-align: center;
+}

@@ -1,0 +1,151 @@
+<!--pages/serviceMenu/serviceMenu.wxml-->
+
+<view class='box'>
+<view class='tip'>*以下为客房定制服务，点击开启客人即可在界面使用该服务，关闭后即不再显示，客人即无法使用此功能，请谨慎操作</view>
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>连wifi功能</text>
+  <view class='switch'>
+  <switch bindchange="wifiSwitchChange" checked='{{wifiValue}}'/>
+  </view>
+</view>
+  <view class='hide-height' bindtap='wifi' wx:if='{{wifiValue}}'>
+   <view class='hide-title'>WIFI账号密码设置</view>
+   <view class='wifirigth'>
+  <image src='../images/right.png'></image>
+  </view>
+</view>
+</view>
+<!-- 早餐券 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>早餐券</text>
+  <view class='switch'>
+  <switch bindchange="breakfastSwitchChange" checked='{{breakfastValue}}'/>
+  </view>
+</view>
+  <view class='hide-height' wx:if='{{breakfastValue}}' bindtap='breakfast'>
+   <view class='hide-title'>编辑早餐券信息</view>
+   <view class='wifirigth'>
+  <image src='../images/right.png'></image>
+  </view>
+</view>
+</view>
+<!-- 自主续住 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>自助续住</text>
+  <view class='switch'>
+  <switch bindchange="selfSwitchChange" checked='{{selfValue}}'/>
+  </view>
+</view>
+</view>
+<!-- 清扫房间 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>清扫房间</text>
+  <view class='switch'>
+  <switch bindchange="clearSwitchChange" checked='{{clearValue}}'/>
+  </view>
+</view>
+</view>
+<!-- 迷你吧 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>在线迷你吧</text>
+  <view class='switch'>
+  <switch bindchange="storeSwitchChange" checked='{{storeValue}}'/>
+  </view>
+</view>
+  <view class='hide-height' wx:if='{{storeValue}}' bindtap='storeEdit'>
+   <view class='hide-title'>迷你吧信息编辑</view>
+   <view class='wifirigth'>
+  <image src='../images/right.png'></image>
+  </view>
+</view>
+</view>
+<!-- 客房送餐 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>客房送餐</text>
+  <view class='switch'>
+  <switch bindchange="mealsSwitchChange" class='self' checked='{{mealsValue}}'/>
+  </view>
+</view>
+  <view class='hide-height' wx:if='{{mealsValue}}' bindtap='mealsEdit'>
+   <view class='hide-title'>客房送餐信息编辑</view>
+   <view class='wifirigth'>
+  <image src='../images/right.png'></image>
+  </view>
+</view>
+</view>
+<!-- 预约发票 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>预约发票</text>
+  <view class='switch'>
+  <switch bindchange="invoiceSwitchChange" class='self' checked='{{invoiceValue}}'/>
+  </view>
+</view>
+  <view class='hide-height' wx:if='{{invoiceValue}}' bindtap='invoiceEdit'>
+   <view class='hide-title'>发票信息录入</view>
+   <view class='wifirigth'>
+  <image src='../images/right.png'></image>
+  </view>
+</view>
+</view>
+<!-- 退房 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>退房</text>
+  <view class='switch'>
+  <switch bindchange="checkOutSwitchChange" checked='{{checkOutValue}}'/>
+  </view>
+</view>
+</view>
+<!-- 会员 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>会员</text>
+  <view class='switch'>
+  <switch bindchange="VipSwitchChange" checked='{{vipValue}}'/>
+  </view>
+</view>
+  <view class='hide-height' wx:if='{{vipValue}}' bindtap='vip'>
+   <view class='hide-title'>会员信息录入</view>
+   <view class='wifirigth'>
+  <image src='../images/right.png'></image>
+  </view>
+</view>
+</view>
+<!-- 店长热线 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>店长热线</text>
+  <view class='switch'>
+  <switch bindchange="HotLineSwitchChange" checked='{{HotLineValue}}'/>
+  </view>
+</view>
+  <view class='hide-height' wx:if='{{HotLineValue}}' bindtap='ShopownerHotline'>
+   <view class='hide-title'>店长信息录入</view>
+   <view class='wifirigth'>
+  <image src='../images/right.png'></image>
+  </view>
+</view>
+</view>
+<!-- 经理在线 -->
+<view class='wifi public-height'>
+<view class='content'>
+  <text class='public-title'>经理在线</text>
+  <view class='switch'>
+  <switch bindchange="managerSwitchChange" checked='{{managerValue}}'/>
+  </view>
+</view>
+  <view class='hide-height' wx:if='{{managerValue}}' bindtap='managerOnline'>
+   <view class='hide-title'>留言信息编辑</view>
+   <view class='wifirigth'>
+  <image src='../images/right.png'></image>
+  </view>
+</view>
+</view>
+</view>

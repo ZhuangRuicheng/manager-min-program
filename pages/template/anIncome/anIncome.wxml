@@ -1,0 +1,32 @@
+<!--pages/template/anIncome/anIncome.wxml-->
+<template name="anIncome">
+<view class='boxs'>
+  <view class='headers'>
+  <view class='th1'>
+    <view class='remains'>
+      <view class='remain-labels'>账户剩余（元）</view>
+      <view class='remain-moneys'>￥{{money}}</view>
+    </view>
+     <view class='remains'>
+      <view class='remain-labels'>可提现金额（元）</view>
+      <view class='remain-moneys'>￥{{withdrawAmount}}</view>
+    </view>
+  </view>
+
+  <view class='th2'>
+    <view class='remains'>
+      <view class='remain-labels'>当日入金（元）</view>
+      <view class='remain-moneys'>￥{{toDayInAmount}}</view>
+    </view>
+     <view class='remains'>
+      <view class='remain-labels'>当日出金（元）</view>
+      <view class='remain-moneys'>￥{{toDayOutAmount}}</view>
+    </view>
+  </view>
+  </view>
+  <button class='btn1s' bindtap='detailed'>查看明细</button>
+  <button class='btns' bindtap='settlement'>对账结算</button>
+</view>
+<view class='wx-tips'>*您的账户已开通自动提现功能，T+1自动提现到账</view>
+</template>
+

@@ -1,0 +1,3 @@
+/* pages/financialManagement/financialManagement.wxss */
+@import "../template/wechatIncome/wechatIncome.wxss";
+@import "../template/anIncome/anIncome.wxss";

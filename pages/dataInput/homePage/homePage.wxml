@@ -1,0 +1,14 @@
+<!--pages/homePage/homePage.wxml-->
+<view class='box'>
+ <view class='addImages' bindtap='getImage'>
+    <view class='tips1'>+添加图片<text class='tips2'>(3张以内)</text></view>
+    <view class='tips2'>图片尺寸750*348,大小不超过5M</view>
+  </view>
+  <view class='images' wx:for='{{imgUrls}}' id="{{item}}" data-index="{{index}}" wx:key="*this">
+    <image src='{{item.imgUrl}}' class='chooseImg' mode="aspectFill"></image>
+    <view class='all'>
+    <view class='time'>{{item.createTime}}</view>
+    <view class='text' bindtap='deleteImage' data-id='{{item.id}}'>删除</view>
+    </view>
+</view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/serviceMenu/mealsEdit/mealsEdit.wxml-->
+<import src="../../template/meals/mealsEdit/mealsEdit.wxml"/>
+<view>
+  <template is="Edit" data="{{headerTitle,addImg,introduceTitle,storeClassify,storeEdit,introduceContent,img,textarea}}" ></template>
+</view>

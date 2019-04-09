@@ -1,0 +1,56 @@
+
+/* pages/serviceMenu/breakfastEdit/breakfastSetting/breakfastIntroduce/breakfastIntroduce.wxss */page{
+  background-color: #f7f7f7;
+}
+
+.all{
+  margin-top: 30rpx;
+ padding-bottom: 30rpx;
+  background-color: white;
+}
+textarea{
+  height: 300rpx;
+  width: 690rpx;
+  border: 1rpx #cccccc solid;
+  margin: 0rpx 30rpx 30rpx 30rpx;
+  font-size: 32rpx;
+}
+.title{
+  font-size: 34rpx;
+  padding: 34rpx 0rpx 34rpx 30rpx;
+  color: #333333;
+}
+.createImg{
+  width: 400rpx;
+  height: 100rpx;
+  border: 1rpx #b2b2b2 solid;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 100rpx;
+  margin-left: 175rpx;
+  color: #333333;
+}
+.url{
+  width: 400rpx;
+  height: 60rpx;
+  border: 1rpx #b2b2b2 solid;
+   margin-left: 175rpx;
+   margin-top: 62rpx;
+   font-size: 24rpx;
+}
+image{
+  width: 690rpx;
+}
+.btn{
+  color: white;
+  background-color: #ea5415;
+  position: fixed;
+  bottom: 30rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  left: 195rpx;
+  width: 360rpx;
+}
+.breakfastImg{
+  margin: 0rpx 30rpx 10rpx 30rpx;
+}

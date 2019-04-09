@@ -1,0 +1,152 @@
+/* pages/JurisdictionAdmin/newAccount/newAccount.wxss */
+.header{
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+    border-bottom: 1rpx #cccccc solid
+}
+.name{
+  font-size: 32rpx;
+  padding: 0rpx 44rpx 0rpx 34rpx;
+}
+input{
+  width: 478rpx;
+  height: 56rpx;
+  border: 1rpx #cccccc solid;
+  margin: 16rpx 30rpx 22rpx 0rpx;
+  font-size: 32rpx;
+}
+.picker{
+  border: 1rpx #cccccc solid;
+  font-size: 32rpx;
+  width: 478rpx;
+  height: 56rpx;
+  margin: 16rpx 30rpx 22rpx 62rpx;
+}
+.text{
+  margin: -15rpx 10rpx 0rpx 20rpx;
+}
+.lower{
+  width: 29rpx;
+   height: 16rpx;
+   position: relative;
+   top: -90rpx;
+  left: 430rpx;
+}
+
+.phoneInput{
+  margin-left: 32rpx;
+}
+.passwordInput{
+  margin-left: 60rpx;
+}
+.on{display: block}
+.off{display: none}
+.t1{
+  width: 200rpx;
+}
+.business-title{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  line-height: 88rpx;
+  height: 88rpx;
+  padding-left: 30rpx;
+  border-bottom: 1rpx #cccccc solid;
+}
+.hotel-data{
+  line-height: 88rpx;
+  height: 88rpx;
+  font-size: 32rpx;
+  color: #333333;
+  border-bottom: 1rpx #cccccc solid;
+  padding-left: 60rpx;
+}
+switch{
+  transform: scale(0.9);
+  position: absolute;
+  right: 30rpx;
+}
+.order-accep{
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  border-bottom: 1rpx #cccccc solid;
+  padding-left: 70rpx;
+}
+.lock{
+  width: 21rpx;
+  height: 22rpx;
+}
+.order-accep-title{
+  font-size: 28rpx;
+  color: #333333;
+  margin-left: 15rpx;
+}
+.check-box-img{
+  width: 42rpx;
+  height: 42rpx;
+  position: absolute;
+  right: 123rpx;
+  margin-top: 22rpx;
+}
+.jurisdiction-tr1{
+  display: flex;
+  padding-top: 30rpx;
+  padding-left: 58rpx;
+}
+.public-img{
+  width: 140rpx;
+  height: 60rpx;
+  margin-right: 32rpx;
+}
+.jurisdiction-tr2{
+  display: flex;
+  padding-top: 30rpx;
+  padding-left: 58rpx;
+}
+.jurisdiction-tr3{
+  display: flex;
+  padding-top: 30rpx;
+  padding-left: 58rpx;
+  border-bottom: 1rpx #cccccc solid;
+  padding-bottom: 30rpx;
+}
+.menu{
+  margin-bottom: 50rpx;
+}
+.btn{
+  width: 280rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  font-size: 32rpx;
+  color: white;
+  background-color: green;
+  line-height: 80rpx;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.reset{
+  width: 200rpx;
+  height: 60rpx;
+  font-size: 32rpx;
+  line-height: 60rpx;
+  margin: 18rpx 0rpx 18rpx 60rpx;
+  background-color: #ea5415;
+  color: white;
+}
+.disable-btn{
+  width: 280rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  font-size: 32rpx;
+  color: white;
+  background-color: red;
+  line-height: 80rpx;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.btn-th{
+  width: 100%;
+  display: flex;
+}

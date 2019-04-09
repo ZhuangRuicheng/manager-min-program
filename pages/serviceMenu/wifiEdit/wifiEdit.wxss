@@ -1,0 +1,41 @@
+/* pages/hotelInfoEdit/wifiEdit/wifiEdit.wxss */
+
+.header{
+  height:100rpx;
+  line-height: 100rpx; 
+  background-color: white;
+  display: flex;
+  margin-top: 30rpx;
+
+}
+.title{
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 30rpx;
+}
+input{
+  height: 56rpx;
+  border: 1rpx #cccccc solid;
+  font-size: 24rpx;
+  margin: 30rpx 30rpx 30rpx 30rpx;
+  max-width: 250rpx;
+}
+.placeholder{
+  font-size: 24rpx;
+  color: #999999;
+}
+.pwd{
+  margin-top: 0rpx;
+  border: none;
+}
+.password{
+  margin-left: 100rpx;
+}
+.btn{
+  margin: 110rpx 224rpx 0rpx 224rpx;
+  color: white;
+  background-color: #ea5415;
+}
+page{
+  background-color: #f7f7f7;
+}

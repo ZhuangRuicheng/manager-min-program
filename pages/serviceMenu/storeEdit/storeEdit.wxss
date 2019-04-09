@@ -1,0 +1,50 @@
+/* pages/hotelInfoEdit/storeEdit/storeEdit.wxss */
+.title{
+  font-size: 32rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+  padding-left: 70rpx;
+
+}
+.header{
+  display: flex;
+  /* background-color: wheat; */
+   background-color: white;
+   margin-top: 30rpx;
+}
+image{
+  width: 15rpx;
+  height: 25rpx;
+  margin: 38rpx 0rpx 30rpx 0rpx;
+}
+.right{
+  margin-left: 370rpx;
+}
+textarea{
+  width: 690rpx;
+  height: 250rpx;
+  background-color: white;
+  padding: 24rpx 30rpx 0rpx 30rpx;
+  font-size: 32rpx;
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+}
+.placeholder{
+  color: #999999;
+  font-size: 32rpx;
+}
+.sign{
+  margin-left: 470rpx;
+}
+.goodsEdit{
+  margin-top: 0rpx;
+}
+.logo{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin: 10rpx 0rpx 0rpx 300rpx;
+}
+page{
+  background-color: #f7f7f7;
+}

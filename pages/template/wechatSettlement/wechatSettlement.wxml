@@ -1,0 +1,52 @@
+<!--pages/template/wechatSettlement/wechatSettlement.wxml-->
+<template name="wechatSettlement">
+<view class='box'>
+<view class='an'>
+   <view class='an-header'>
+  <view class='an-title'>结算记录</view>
+  <view class='view-btn' bindtap='downloadOrder'>下载对账单</view>
+ </view>
+ </view>
+ <view class='wx'>
+  <view class='record-list' wx:for="{{WxSettleList}}">
+    <view class='time-money'>
+      <view class='time'><label class='day'>{{item.day}}</label><label class='line'>/</label><label class='month'>{{item.month}}</label></view>
+    </view>
+    <view class='pay-detail'>
+      <view class='pay-moneys'>
+        <view class='pay-title'>支付结算金额</view>
+        <view class='pay-money'>￥{{item.money}}</view>
+      </view>
+      <view class='service-charge'>
+        <view class='service-charge-title'>手续费</view>
+        <view class='service-charge-money pay-money'>￥{{item.poundage}}</view>
+      </view>
+       <view class='refund'>
+        <view class='refund-title pay-title'>入账</view>
+        <view class='refund-money pay-money'>￥{{item.actualMoney}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+  <!-- <view class='record-list'>
+    <view class='time-money'>
+      <view class='time'><label class='day'>09</label><label class='line'>/</label><label class='month'>12</label></view>
+      <view class='money'><label class='money-label'>入账：</label><text class='price'>￥890</text></view>
+    </view>
+    <view class='pay-detail'>
+      <view class='pay-moneys'>
+        <view class='pay-title'>支付结算金额</view>
+        <view class='pay-money'>￥245</view>
+      </view>
+      <view class='service-charge'>
+        <view class='service-charge-title'>手续费</view>
+        <view class='service-charge-money pay-money'>￥123</view>
+      </view>
+      <view class='refund'>
+        <view class='refund-title pay-title'>退款结算金额</view>
+        <view class='refund-money pay-money'>￥1230</view>
+      </view>
+    </view>
+  </view> -->
+</view>
+</template>

@@ -1,0 +1,67 @@
+/* pages/userManagement/userManagement.wxss */
+.header{
+  height: 110rpx;
+  display: flex;
+  line-height: 110rpx;
+  border-bottom: 1rpx #cccccc solid;
+}
+
+input{
+  background-color: #e8e8e8;
+  width: 601rpx;
+  height: 56rpx;
+  font-size: 26rpx;
+  padding-left: 30rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+}
+.search{
+  font-size: 32rpx;
+  color: #ea5415;
+  margin-left: 20rpx;
+}
+.Title{
+  display:flex; 
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #999999;
+  background-color: #f7f7f7;
+  border-bottom: 1rpx #cccccc solid;
+}
+.headerImg{
+  margin-left: 44rpx;
+}
+.name{
+  margin-left: 78rpx;
+}
+.time{
+  margin-left: 322rpx;
+}
+.content{
+  height: 140rpx;
+  line-height: 140rpx;
+  display: flex;
+  border-bottom: 1rpx #cccccc solid;
+}
+.img{
+  height: 80rpx;
+  width: 80rpx;
+  
+  overflow: hidden;
+  padding: 30rpx 50rpx 29rpx 30rpx;
+}
+image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.showName{
+  font-size: 32rpx;
+}
+.showTime{
+  position: absolute;
+  right: 30rpx;
+  font-size: 24rpx;
+  color: #999999;
+}

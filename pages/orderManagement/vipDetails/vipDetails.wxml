@@ -1,0 +1,43 @@
+<!--pages/orderManagement/vipDetails/vipDetails.wxml-->
+<import src="../../template/evaluate/evaluate.wxml"/>
+<view class='box'>
+   <view class='header'>
+    <view class='img'>
+      <image src='../../images/vipImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>会员</view>
+    <view class='time'>{{orderDetail.createTime}}</view>
+  </view>
+  <view class='guide'>
+    <view class='madeGuide'>操作指引:</view>
+    <view class='guideContent'>客人已支付成功并提交了个人资料信息，请核实提交信息无误后，在会员系统为客人办理会员</view>
+  </view>
+  <view class='VIPContent'>
+    <view class='type1'>会员类型：{{orderInfo.vipType}}</view>
+    <view class='type1'>会员名称：{{orderDetail.customerName}}</view>
+    <view class='type1'>身份证：{{orderInfo.idCard}}</view>
+    <view class='type1'>手机号码：{{orderInfo.telephone}}</view>
+  </view>
+   <view class='allStatus'>
+  <view class='room'>房间号：{{orderDetail.roomNum}}</view>
+  <view class='state' wx-if="{{orderDetail.status == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{orderDetail.status == 'OVERDUE'?true:false}}">已过期</view>
+    </view>
+<!-- 点评 -->
+    <template is="evaluate" data="{{finishUserInfo,orderDetail,headerImage}}"></template>
+<!-- 点评 -->
+  <!-- <view class='orderTitle'>订单信息：</view> -->
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{orderDetail.orderNo}}</view>
+    <view class='name num'>姓名：{{orderDetail.customerName}}</view>
+    <view class='connect num'>联系方式:{{orderInfo.telephone}}</view>
+    <view class='downOrderTime num'>下单时间:{{orderDetail.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{orderDetail.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{orderDetail.finishTime}}</view>
+  </view>
+  <view class='state-btn'>
+          <button class='btn' bindtap='accept' disabled="{{disableds}}" style='background-color:{{color}};'>{{value}}</button>
+          </view>
+</view>

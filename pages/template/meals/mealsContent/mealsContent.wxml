@@ -1,0 +1,86 @@
+<!--pages/template/meals/mealsContent/mealsContent.wxml-->
+<template name='mealsContent'>
+  <view class='box'>
+    <view class='header'>
+      <view class="section">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            <view class='text'>{{array[index]}}</view>
+            <image src='../../../images/lower.png' class='lower'></image>
+          </view>
+        </picker>
+      </view>
+      <view class='right' bindtap="showModal" bindload="imageLoad" bindtap='showAddContent' id='add'>+添加商品</view>
+    </view>
+    <view class='googs-content' wx:for="{{productList}}" wx:key="*this" bindtap='Edit' data-categoryid='{{item.categoryId}}' data-name='{{item.name}}' data-image='{{item.image}}' data-description='{{item.description}}' data-status='{{item.status}}' data-price='{{item.price}}'
+      data-productid='{{item.id}}' id='edit' bindlongpress='deleteProduct'>
+      <view class='goods-img'>
+        <image src='{{item.image}}' class='img'></image>
+      </view>
+      <view class='content'>
+        <view class='goods-price'>
+          <view class='goods-name'>{{item.name}}</view>
+          <view class='price'>￥{{item.price}}</view>
+        </view>
+        <view class="{{item.status == 2?'dwon':'state'}}">{{item.status == 1?'已上架':'已下架'}}</view>
+      </view>
+    </view>
+    <!-- 弹出层 -->
+    <view animation="{{animationData}}" class="container-column buydes-dialog-container" catchtouchmove='true' catchtouchmove="preventTouchMove" wx:if="{{addStoreShow}}">
+      <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+            <view class='cancel' bindtap="hideModal">
+              <icon type="cancel" size="30"></icon>
+            </view>
+            <view class='hotelName'>{{modelTitle}}</view>
+            <!-- 表单头 -->
+            <form bindsubmit="formSubmit">
+              <view class='switch'>
+                <label class='for-switch'>商品上架：</label>
+                <switch checked='{{status}}' bindchange="switchChange"></switch>
+              </view>
+              <view class='food-name'>
+                <label class='for-food-name'>菜品名称:</label>
+                <view class='input'>
+                  <input placeholder='请输入菜品名称' bindinput='getContent' id='foodName' value='{{foodName}}'></input>
+                </view>
+              </view>
+              <view class='food-price food-name'>
+                <label class='for-food-price'>价格:</label>
+                <view class='input'>
+                  <input placeholder='请输入价格' bindinput='getContent' id='price' value='{{price}}'></input>
+                </view>
+              </view>
+              <view class='add-picker-content'>
+                <label class='for-food-classify'>分类:</label>
+                <picker class='add-picker' bindchange="bindAddChange" value="{{addStoreIndex}}" range="{{addStoreArray}}">
+                  <view class="model-picker">
+                    <view>{{addStoreArray[addStoreIndex]}}</view>
+                    <view class='sign-location'>
+                      <image src='../../../images/lower.png' class='sign'></image>
+                    </view>
+                  </view>
+                </picker>
+              </view>
+              <view class='describe'>
+                <label class='for-food-describe'>商品描述：</label>
+                <textarea placeholder='商品的详细描述，200字以内，选填' maxlength='200' bindinput='getContent' id='describe' value='{{describe}}'></textarea>
+              </view>
+              <view class='describe'>
+                <label class='for-food-describe'>上传图片：</label>
+                <view class='up-img' wx:if="{{image==''?true:false}}" bindtap='uploadImg'>+ 添加图片</view>
+                <view class='show-img' wx:if="{{image==''?false:true}}" bindtap='uploadImg'>
+                  <image src='{{image}}' class='up-show'></image>
+                </view>
+              </view>
+              <button class='showBtn' form-type='submit'>提交</button>
+              <!-- 表单尾 -->
+            </form>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</template>

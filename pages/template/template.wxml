@@ -1,0 +1,174 @@
+<!--pages/template/template.wxml-->
+ 
+   <template name='CONTINUE_STAY'>
+   <view data-id='{{item.orderId}}' bindtap='self'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/self-s.png' class='img'></image>
+     </view>
+     <view class='type'>自助续住</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房间号：{{item.roomNum}}</view>
+      <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+   </view>
+   </view>
+   </template>
+
+    <template name='CHECKOUT'>
+    <view data-id='{{item.orderId}}' bindtap='checkOut'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/checkOutImg.png' class='img'></image>
+     </view>
+     <view class='type'>退房</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房间号：{{item.roomNum}}</view>
+      <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+   </view>
+   </view>
+   </template>
+
+   <template name='INVOICE'>
+   <view data-id='{{item.orderId}}' bindtap='invoice'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/invoiceImg.png' class='img'></image>
+     </view>
+     <view class='type'>预约发票</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房间号：{{item.roomNum}}</view>
+      <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+   </view>
+   </view>
+   </template>
+
+    <template name='MINI_BAR'>
+    <view data-id='{{item.orderId}}' bindtap='store'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/storeImg.png' class='img'></image>
+     </view>
+     <view class='type'>在线迷你吧</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房间号：{{item.roomNum}}</view>
+      <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+   </view>
+   </view>
+   </template>
+
+     <template name='MEAL'>
+    <view data-id='{{item.orderId}}' bindtap='meals'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/storeImg.png' class='img'></image>
+     </view>
+     <view class='type'>客房送餐</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房间号：{{item.roomNum}}</view>
+      <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+   </view>
+   </view>
+   </template>
+
+    <template name='FEEDBACK'>
+    <view data-id='{{item.orderId}}' bindtap='feedback'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/feekImg.png' class='img'></image>
+     </view>
+     <view class='type'>投诉建议</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房间号：{{item.roomNum}}</view>
+      <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+   </view>
+   </view>
+   </template>
+
+ <template name='VIP'>
+ <view data-id='{{item.orderId}}' bindtap='vip'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/vipImg.png' class='img'></image>
+     </view>
+     <view class='type'>办理会员</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房间号：{{item.roomNum}}</view>
+      <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+   </view>
+   </view>
+   </template>
+
+   <template name='CLEAN_ROOM'>
+   <view data-id='{{item.orderId}}' bindtap='clearRoom'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/clearImg.png' class='img'></image>
+     </view>
+     <view class='type'>打扫房间</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房间号：{{item.roomNum}}</view>
+     <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+   </view>
+   </view>
+   </template>
+
+   <template name='HOTEL_RESERVE'>
+   <view data-id='{{item.orderId}}' bindtap='hotelRerveDetails'>
+     <view class='contentTitle'>
+     <view class='self'>
+      <image src='../images/hotelReservationImg.png' class='img'></image>
+     </view>
+     <view class='type'>酒店预订</view>
+     <view class='time'>{{item.createTime2}}</view>
+   </view>
+   <view class='bottom'>
+     <view class='room'>房型：{{item.roomTypeName}}</view>
+      <view class='state' wx-if="{{item.orderStatus == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{item.orderStatus == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{item.orderStatus == 'OVERDUE'?true:false}}">已过期</view>
+       <view class='state' wx-if="{{item.orderStatus == 'CANCEL'?true:false}}">已取消</view>
+   </view>
+   </view>
+   </template>
+

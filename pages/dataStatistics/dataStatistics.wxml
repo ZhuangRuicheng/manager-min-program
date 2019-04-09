@@ -1,0 +1,136 @@
+<!--pages/dataStatistics/dataStatistics.wxml-->
+<view class="{{dataExplain?'box1':''}}">
+<view class="box">
+<view class='header'>
+   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+  <view class='img'>
+    <image src='../images/tip.png' class='tip'></image>
+  </view>
+  <view class='count' bindtap='dataExplain'>
+    <image class='explain' src='../images/explain.png'></image>
+    <text>统计数据说明</text>
+  </view>
+  <view class='profit'>
+  <view class='profitTitle'> 收益（元）</view>
+  <view class='profitMonet'>{{income}}</view>
+  </view>
+</view>
+<view class='customer'>
+ <view class='flex'>
+  <view class='visitingCustomers'>访问顾客</view>
+  <view class='visitingNum'>{{visitCustomer}}</view>
+ </view>
+ <view class='hr'></view>
+ <view class='flex'>
+  <view class='newCustomer visitingCustomers'>新客</view>
+  <view class='newCustomerNum visitingNum'>{{newAddCustomer}}</view>
+ </view >
+ <view class='hr'></view>
+ <view class='flex'>
+  <view class='payCustomer visitingCustomers'>付费客户</view>
+  <view class='paycustomerNum visitingNum'>{{paidCustomer}}</view>
+ </view>
+</view>
+<view class='share'>
+ <view class='shareFlex'>
+  <view class='shareForward'>分享转发：</view>
+  <view class='shareForwardNum'>{{share}}</view>
+ </view>
+ <view class='shareHr'></view>
+ <view class='shareFlex'>
+   <view class='mostForward'>多次转发：</view>
+   <view class='mostForwardNum'>{{forward}}</view>
+ </view>
+</view>
+<view class='evaluate'>
+<view class='custemsEvaluate'>顾客评价</view>
+<view class='evaluateTitle'>满意度<text class='textNum'>{{evaluateSatisfied}}%</text></view>
+ <view wx-if='{{percent<60?true:false}}'>
+   <image src='../images/try.png' class='come' style='left:{{left}}rpx'></image>
+   <progress percent='{{percent}}' backgroundColor='#cccccc' stroke-width='15' activeColor="#fa803d"></progress>
+  </view>
+  <view wx-if='{{percent>=60?true:false}}'>
+   <image src='../images/comeOn.png' class='come' style='left:{{right}}rpx'></image>
+   <progress percent='{{percent}}' backgroundColor='#cccccc' stroke-width='15' activeColor="#f74b1a"></progress>
+  </view>
+  
+</view>
+<view class='frequency'>
+<view class='flex'>
+  <view class='visitingTitle'>访问次数</view>
+  <view class='visitingNums'>{{PVallCount}}</view>
+ </view>
+ <view class='hrs'></view>
+ <view class='flex'>
+  <view class='starTitle'>启动次数</view>
+  <view class='starNum visitingNums'>{{startupCount}}</view>
+ </view >
+ <view class='hrs'></view>
+ <view class='flex'>
+  <view class='stey'>次均停留时长</view>
+  <view class='steyNum visitingNums'>{{stayTimeAvg}}</view>
+ </view>
+</view>
+<view class='Allbusiness'> 
+<view class='business'>各业务访问统计</view>
+<!-- //访问人数 -->
+<view class="{{dataExplain?'box1':'container'}}">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+</view>
+<view class='left'>
+<view class='flex'>
+  <view class='orderTotal'>订单总数</view>
+  <view class='orderNum payNum'>{{allCount}}</view>
+</view>
+<view class='payHr'></view>
+<view class='flex'>
+  <view class='payOrder'>付费订单</view>
+  <view class='payNum'>{{payCount}}</view>
+</view>
+</view>
+<view class='orderNumber'>
+<view class='business'>各业务下单统计</view>
+<view class="{{dataExplain?'box1':'container'}}">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ecOrder }}"></ec-canvas>
+</view>
+</view>
+
+
+<view class="container-column" wx-if='{{dataExplain}}'>
+<view class="container-column buydes-dialog-container">
+     <view class='useTicket'>
+       <view class='cancel' bindtap='cancel'>×</view>
+       <view class='contents'>
+       <view class='dataTitle'>页面数据统计说明</view>
+        <view class='text1'>1.访问顾客：访问小程序内所有页面的总用户数，同一用户多次访问不重复计；</view>
+        <view class='text2'>2.新客：首次访问小程序页面的用户数，同一用户多次访问不重复计；</view>
+        <view class='text3'>3.付费顾客：访问顾客中有支付金额的顾客；</view>
+        <view class='text4'>4.分享转发：点击右上角转发功能转发的用户；</view>
+        <view class='text5'>5.多次转发：点开别人的分享卡片后再次转发的用户；</view>
+        <view class='text6'>6.顾客满意度：顾客满意评价占总评价的比例；</view>
+        <view class='text7'>7.访问次数：访问小程序内所有页面总次数，多个页面之间跳转、同一页面的重复访问计为多次访问；</view>
+        <view class='text8'>8.启动次数：打开小程序总次数，用户从打开小程序到主动关闭小程序或超时退出计为一次；</view>
+        <view class='text9'>9.次均停留时长：平均每次打开小程序停留在小程序页面的总时长，即小程序停留总时长/打开次数.</view>
+        <view class='text10'>10.各业务访问统计：访问小程序内单个业务的页面总次数，多个页面之间跳转、同一页面的重复访问计
+为多次访问；</view>
+        <view class='text11'>11.订单总数：顾客所有类型服务订单的下单总数；</view>
+        <view class='text12'>12.付费订单：顾客有支付金额的订单数；</view>
+        <view class='text13'>13.各业务下单统计：访问小程序内各个业务的下单总数；</view>
+        <view class='text14'>14.收益：选定时间内的收入总和</view>
+
+       </view>
+     </view>
+  </view>
+</view>
+
+</view>
+
+</view>
+
+
+

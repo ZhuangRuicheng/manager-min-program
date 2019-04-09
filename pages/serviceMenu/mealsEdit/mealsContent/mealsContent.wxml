@@ -1,0 +1,5 @@
+<!--pages/serviceMenu/mealsEdit/mealsContent/mealsContent.wxml-->
+<import src="../../../template/meals/mealsContent/mealsContent.wxml" />
+<view>
+  <template is="mealsContent" data="{{modelTitle,index,array,addStoreShow,status,addStoreIndex,addStoreArray,foodName,price,describe,productList,image}}"></template>
+</view>

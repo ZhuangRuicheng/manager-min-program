@@ -1,0 +1,110 @@
+/* pages/template/meals/mealsClassify/mealsClassify.wxss */
+
+page {
+  background-color: #f7f7f7;
+}
+
+.header {
+  width: 460rpx;
+  height: 100rpx;
+  color: #333;
+  line-height: 100rpx;
+  text-align: center;
+  border: 2rpx solid #efefef;
+  background-color: white;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  margin: 30rpx auto 30rpx auto;
+}
+
+.classify {
+  /* margin: auto; */
+  padding: 50rpx 30rpx 80rpx 117rpx;
+  background-color: white;
+}
+
+.classify-title {
+  font-size: 34rpx;
+  color: #333;
+}
+.goodsName{
+  margin: auto;
+  margin-top: 40rpx;
+  width: 600rpx;
+}
+.name{
+  border: 1rpx #ea5415 solid;
+  font-size: 30rpx;
+  border-radius: 6rpx;
+  margin-right: 62rpx;
+  color: #ea5415;
+  height: 70rpx;
+  width: 220rpx;
+  line-height: 70rpx;
+  text-align: center;
+  word-break: keep-all;
+  word-wrap: break-word;
+  display: inline-block;
+  margin-bottom: 40rpx;
+}
+/* 弹出层样式 */
+    .buydes-dialog-container{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color:rgba(15, 15, 26, 0.7);
+    position: fixed;
+    z-index: 999;
+    /* position: absolute; */
+    top: 0rpx;
+}
+.buydes-dialog-container-top{
+    flex-grow: 1;
+}
+ 
+.buydes-dialog-container-bottom{
+    display: flex;
+    flex-grow: 0;
+}
+
+.popup{
+  margin: 200rpx 0rpx 80rpx 60rpx;
+  background-color: white;
+}
+.ticketShow{
+  height: 450rpx;
+  width: 640rpx;
+  border-bottom: 1rpx #dfdfdf dotted;
+}
+.cancel{
+  position: absolute;
+  right: 64rpx;
+  margin-top: 20rpx;
+}
+.hotelName{
+  font-size: 38rpx;
+  width: 640rpx;
+  height: 30rpx;
+  text-align: center;
+  padding-top: 50rpx;
+  color: #333;
+}
+.input-classify{
+  margin-top: 70rpx;
+  margin-bottom: 70rpx;
+}
+input{
+  margin: auto;
+  width: 500rpx;
+  height: 60rpx;
+  border: 1rpx #cccccc solid;
+  padding-left: 30rpx;
+  font-size: 30rpx;
+}
+.showBtn{
+  width: 360rpx;
+  height: 80rpx;
+  text-align: center;
+  background-color: #ea5415;
+  color: white;
+}

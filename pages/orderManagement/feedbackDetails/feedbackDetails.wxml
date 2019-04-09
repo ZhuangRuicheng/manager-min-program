@@ -1,0 +1,58 @@
+<!--pages/orderManagement/feedbackDetails/feedbackDetails.wxml-->
+<import src="../../template/evaluate/evaluate.wxml"/>
+<view class='box'>
+    <view class='header'>
+    <view class='img'>
+      <image src='../../images/feekImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>经理在线</view>
+    <view class='time'>{{orderDetail.createTime}}</view>
+  </view>
+   <view class='guide'>
+    <view class='madeGuide'>操作指引:</view>
+    <view class='guideContent'>请在20分钟内答复客人投诉建议，缓和客人情绪</view>
+  </view>
+  <view class='managerContent'>
+  <!-- <view class='ll'> -->
+    <view class='type1'>{{orderInfo.content}}</view>
+    <!-- </view> -->
+
+    <view class='count1'>经理回复：{{!orderInfo.reply?'':orderInfo.reply}}</view>
+        <view class='ll'>
+     <button class='replyBtn' wx:if="{{orderDetail.status=='SUBMIT'?true:false}}" bindtap='replys' disabled="{{orderDetail.status == 'ACCEPT'?'':'disable'}}">回复</button>
+    <button class='replyBtn' wx:if="{{orderDetail.status=='ACCEPT'?true:false}}" bindtap='replys' disabled="{{orderDetail.status == 'ACCEPT'?'':'disable'}}">回复</button>
+    <button class='replyBtn' wx:if="{{orderDetail.status=='FINISH'?false:''}}" bindtap='replys' disabled="{{orderDetail.status == 'ACCEPT'?'':'disable'}}">回复</button>
+    <button class='replyBtn' wx:if="{{orderDetail.status=='OVERDUE'?false:''}}" bindtap='replys' disabled="{{orderDetail.status == 'ACCEPT'?'':'disable'}}">回复</button>
+    </view>
+  </view>
+    <view class='allStatus'>
+  <view class='room'>房间号：{{orderDetail.roomNum}}</view>
+  <view class='state' wx-if="{{orderDetail.status == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{orderDetail.status == 'OVERDUE'?true:false}}">已过期</view>
+    </view>
+    <!-- 点评 -->
+    <template is="evaluate" data="{{finishUserInfo,orderDetail,headerImage}}"></template>
+    <!-- 点评 -->
+  <!-- <view class='orderTitle'>订单信息：</view> -->
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{orderDetail.orderNo}}</view>
+    <view class='name num'>姓名：{{!orderDetail.customerName?'--':orderDetail.customerName}}</view>
+    <view class='connect num'>联系方式:{{orderDetail.phoneNumber}}</view>
+    <view class='downOrderTime num'>下单时间:{{orderDetail.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{orderDetail.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{orderDetail.finishTime}}</view>
+  </view>
+  <view class='state-btn'>
+    <button class='btn' bindtap='accept' disabled="{{disableds}}" style='background-color:{{color}};'>{{value}}</button>
+</view>
+    <view class='diog' wx:if='{{diogShow}}'>
+      <view class='container'>
+        <view class='customers'>客人留言:</view>
+        <view class='customerContent'>{{orderInfo.content}}</view>
+          <textarea placeholder='请输入回复内容' bindinput='changeContent' value='{{content}}'></textarea>
+          <button class='feedbackBtn' bindtap='SUBMit'>提交</button>
+      </view>
+    </view>
+</view>

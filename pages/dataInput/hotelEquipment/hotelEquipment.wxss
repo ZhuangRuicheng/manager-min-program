@@ -1,0 +1,111 @@
+/* pages/dataInput/hotelEquipment/hotelEquipment.wxss */
+.addImages{
+  height: 88rpx;
+  background-color: #f7f7f7;
+  padding: 30rpx 135rpx 30rpx 135rpx;
+}
+.tips1{
+  font-size: 32rpx;
+  width: 480rpx;
+  height: 88rpx;
+  border: 1rpx #cccccc solid;
+  text-align: center;
+  line-height: 88rpx;
+  border-radius: 16rpx;
+  background-color: white;
+  font-weight: bold;
+
+  
+}
+
+/* 弹出层样式 */
+    .buydes-dialog-container{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color:rgba(15, 15, 26, 0.7);
+    position: fixed;
+    z-index: 999;
+    top: 0rpx;
+}
+.buydes-dialog-container-top{
+    flex-grow: 1;
+}
+ 
+.buydes-dialog-container-bottom{
+    display: flex;
+    flex-grow: 0;
+}
+
+.popup{
+  margin: 200rpx 0rpx 80rpx 60rpx;
+  background-color: white;
+}
+.ticketShow{
+  height: 650rpx;
+  width: 640rpx;
+  border-bottom: 1rpx #dfdfdf dotted;
+}
+.cancel{
+  color: #ea5415;
+  font-size: 28rpx;
+  padding: 20rpx 0rpx 28rpx 16rpx;
+}
+.hotelName{
+  font-size: 32rpx;
+  width: 640rpx;
+  text-align: center;
+}
+
+.tips{
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  margin-top: 56rpx;
+}
+textarea{
+  width: 580rpx;
+  height: 200rpx;
+  font-size: 32rpx;
+  border: 1rpx #cccccc solid;
+  margin: 30rpx;
+}
+.showBtn{
+  width: 300rpx;
+  height: 80rpx;
+  text-align: center;
+  background-color: #ea5415;
+  color: white;
+  margin-top: 30rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.allBtn{
+  display: flex;
+}
+.box1{
+  position: fixed;
+}
+.facilityDisplay{
+
+  width: 650rpx;
+  word-break: keep-all;
+  word-wrap: break-word;
+  margin-left: 104rpx;
+}
+.facilityAll{
+  display: inline-flex;
+  margin-top: 60rpx;
+  margin-right: 90rpx;
+  /* width: 200rpx; */
+}
+.publicImgs{
+  margin: 0rpx 16rpx 0rpx 0rpx;
+}
+.publicImg{
+  width: 44rpx;
+  height: 42rpx;
+}
+
+.facilityName{
+  font-size: 32rpx;
+}

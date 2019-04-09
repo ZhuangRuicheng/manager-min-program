@@ -1,0 +1,6 @@
+<!--pages/JurisdictionAdmin/ticketWriteOff/ticketWriteOff.wxml-->
+<view class='box'>
+<view class='write-count' bindtap='writeOff'><image src='../images/scan-btn.png'></image></view>
+<view class='write-off' bindtap='statistics'><image src='../images/count-btn.png'></image></view>
+<view class='tip'>如需生成早餐券领取的二维码，请在首页-->菜单管理-->早餐券设置，下载二维码图片</view>
+</view>

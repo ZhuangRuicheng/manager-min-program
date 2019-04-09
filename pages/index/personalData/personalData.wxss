@@ -1,0 +1,145 @@
+/* pages/index/personalData/personalData.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.all{
+  height: 140rpx;
+  background-color: white;
+  padding-left: 30rpx;
+  margin-top: 30rpx;
+}
+.tr-one{
+ 
+  display: flex;
+  font-size: 32rpx;
+  color: #333333;
+  padding-top: 40rpx;
+  padding-right: 30rpx;
+}
+.tips{
+  color: #cccccc;
+  font-size: 24rpx;
+  padding-top: 14rpx;
+  padding-bottom: 16rpx;
+  padding-right: 30rpx;
+  border-bottom: 1rpx #dcdcdc solid;
+}
+
+.headerImage{
+  height: 100rpx;
+  width: 100rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 50rpx;
+  border-radius: 50%;
+}
+
+.tr-two{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  background-color: white;
+  display: flex;
+  color: #333333;
+  
+}
+.hr{
+  height: 1rpx;
+  background-color: #dcdcdc;
+  margin-left: 30rpx;
+}
+.name{
+  position: absolute;
+  right: 30rpx;
+  color: #666666;
+  
+}
+.jurisdiction{
+  font-size: 32rpx;
+  padding-top: 40rpx;
+  padding-bottom: 36rpx;
+  color: #333333;
+  background-color: white;
+  padding-left: 30rpx;
+}
+.set{
+  width: 22rpx;
+  height: 22rpx;
+  padding-top: 8rpx;
+}
+.account{
+  padding-bottom: 25rpx;
+}
+.service-order-all{
+  display: flex;
+  padding-bottom: 36rpx;
+}
+.service-order{
+  font-size: 26rpx;
+  color: #cccccc;
+  padding-left: 10rpx;
+}
+.have-jurisdiction{
+  word-break: keep-all;
+  word-wrap: break-word;
+  font-size: 30rpx;
+}
+.self-help{
+  display: inline-block;
+  margin-right: 41rpx;
+  height: 60rpx;
+  width: 140rpx;
+  background-color: #f7f7f7;
+  color: #333333;
+  line-height: 60rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+  border-radius: 6rpx;
+
+}
+.store{
+  display: inline-block;
+  margin-right: 41rpx;
+  height: 60rpx;
+  width: 140rpx;
+   background-color: #f7f7f7;
+  color: #333333;
+  line-height: 60rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+  border-radius: 6rpx;
+}
+.all3{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  border-top: 1rpx #dcdcdc solid;
+  border-bottom: 1rpx #dcdcdc solid;
+  padding-left: 30rpx;
+}
+.changePassword{
+  font-size: 32rpx;
+  color: #333333;
+}
+.img{
+  width: 15rpx;
+  height: 27rpx;
+  position: absolute;
+  right: 30rpx;
+  margin-top: 36rpx;
+}
+.btn{
+  width: 640rpx;
+  height: 80rpx;
+  background-color: #ea5415;
+  font-size: 30rpx;
+  border-radius: 16rpx;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 120rpx;
+
+}

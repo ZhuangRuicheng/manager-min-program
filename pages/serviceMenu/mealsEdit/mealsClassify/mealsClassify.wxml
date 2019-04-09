@@ -1,0 +1,5 @@
+<!--pages/serviceMenu/mealsEdit/mealsClassify/mealsClassify.wxml-->
+<import src="../../../template/meals/mealsClassify/mealsClassify.wxml" />
+<view>
+  <template is="classify" data="{{addClassify,classifyTitle,modelTitle,placeholder,btnName,classifyShow,categories,classifyName}}"></template>
+</view>

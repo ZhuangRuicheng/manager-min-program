@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "早餐券",
+  "usingComponents": {
+    "calendar": "plugin://calendar/calendar"
+  }
+}

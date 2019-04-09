@@ -1,0 +1,16 @@
+<!--pages/JurisdictionAdmin/JurisdictionAdmin.wxml-->
+<view class='box'>
+<view class='list' wx:for='{{userInfo}}' bindtap='detail' data-id='{{item.id}}' data-position='{{item.position}}'>
+  <view class='content1'>
+  <image src="{{item.personalImage === '' ? headerImage : item.personalImage}}" class='headerImg'></image>
+  <view class='name'>{{item.name}}</view>
+  <view class='position'>{{item.position}}</view>
+  <view class='satisfaction'>满意度：{{item.satisfactionDegree}}%</view>
+  </view>
+  <view class='content2'>
+  <input class="state {{item.isDisable?'red':'green'}}" value="{{item.isDisable?'已禁用':'正常使用'}}" disabled='disabled'></input>
+  <view class='login-time'>最后登录：{{item.loginTime === null ? '--':item.loginTime}}</view>
+  </view>
+</view>
+<button class='btn' bindtap='newAccount'>+新增账号</button>
+</view>

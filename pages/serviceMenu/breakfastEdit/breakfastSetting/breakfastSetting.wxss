@@ -1,0 +1,24 @@
+/* pages/serviceMenu/breakfastEdit/breakfastSetting/breakfastSetting.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.tr1{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx #dcdcdc solid;
+  font-size: 34rpx;
+  color: #333333;
+  background-color: white;
+}
+.right{
+  position: absolute;
+  right: 30rpx;
+}
+.rightImg{
+  width: 15rpx;
+  height: 27rpx;
+}
+.breakfast-introduce{
+  padding-left: 30rpx;
+}

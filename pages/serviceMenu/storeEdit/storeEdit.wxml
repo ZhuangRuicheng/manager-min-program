@@ -1,0 +1,20 @@
+<!--pages/hotelInfoEdit/storeEdit/storeEdit.wxml-->
+<view class='box'>
+ <view class='header'>
+  <view class='title'>在线迷你吧Logo</view>
+  <image src='{{headerImage}}' class='right logo' bindtap='getImage'></image>
+</view>
+<view class='header' bindtap='storeDescription'>
+  <view class='title'>在线迷你吧介绍</view>
+  <image src='../../images/right.png' class='right'></image>
+</view>
+<textarea placeholder='70字以内' placeholder-class='placeholder' value='{{text}}' disabled='disabled' bindtap='storeDescription'></textarea>
+<view class='header' bindtap='goodsClassify'>
+  <view class='title'>商品分类</view>
+  <image src='../../images/right.png' class='right sign'></image>
+</view>
+<view class='header goodsEdit' bindtap='goodsContent'>
+  <view class='title'>商品编辑</view>
+  <image src='../../images/right.png' class='right sign'></image>
+</view>
+</view>

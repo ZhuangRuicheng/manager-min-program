@@ -1,0 +1,20 @@
+<!--pages/serviceMenu/breakfastEdit/breakfastSetting/breakfastIntroduce/breakfastIntroduce.wxml-->
+<view class='box'>
+<form bindsubmit="formSubmit">
+<view class='all'>
+  <view class='title'>早餐信息介绍录入:</view>
+  <textarea bindinput='inputChanged' id='description' value='{{description}}'></textarea>
+  <view class='createImg' bindtap='getImage'>+添加早餐券介绍图片</view>
+</view>
+<view  bindlongpress="deleteImage" wx:if="{{image1 != ''? true : false}}" id='image1'>
+<image src='{{image1}}' class='breakfastImg'></image>
+</view>
+<view  bindlongpress="deleteImage" wx:if="{{image2 != ''? true : false}}" id='image2'>
+<image src='{{image2}}' class='breakfastImg'></image>
+</view>
+<view  bindlongpress="deleteImage" wx:if="{{image3 != ''? true : false}}" id='image3'>
+<image src='{{image3}}' class='breakfastImg'></image>
+</view>
+  <button class='btn' form-type='submit'>保存</button>
+</form>
+</view>

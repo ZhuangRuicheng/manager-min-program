@@ -1,0 +1,35 @@
+<!--pages/putForward /putForward .wxml  -->
+<view class='box'>
+  
+<view class='header' wx:if='{{state}}'>
+  <view class='title'><text class='red'>*</text>添加对公账号信息</view>
+  <image src='../images/right.png' class='right' bindtap='dataInput'></image>
+</view>
+<view class='Info' wx:if='{{infoState}}' bindtap='dataInput'>
+  <view class='titles'>{{enterpriseName}}</view>
+  <image src='../images/right.png' class='rights' bindtap='dataInput'></image>
+  <view class='openBank'>开户行：{{bankName}}</view>
+   <view class='openBank'>银行账户：{{bankAccount}}</view>
+</view>
+<form bindsubmit='putForward' report-submit='true'>
+<view class='info'>
+<view class='moneyInfo'>
+  <view class='money'>
+    提现金额
+  </view>
+  <view class='sign'>￥
+   <input bindinput='inputChange' id='money' value='{{moneyC}}' type='text' focus='true' type='digit' step="0.01"></input>
+  </view>
+</view>
+<view class='remainMoney'>可用金额: {{money}},<text class='allMoney' bindtap='allMoney'>全部提现</text></view>
+<button class='btn' form-type='submit' disabled="{{money==0?'disabled':''}}">确认提现</button>
+</view>
+</form>
+<view class='header1'>
+<view class='putKnow'>提现须知</view>
+  <view class='tips'>1.请确认提交的对公结算账号为有效账号，如因资料有误出现的转账问题，请自行负责；</view>
+  <view class='tips1'>2.每日限提现3次，每次需大于500元，且不超过10000元；</view>
+  <view class='tips2 tips1'>3.提现后公司财务会审核对账单，通过后及时对公转账到酒店账户，预计在7个工作日到账；</view>
+  <view class='tips3 tips1'>4.如在提现过程中遇到问题，请联系官方服务电话：4008-040-321</view>
+</view>
+</view>

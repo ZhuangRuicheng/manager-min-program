@@ -1,0 +1,9 @@
+<!--pages/hotelInfoEdit/storeEdit/storeDescription/storeDescription.wxml-->
+<view class='box'>
+     <form bindsubmit="formSubmit">
+       <textarea placeholder='70字以内' placeholder-class='styles' class='textarea' bindinput='feedBackInput' value='{{feedBackContent}}' bindinput='textareaInput' maxlength='70'>
+       </textarea>
+       <button form-type='submit'>提交</button>
+    </form>
+</view>
+

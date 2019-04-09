@@ -1,0 +1,133 @@
+/* pages/dataInput/dataInput.wxss */
+.header{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx #cccccc solid;
+  display: flex;
+}
+.hotel-name{
+  font-size: 34rpx;
+  color: #333333;
+  font-weight: bold;
+  margin-left: 30rpx;
+}
+.input-name{
+  position: absolute;
+  right: 80rpx;
+}
+.hotelNameInput{
+  font-size: 26rpx;
+  color: #999999;
+  margin-top: 28rpx;
+  text-align: right;
+}
+.img{
+  position: absolute;
+  right: 30rpx;
+}
+.right{
+  width: 15rpx;
+  height: 25rpx;
+}
+.ss{
+  font-size: 26rpx;
+  color: #999999;
+}
+.hotel-location-tr{
+  display: flex;
+  margin-top: 28rpx;
+}
+.location{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-left: 30rpx;
+}
+.loading{
+  font-size: 26rpx;
+  width: 150rpx;
+  height: 50rpx;
+  border: 2rpx #ea5415 solid;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 16rpx;
+  color: #ea5415;
+  position: absolute;
+  right: 30rpx; 
+}
+.ss1{
+  margin-top: 30rpx;
+  border: none;
+}
+.ss2{
+  padding-bottom: 20rpx;
+}
+.longitude-input{
+  position: absolute;
+  right: 30rpx;
+  margin-top: 18rpx;
+}
+.longitude{
+  font-size: 26rpx;
+  color: #999999;
+  text-align: right;
+  border: 1rpx #cccccc solid;
+  width: 553rpx;
+  height: 70rpx;
+}
+.addImages{
+  font-size: 30rpx;
+  margin: 20rpx 30rpx 0rpx 30rpx;
+  border: 1rpx #cccccc solid;
+  border-radius: 6rpx;
+  height: 120rpx;
+  text-align: center;
+}
+.tips1{
+  padding-top: 30rpx;
+}
+.tips2{
+font-size: 28rpx;
+color: #999999;
+}
+.images{
+  background-color: gainsboro;
+  margin: 24rpx 30rpx 34rpx 30rpx;
+}
+.chooseImg{
+  height: 348rpx;
+  width: 690rpx;
+}
+textarea{
+  border: 2rpx #cccccc solid;
+  margin: 20rpx 30rpx 40rpx 30rpx;
+  width: 690rpx;
+  font-size: 32rpx;
+}
+.textarea{
+  font-size: 28rpx;
+  color: #999999;
+  padding-left: 200rpx;
+}
+.notice{
+  height: 280rpx;
+  font-size: 32rpx;
+
+  border-bottom: 1rpx #cccccc solid;
+}
+.noticeTitle{
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.noticeTextarea{
+  width: 690rpx;
+  height: 180rpx;
+}
+.btn{
+  margin: 0rpx 194rpx 30rpx 194rpx;
+  color: white;
+  background-color: #ea5415;
+
+}

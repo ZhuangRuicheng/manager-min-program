@@ -1,0 +1,25 @@
+<!--pages/serviceMenu/breakfastEdit/breakfastSetting/downLoadQr/downLoadQr.wxml-->
+<view class='box'>
+<view class='tips'>
+  <view class='tips-one'>1.请根据实际需要将二维码出示给客人，扫码领取早餐券即可。</view>
+  <view class='ips-two'>2.根据领取时间自动将早餐券有效期设为第二天上午，二维码长期有效，如遇特殊情况，可重置二维码，之前二维码失效，无法领取。</view>
+</view>
+  <view class='content'>
+    <view class='type'>付费早餐券二维码</view>
+    <view class='Qr'><image src='{{payImgQr}}'></image></view>
+    <view class='pay-tips'>扫码付费后领取</view>
+    <view class='downLoad-btn'>
+    <button class='btn' bindtap='payDownLoad'>下载二维码</button>
+    </view>
+    <view class='reset' bindtap='payReset'>重置二维码</view>
+  </view>
+  <view class='content-free'>
+    <view class='type'>免费早餐券二维码</view>
+    <view class='Qr'><image src='{{freeImgQr}}'></image></view>
+    <view class='pay-tips'>扫码后免费领取</view>
+    <view class='downLoad-btn'>
+    <button class='btn' bindtap='freeDownLoad'>下载二维码</button>
+    </view>
+    <view class='reset' bindtap='freeReset'>重置二维码</view>
+  </view>
+</view>

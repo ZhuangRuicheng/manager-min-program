@@ -1,0 +1,73 @@
+/* pages/JurisdictionAdmin/JurisdictionAdmin.wxss */
+.box{
+  padding-bottom: 120rpx;
+}
+.header{
+  height: 400rpx;
+  background-color: white;
+}
+.headerImg{
+   width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 40rpx 0rpx 30rpx 30rpx;
+}
+.list{
+  height: 170rpx;
+  border-bottom: 1rpx #cccccc solid;
+}
+.content1{
+  display: flex;
+}
+.name{
+
+  font-size: 32rpx;
+  padding-right: 24rpx;
+  margin-top: 48rpx;
+  padding-left: 25rpx;
+}
+.position{
+  font-size: 24rpx;
+  color: #666666;
+  margin-top: 56rpx;
+}
+.satisfaction{
+  font-size: 28rpx;
+  color: #ea5415;
+  margin-top: 56rpx;
+  position: absolute;
+  left: 520rpx;
+  font-weight: bold;
+}
+.state{
+  font-size: 24rpx;
+  margin: -70rpx 20rpx 0rpx 155rpx;
+  width: 100rpx;
+}
+.red{
+  color: red;
+}
+.green{
+  color: #497f13;
+}
+.content2{
+  display: flex;
+}
+.login-time{
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: -66rpx;
+  /* position: absolute;
+  left: 200rpx; */
+}
+.btn{
+  bottom: 0rpx;
+  height: 100rpx;
+  color: white;
+  font-size: 36rpx;
+  width: 100%;
+  background-color: #ea5415;
+  line-height: 100rpx;
+  position: fixed;
+  z-index: 1000;
+}

@@ -1,0 +1,21 @@
+<!--pages/dataInput/modelInput/editMode/editMode.wxml-->
+<view class='box'>
+ <!-- 表单头 -->
+      <form bindsubmit="formSubmit">
+<view class='hr'></view>
+  <view class='mode-image'>
+    <view class='img-text'>房型图</view>
+    <view class='img'><image src="{{!img ?'../../images/useType.png':img}}" bindtap='click' class='show-img'></image></view>
+  </view>
+  <view class='room-type'><label class='type-name'>房型名称</label><input type='text' placeholder='请输入房型名称' bindinput='inputChange' id='name' value='{{name}}'></input></view>
+  <view class='room-type'><label class='arem'>面积</label><input type='text' placeholder='请输入房型面积' bindinput='inputChange' id='arem' value='{{arem}}'></input></view>
+  <view class='room-type'><label class='floor arem'>楼层</label><input type='text' placeholder='请输入楼层' bindinput='inputChange' id='floor' value='{{floor}}'></input></view>
+  <view class='room-type'><label class='bed-type arem'>床型</label><input type='text' placeholder='请输入床型' bindinput='inputChange' id='bedtype' value='{{bedtype}}'></input></view>
+  <view class='room-type'><label class='window arem'>窗户</label><input type='text' placeholder='请输入是否窗户' bindinput='inputChange' id='window' value='{{window}}'></input></view>
+  <view class='room-type'><label class='add-bed type-name'>是否加床</label><input type='text' placeholder='请输入是否可加床' bindinput='inputChange' id='addbed' value='{{addbed}}'></input></view>
+  <view class='room-type'><label class='checkIn-num type-name'>入住人数</label><input type='text' placeholder='请输入允许入住人数' bindinput='inputChange' id='personnum' value='{{personnum}}'></input></view>
+  <view class='describe'><label>房型描述</label><textarea placeholder='请输入房间介绍及注意事项(50字以内)' maxlength='50' bindinput='inputChange' id='describe' value='{{describe}}'></textarea></view>
+  <view class='btn'><button class='save' form-type='submit'>保存</button></view>
+          <!-- 表单尾 -->
+    </form>
+</view>

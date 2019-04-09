@@ -1,0 +1,176 @@
+/* pages/orderManagement/orderDetails/orderDetails.wxss */
+@import "../../template/evaluate/evaluate.wxss";
+.header{
+  height: 88rpx;
+  background-color: white;
+  line-height: 88rpx;
+  display: flex;
+  padding-left: 30rpx;
+  border-bottom: 1rpx #cccccc solid;
+}
+.clearImg{
+  width: 39rpx;
+  height: 35rpx;
+}
+.text{
+  font-size: 30rpx;
+    margin-left: 10rpx;
+}
+.time{
+  font-size: 26rpx;
+  position: absolute;
+  right: 30rpx;
+  color: #999999;
+}
+.guide{
+  background: white;
+  border-bottom: 1rpx #cccccc solid;
+  padding-bottom: 30rpx;
+}
+.madeGuide{
+  font-size: 26rpx;
+  color: #999999;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+}
+.guideContent{
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-right: 30rpx;
+}
+.content{
+  padding-bottom: 30rpx;
+  background-color: white;
+  border-bottom: 1rpx #cccccc solid;
+  font-size: 32rpx;
+}
+.invoiceContent{
+  border-bottom: 1rpx #cccccc solid;
+  height:520rpx;
+  background-color: white;
+  font-size: 32rpx;
+}
+.VIPContent{
+  border-bottom: 1rpx #cccccc solid;
+  height:280rpx;
+  background-color: white;
+  font-size: 32rpx;
+}
+.managerContent{
+  background-color: white;
+  border-bottom: 1rpx #cccccc solid;
+  padding-bottom: 30rpx;
+  font-size: 32rpx;
+}
+.type{
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  padding-top: 60rpx;
+  margin-bottom: 40rpx;
+}
+.type1{
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+}
+.count{
+  font-size: 26rpx;
+  color: #999999;
+  padding-left: 30rpx;
+}
+.count1{
+   font-size: 26rpx;
+  color: #999999;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+}
+.allStatus{
+  display: flex;
+  background-color: white;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin-bottom: 30rpx;
+}
+.state{
+  position: absolute;
+  right: 30rpx;
+  font-size: 28rpx;
+  color: red;
+}
+.room{
+
+  background-color: white;
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  margin-bottom: 30rpx;
+}
+
+.orderTitle{
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: white;
+  font-size: 30rpx;
+  border-bottom: 1rpx #cccccc solid;
+  padding-left: 30rpx;
+}
+.orderInfo{
+  height: 330rpx;
+  background-color: white;
+  font-size: 26rpx;
+  padding-top: 24rpx;
+  padding-left: 30rpx;
+}
+.num{
+  color: #999999;
+  margin-bottom: 20rpx;
+}
+
+.hotelName{
+  font-size: 34rpx;
+  line-height: 88rpx;
+  padding-left: 30rpx;
+}
+.hotelNum{
+  font-size: 34rpx;
+  line-height: 88rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.content1{
+  border-bottom: 0.5rpx #cccccc solid;
+   background-color: white;
+   font-size: 30rpx;
+}
+
+.remarks{
+  padding: 44rpx 0rpx 30rpx 30rpx;
+  font-size: 30rpx;
+  color: #999999;
+}
+page{
+  background-color: #f7f7f7;
+}
+.state-btn{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  bottom: 0rpx;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  font-size: 32rpx;
+  z-index: 9999;
+}
+.btn{
+  width: 350rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
+  font-size: 32rpx;
+  background-color: #ea5415;
+  text-align: center;
+}
+.box{
+  margin-bottom: 120rpx;
+}

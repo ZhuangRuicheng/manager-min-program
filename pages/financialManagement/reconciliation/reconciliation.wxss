@@ -1,0 +1,39 @@
+/* pages/financialManagement/reconciliation/reconciliation.wxss */
+@import "../../template/wechatSettlement/wechatSettlement.wxss";
+@import "../../template/anSettlement/anSettlement.wxss";
+page{
+  background-color: #f7f7f7;
+}
+/* 弹出层 */
+ .buydes-dialog-container{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color:rgba(15, 15, 26, 0.7);
+    position: fixed;
+    z-index: 999;
+    top: 0rpx;
+}
+
+.useTicket{
+  margin: 200rpx 80rpx 0rpx 80rpx;
+  background-color: white;
+}
+
+.cancel{
+  font-size: 56rpx;
+  color: red;
+  position: absolute;
+  right: 110rpx;
+  margin-top: 0rpx;
+}
+
+.order-tips{
+  line-height: 50rpx;
+  font-size: 34rpx;
+  color: #999999;
+  padding-left: 45rpx;
+  padding-right: 45rpx;
+  padding-bottom: 80rpx;
+  padding-top: 80rpx;
+}

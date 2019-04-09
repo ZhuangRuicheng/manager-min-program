@@ -1,0 +1,118 @@
+<!--pages/dataInput/modelInput/modelInput.wxml-->
+<view class="box {{showModalStatus?'box1':''}}">
+<view class="box3 {{EditshowModalStatus?'box2':''}}">
+  <view class='addImages' bindtap="showModal">
+    <view class='tips1'>+添加房型</view>
+  </view>
+ <view class='header3'>
+    <view class='contents' wx:for='{{roomTypeList}}'>
+
+      <view class='roomImgs' bindlongpress="deleteImage" data-id='{{item.roomTypeId}}'><image src="{{!item.imgUrl ?'../../images/useType.png':item.imgUrl}}" class='roomImg'  bindtap='edit' data-id='{{item.roomTypeId}}' data-img='{{item.imgUrl}}'></image>
+      <!-- <view class='room-type'>
+        <view class='room-type-text'>
+        <label class='room-text'>钟点房</label>
+        <view class='edit-icon'><image src='../../images/editIcon.png' class='icon-img'></image></view>
+        </view>
+      </view> -->
+      <view bindtap='edit' data-id='{{item.roomTypeId}}' data-img='{{item.imgUrl}}'>
+      <view class='roomType' wx:if="{{item.useType == 'CLOCK_ROOM'?true:false}}">
+       <label class='room-text'>钟点房</label>
+       <view class='edit-icon'><image src='../images/editIcon.png' class='icon-img'></image></view>
+      </view>
+      <view class='roomType' wx:if="{{item.useType == 'DAY_ROOM'?true:false}}">
+       <label class='room-text'>日租房</label>
+       <view class='edit-icon'><image src='../images/editIcon.png' class='icon-img'></image></view>
+      </view>
+      <view class='roomType' wx:if="{{item.useType == 'HALF_DAY_ROOM'?true:false}}">
+       <label class='room-text'>半日房</label>
+       <view class='edit-icon'><image src='../images/editIcon.png' class='icon-img'></image></view>
+      </view>
+  </view>
+      </view>
+        <view class='tr'>
+      <view class='title'>{{item.typeName}}</view>
+      <view class='hr'></view>
+      <view wx:if="{{item.isOpenBook ? true:false}}">
+      <view wx:if="{{item.roomCount > 0 ? true:false}}">
+      <view class='state'>有房({{item.roomCount}})</view>
+      </view>
+      </view>
+      <view wx:if="{{item.isOpenBook ? false:true}}">
+      <view class='state3'>已关房</view>
+      </view>
+      <view wx:if="{{item.roomCount == 0 ? true:false}}">
+       <view wx:if="{{item.isOpenBook ? true:false}}">
+      <view class='state2'>已售罄</view>
+      </view>
+      </view>
+      </view>
+      <view class='price'>￥{{item.price == null ?'--':item.price}}</view>
+      <view class='room-manager' bindtap='roomManager' data-id='{{item.roomTypeId}}'>房型管理</view>
+      <!-- <view class='originalPrice'>原价:￥450</view> -->
+      <!-- <input class="{{item.isOpenBook ? 'btn' :'NotBtn'}}" bindtap="{{item.isOpenBook ? 'closeRoomTypeBook' :'openRoomTypeBook'}}" value="{{item.isOpenBook ? '可预订' :'已满房'}}" disabled='disabled' data-id='{{item.id}}'></input> -->
+    </view>
+  </view>
+  <!-- 添加房型弹出层  -->
+<view class="container-column" wx:if="{{showModalStatus}}">
+<view class="container-column buydes-dialog-container" catchtouchmove='true'>
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+      <view class='cancel' bindtap="hideModal">取消</view>
+      <view class='hotelName'>添加房型</view>
+      <!-- 表单头 -->
+      <form bindsubmit="formSubmit">
+        <view class='modelImg' bindtap='click' wx:if='{{hide}}'>+添加图片</view>
+        <view class='showImgs'>
+        <image src="{{img}}" class='showImg' wx:if='{{show}}' bindtap='click'></image>
+        </view>
+        <view class='content'>
+          <view class='modelName'>
+          房型名称：
+            <input type='text' placeholder='请输入房型名称' bindinput='inputChange' id='modelName'></input>
+          </view>
+          <!-- <view class='rentType'>
+          类型：
+            <radio-group class="radio-group" bindchange="radioChange">
+              <label class="radio">
+               <radio value="{{dayName}}" checked="{{dayChecked}}"/>{{dayName}}
+                <radio value="{{clockName}}" checked="{{clockCheck}}"/>{{clockName}}
+                 <radio value="{{halfDay}}" checked="{{halfDayCheck}}"/>{{halfDay}}
+              </label>
+           </radio-group>
+          </view> -->
+          <!-- <view class='roomPrice'>当前房价： 
+          <input type='digit' step="0.01" placeholder='请输入当前房价' bindinput='inputChange' id='roomPrice'></input>
+          </view> -->
+          <view class='area'>面积：
+          <input type='text' placeholder='请输入房间面积' class='areaInput' bindinput='inputChange' id='area'></input>
+          </view>
+          <view class='area'>楼层：
+          <input type='text' placeholder='请输入房间楼层' class='areaInput' bindinput='inputChange' id='floor'></input>
+          </view>
+          <view class='area'>床型：
+          <input type='text' placeholder='请输入房间床型' class='areaInput' bindinput='inputChange' id='bedTypes'></input>
+          </view>
+          <view class='area'>窗户：
+          <input type='text' placeholder='请输入房间窗户' class='areaInput' bindinput='inputChange' id='windows'></input>
+          </view>
+           <view class='roomPrice'>是否加床： 
+          <input type='text' placeholder='请输入是否可加床' bindinput='inputChange' id='addBed'></input>
+          </view>
+          <view class='roomPrice'>入住人数： 
+          <input type='text' placeholder='请输入最多可入住人数' bindinput='inputChange' id='checkInNum'></input>
+          </view>
+          <view class='describe'>房型描述：</view>
+          <textarea placeholder='请输入房间介绍及注意事项(50字以内)' maxlength='50' bindinput='inputChange' id='describe'></textarea>
+        </view>
+        
+       <button class='showBtn' form-type='submit'>提交</button>
+         <!-- 表单尾 -->
+    </form>
+    </view>
+    </view>
+        </view>
+    </view>
+</view>
+</view>
+</view>

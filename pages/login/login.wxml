@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class='box'>
+<!-- 表单头 -->
+<form>
+  <image src='../images/logo.png' class='logo'></image>
+  <view class='row'>
+  <view class='sign'>
+  <image src='../images/account.png' class='accountSign'></image>
+  </view>
+  <input class='account' placeholder='请输入授权账号' placeholder-class='placeholder' bindinput='inputChange' id='account' value='{{account}}'></input>
+  </view>
+  <view class='row'>
+  <view class='sign'>
+  <image src='../images/password.png' class='accountSign'></image>
+  </view>
+   <input class='password' placeholder='请输入密码' placeholder-class='placeholder' bindinput='inputChange' id='password' value='{{password}}' type='password'></input>
+   </view>
+   <button class='btn' bindtap='login'>登录</button>
+   </form>
+   <!-- 表单尾 -->
+   <view class='tips'>
+   <view class='tips1'>客房助手酒店管理后台，如有需要请联系酒店管理员创建账号；</view>
+   <view class='tips2'>客房助手官方服务热线：4008-040-321</view>
+   </view>
+</view>

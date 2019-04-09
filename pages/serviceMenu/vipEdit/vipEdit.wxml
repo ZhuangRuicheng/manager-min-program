@@ -1,0 +1,74 @@
+<!--pages/hotelInfoEdit/vipEdit/vipEdit.wxml-->
+<view class='box'>
+ <view class='addImages' bindtap="showModal" bindload="imageLoad">
+    <view class='tips1'>+添加会员等级</view>
+  </view>
+  <view class='header' wx:for='{{vipGrades}}' bindlongpress='deleteVip' data-idx='{{item.id}}' bindtap="vipshowModal" data-id='{{item.id}}' data-name='{{item.name}}' data-price='{{item.price}}' data-privilege='{{item.privilege}}'>
+  <view class='title'>{{item.name}}</view>
+  <image src='../../images/right.png' class='right' bindload="imageLoad" ></image>
+</view>
+<!-- <view class='header goodsEdit'>
+  <view class='title'>VIP会员</view>
+  <image src='../../images/right.png' class='right' bindtap='dataInput'></image>
+</view> -->
+
+ <!-- 弹出层 -->
+<view class="container-column">
+<view animation="{{animationData}}" class="container-column buydes-dialog-container" wx:if="{{showModalStatus}}" catchtouchmove='true'>
+        <view class="buydes-dialog-container-top" bindtap="hideModal"></view>
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+      <view class='cancel' bindtap="hideModal">取消</view>
+      <view class='hotelName'>添加会员等级</view>
+      <form bindsubmit="formSubmit">
+      <view class='type'>
+       
+        <text>会员等级名称：</text>
+        <input type='text' class='showGoodsName' bindinput='inputChanged' id='vipName' maxlength='6' value='{{vipName}}'></input>
+      </view>
+      <view class='type'>
+        <text class='vipprice'>会员价格：</text>
+        <input type='digit' class='showGoodsName' bindinput='inputChanged' id='vipPrice' value='{{vipPrice}}' step="0.01"></input>
+      </view>
+      <view class='type'>
+        <text class='vipprice'>会员特权：</text>
+      </view>
+      <textarea type='text' bindinput='inputChanged' id='Viptextarea' value='{{Viptextarea}}' maxlength='500'></textarea>
+       <button class='showBtn' form-type='submit'>提交</button>
+       </form>
+    </view>
+    </view>
+        </view>
+    </view>
+</view>
+<!-- vip弹出层 -->
+<view class="container-column">
+<view animation="{{animationData}}" class="container-column buydes-dialog-container" wx:if="{{vipModalStatus}}">
+        <view class="buydes-dialog-container-top" bindtap="hideModal"></view>
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+      <view class='cancel' bindtap="viphideModal">取消</view>
+      <view class='hotelName'>添加会员等级</view>
+      <form bindsubmit="changeVip">
+      <view class='type'>
+        <text>会员等级名称：</text>
+        <input type='text' class='showGoodsName' bindinput='inputChanged' id='vipShowName' value='{{vipEditName}}' maxlength='6'></input>
+      </view>
+      <view class='type'>
+        <text class='vipprice'>会员价格：</text>
+        <input type='digit' class='showGoodsName' bindinput='inputChanged' id='changeVipPrice' value='{{vipEditPrice}}' step="0.01"></input>
+      </view>
+      <view class='type'>
+        <text class='vipprice'>会员特权：</text>
+      </view>
+      <textarea type='text' bindinput='inputChanged' id='changeViptextarea' value='{{VipEdittextarea}}' maxlength='500'></textarea>
+       <button class='showBtn' form-type='submit'>提交</button>
+       </form>
+    </view>
+    </view>
+        </view>
+    </view>
+</view>
+</view>

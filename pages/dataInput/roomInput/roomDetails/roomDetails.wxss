@@ -1,0 +1,80 @@
+/* pages/dataInput/roomInput/roomDetails/roomDetails.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.scavengingImg{
+  width: 690rpx;
+  height: 300rpx;
+  margin: 20rpx 30rpx 0rpx 30rpx;
+}
+.room{
+  font-size: 40rox;
+  color: #ea5415;
+  height: 170rpx;
+  line-height: 190rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.rooms{
+  font-size: 40rox;
+  color: #ea5415;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* .QRImg{
+  height: 400rpx;
+  width: 400rpx;
+  background-color: white;
+  text-align: center;
+  line-height: 400rpx;
+  border-radius: 12rpx;
+} */
+.img{
+  width: 320rpx;
+  height: 330rpx;
+  margin-top: 0rpx;
+  margin-left: 220rpx;
+}
+.ID{
+  font-size: 26rpx;
+  color: red;
+  position: absolute;
+  left: 266rpx;
+  margin-top: 20rpx;
+}
+.downLoadQR{
+  background-color: #ea5415;
+  color: white;
+  font-size: 32rpx;
+  height: 88rpx;
+  width: 600rpx;
+  text-align: center;
+  line-height: 88rpx;
+  margin-top: 60rpx;
+  border-radius: 12rpx;
+}
+.relieveQR::after{
+  border:none;
+}
+.relieveQR{
+  background-color: white;
+  color: #333333;
+  border: 2rpx #ea5415 solid;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  height: 88rpx;
+  width: 600rpx;
+  text-align: center;
+  line-height: 88rpx;
+  margin-top: 30rpx;
+}
+.disableQR{
+  font-size: 26rpx;
+  color: #ff3333;
+  position: absolute;
+  right: 70rpx;
+  margin-top: 30rpx;
+}

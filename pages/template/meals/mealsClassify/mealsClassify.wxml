@@ -1,0 +1,31 @@
+<!--pages/template/meals/mealsClassify/mealsClassify.wxml-->
+<template name="classify">
+<view class='box'>
+  <view class='header' bindtap='addClassifyShow'>{{addClassify}}</view>
+  <view class='classify'>
+    <view class='classify-title'>{{classifyTitle}}</view>
+    <view class='goodsName'>
+       <view class='name' wx:for="{{categories}}" wx:key="*this" bindlongtap='deleteClassify' data-id='{{item.id}}'>{{item.name}}</view>
+    </view>
+  </view>
+  <!-- 弹出层 -->
+<view animation="{{animationData}}" class="container-column buydes-dialog-container" catchtouchmove='true' catchtouchmove="preventTouchMove" wx:if='{{classifyShow}}'>
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+      <view class='cancel' bindtap="hideModal"><icon type="cancel" size="30"></icon></view>
+      <view class='hotelName'>{{modelTitle}}</view>
+      <!-- 表单头 -->
+      <form bindsubmit="formSubmit">
+      <view class='input-classify'>
+       <input type='text' maxlength='5' placeholder='{{placeholder}}' bindinput='classifyName' value='{{classifyName}}'></input>
+       </view>
+       <button class='showBtn' form-type='submit'>{{btnName}}</button>
+       <!-- 表单尾 -->
+       </form>
+    </view>
+    </view>
+        </view>
+    </view>
+</view>
+</template>

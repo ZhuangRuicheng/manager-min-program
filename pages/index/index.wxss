@@ -1,0 +1,181 @@
+/**index.wxss**/
+
+page{
+  background-color: #f7f7f7;
+}
+
+.header-top{
+  background-color: #ea5415;
+  height: 240rpx;
+  width: 100%;
+  border-top: 1rpx #f7f7f7 solid;
+}
+.window-bottom{
+  width: 690rpx;
+  height: 270rpx;
+  position: absolute;
+  top: 148rpx;
+  left: 30rpx;
+}
+.headerImage{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 84rpx;
+  left: 311rpx;
+}
+.camera{
+  width: 42rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+}
+.classifiy{
+ text-align: center;
+ position: relative;
+ margin-top: -17rpx; 
+}
+.name{
+  font-size: 32rpx;
+  color: #333333;
+  /* position: relative;
+  left: 30%; */
+}
+.department{
+  font-size: 24rpx;
+  color: #666666;
+  padding-left: 16rpx;
+   /* position: relative;
+  left: 30%; */
+}
+.hotelName{
+  font-size: 26rpx;
+  color: white;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.threeCss{
+  display: flex;
+  margin-top: -20rpx;
+}
+.satisfied{
+  position: absolute;
+  left: 110rpx;
+}
+.ranking{
+  position: absolute;
+  left: 320rpx;
+}
+.order{
+  position: absolute;
+  right: 117rpx;
+}
+.satisfied-percent{
+  font-size: 32rpx;
+  color: #ea5415;
+  margin-top: 48rpx;
+  font-weight: bold;
+  
+}
+.satisfied-text{
+  font-size: 24rpx;
+  color: #999999
+}
+.hr1{
+  /* border: 0.5rpx #c0bfbf solid; */
+  height: 50rpx;
+  position: absolute;
+  left:250rpx;
+  margin-top: 65rpx;
+  background-color: #c0bfbf;
+  width: 1rpx;
+}
+.ranking-num{
+  text-align: center;
+}
+.hr2{
+  /* border: 0.3rpx #c0bfbf solid; */
+  height: 50rpx;
+  position: absolute;
+  right:270rpx;
+  margin-top: 65rpx;
+   background-color: #c0bfbf;
+  width: 2rpx;
+}
+.order-num{
+  text-align: center;
+}
+.income{
+  font-size: 30rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  background-color: white;
+  display: flex;
+  margin-top: 165rpx;
+}
+.income-text{
+  color: #666666;
+  padding-left: 30rpx;
+}
+.income-money{
+  font-size: 32rpx;
+  color: #ea5415;
+  position: absolute;
+  right: 65rpx;
+  font-weight: bold;
+}
+.right{
+  width: 15rpx;
+  height: 27rpx;
+  position: absolute;
+  right: 30rpx;
+  margin-top: 35rpx;
+}
+.contont{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 71rpx;
+  margin-top: 150rpx;
+}
+.hh{
+  word-break: keep-all;
+  word-wrap: break-word;
+  display: inline-block;
+}
+.hotelInfoEdit{
+  width: 225rpx;
+  height: 94rpx;
+  margin: 40rpx 0rpx 0rpx 0rpx;
+  text-align: center;
+  border-radius: 16rpx;
+
+}
+.hotelInfo{
+  width: 100rpx;
+  height: 100rpx;
+}
+.note{
+  width: 100rpx;
+  height: 100rpx;
+}
+.jurisdiction{
+  width: 100rpx;
+  height: 100rpx;
+}
+.text{
+  font-size: 28rpx;
+  color: #333333;
+  padding-top: 18rpx;
+}
+/* .btn{
+  width: 360rpx;
+  height: 80rpx;
+  background-color: #ea5415;
+  font-size: 32rpx;
+  border-radius: 16rpx;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+} */

@@ -1,0 +1,33 @@
+/* pages/hotelInfoEdit/managerOnline/managerOnline.wxss */
+.text{
+  font-size: 36rpx;
+  margin: 30rpx 0rpx 0rpx 30rpx;
+}
+.tips{
+ color: #ea5415;
+ font-size: 28rpx;
+ padding-left: 120rpx;
+}
+.styles{
+  font-size: 30rpx;
+  color: #cccccc;
+}
+.textarea{
+  width: 670rpx;
+  border: 1rpx #BEBEBE solid;
+  height: 345rpx;
+  margin: 18rpx 30rpx 0rpx 30rpx;
+  font-size: 30rpx;
+  background-color: white;
+}
+button{
+  width: 360rpx;
+  margin-top: 86rpx;
+  letter-spacing: 15rpx;
+  background-color: #EA5415;
+  color: white;
+  font-weight: bold;
+}
+page{
+  background-color: #f7f7f7;
+}

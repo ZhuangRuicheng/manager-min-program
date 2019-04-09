@@ -1,0 +1,21 @@
+<!--pages/userManagement/userManagement.wxml-->
+<view class='box'>
+  <view class='header'>
+    <view class='inputInfo'> 
+    <input type='text' bindinput='infoInput' id='Input' placeholder='请输入客人姓名/手机号' value='{{Input}}'></input>
+    </view>
+    <view class='search' bindtap='search'>搜索</view>
+  </view>
+  <view class='Title'>
+    <view class='headerImg'>头像</view>
+    <view class='name'>昵称</view>
+    <view class='time'>最后访问时间</view>
+  </view>
+  <view class='content' wx:for='{{infoList}}' data-id='{{item.id}}' bindtap='details'>
+    <view class='img'>
+      <image src='{{item.avatarUrl}}'></image>
+    </view>
+    <view class='showName'>{{item.nickName}}</view>
+    <view class='showTime'>{{item.loginTime}}</view>
+  </view>
+</view>

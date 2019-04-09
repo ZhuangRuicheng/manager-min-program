@@ -1,0 +1,60 @@
+<!--pages/serviceMenu/breakfastEdit/breakfastSetting/statistics/statistics.wxml-->
+<view class='box'>
+<view class='hide'>
+  <view class='header'>
+    <view class='picker'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{month}}">
+      <view class='p1'>
+         <view class="pickers">{{month[index]}} </view>
+        <image src='../../images/tip.png' class='tip'></image>
+      </view>
+      </picker>
+    </view>
+  </view>
+  <view class='statics'>
+    <view class='statics-bottm'><image src='../../images/statistics-bg.png' class='statistics-bg'></image></view>
+     <view class='title'>餐券总计</view>
+  <view class='num'>{{total}}</view>
+  <view class='state'>
+  <view class='use-writeOff'>
+    <view class='use-writeOff-title'>已核销</view>
+    <view class='use-writeOff-num'>{{used}}</view>
+  </view>
+  <view class='no-use'>
+    <view class='no-use-title public-Title'>待核销</view>
+    <view class='no-use-num public-num'>{{noUsed}}</view>
+  </view>
+  <view class='pay'>
+    <view class='pay-title public-Title'>付费餐券</view>
+    <view class='pay-num public-num'>{{pay}}</view>
+  </view>
+  <view class='free'>
+    <view class='free-title public-Title'>免费餐券</view>
+    <view class='free-num public-num'>{{noPay}}</view>
+  </view>
+  </view>
+  </view>
+
+  <view class='detail'>餐券明细</view>
+    </view>
+    <view class='hh'>
+  <view class='content' wx:for="{{dateDetails}}" wx:if="{{dateDetails === null ?false:true}}">
+  <view class='tr'>
+    <view class='time'><text class='month'>{{item.day}}</text><text class='year'>/{{item.month}}</text></view>
+    <view class='count'><label class='count-title'>领券总计：</label><text class='count-num'>{{item.total}}</text></view>
+  </view>
+  <view class='tr2'>
+  <view class='today-writeOff'>
+    <view class='today'><label class='today-title'>当日核销：</label><text class='today-num'>{{item.used}}</text></view>
+    <view class='today-no-use'><label class='no-use-title'>待核销：</label><text class='no-use-number'>{{item.noUsed}}</text></view>
+  </view>
+  <view class='hr'></view>
+  <view class='pay-type'>
+    <view class='pay-titles'><label>付费券：</label><text>{{item.pay}}</text></view>
+    <view class='free-titles'><label>免费券：</label><text>{{item.noPay}}</text></view>
+  </view>
+  </view>
+  </view>
+  </view>
+  <view class='noData' wx:if="{{dateDetails === null ?true:false}}">暂无数据</view>
+</view>

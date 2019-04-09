@@ -1,0 +1,139 @@
+<!--pages/template/orderDetails/orderDetails.wxml-->
+<!-- //打扫房间 -->
+
+   <!-- 退房 -->
+    <template name='CLEAN_ROOM'>
+   <view class='header'>
+    <view class='img'>
+      <image src='../../images/clearImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>退房</view>
+    <view class='time'>{{clearRoom.createTime}}</view>
+  </view>
+  <view class='content'>
+    <view class='type1'>确认房间无遗漏物品</view>
+    <view class='type1'>确认已经结迷你吧等消费</view>
+    <view class='count1'>备注：{{clearRoom.remarks}}</view>
+  </view>
+  <view class='room'>房间号：{{clearRoom.roomNum}}</view>
+  <view class='orderTitle'>订单信息：</view>
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{clearRoom.orderNo}}</view>
+    <view class='name num'>姓名：{{clearRoom.customerName}}</view>
+    <view class='connect num'>联系方式:13924595352</view>
+    <view class='downOrderTime num'>下单时间:{{clearRoom.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{clearRoom.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{clearRoom.finishTime}}</view>
+  </view>
+   </template>
+
+   <!-- 发票 -->
+    <template name='CLEAN_ROOM'>
+ <view class='header'>
+    <view class='img'>
+      <image src='../../images/clearImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>发票</view>
+    <view class='time'>{{clearRoom.createTime}}</view>
+  </view>
+  <view class='invoiceContent'>
+    <view class='type1'>发票类型：</view>
+    <view class='type1'>发票抬头</view>
+    <view class='type1'>纳税人识别号：</view>
+    <view class='type1'>单位地址：</view>
+    <view class='type1'>电话号码：</view>
+    <view class='type1'>开户银行：</view>
+    <view class='type1'>银行账户：</view>
+    <view class='count1'>备注：{{clearRoom.remarks}}</view>
+  </view>
+  <view class='room'>房间号：{{clearRoom.roomNum}}</view>
+  <view class='orderTitle'>订单信息：</view>
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{clearRoom.orderNo}}</view>
+    <view class='name num'>姓名：{{clearRoom.customerName}}</view>
+    <view class='connect num'>联系方式:13924595352</view>
+    <view class='downOrderTime num'>下单时间:{{clearRoom.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{clearRoom.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{clearRoom.finishTime}}</view>
+  </view>
+   </template>
+
+   <!-- 自主续住 -->
+     <template name='CLEAN_ROOM'>
+  <view class='header'>
+    <view class='img'>
+      <image src='../../images/clearImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>自助续住</view>
+    <view class='time'>{{clearRoom.createTime}}</view>
+  </view>
+  <view class='content'>
+    <view class='type1'>续住：</view>
+    <view class='type1'>离开时间：</view>
+
+    <view class='count1'>备注：{{clearRoom.remarks}}</view>
+  </view>
+  <view class='room'>房间号：{{clearRoom.roomNum}}</view>
+  <view class='orderTitle'>订单信息：</view>
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{clearRoom.orderNo}}</view>
+    <view class='name num'>姓名：{{clearRoom.customerName}}</view>
+    <view class='connect num'>联系方式:13924595352</view>
+    <view class='downOrderTime num'>下单时间:{{clearRoom.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{clearRoom.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{clearRoom.finishTime}}</view>
+  </view>
+   </template>
+
+   <!-- 经理回复 -->
+    <template name='CLEAN_ROOM'>
+  <view class='header'>
+    <view class='img'>
+      <image src='../../images/clearImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>经理在线</view>
+    <view class='time'>{{clearRoom.createTime}}</view>
+  </view>
+  <view class='managerContent'>
+    <view class='type1'>四大皆空就打瞌睡的奥斯卡经典款静安寺刷卡机读卡金卡是考虑到</view>
+    <view class='count1'>经理回复：递四方速递史莱克的福克斯看时间和端口</view>
+  </view>
+  <view class='room'>房间号：{{clearRoom.roomNum}}</view>
+  <view class='orderTitle'>订单信息：</view>
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{clearRoom.orderNo}}</view>
+    <view class='name num'>姓名：{{clearRoom.customerName}}</view>
+    <view class='connect num'>联系方式:13924595352</view>
+    <view class='downOrderTime num'>下单时间:{{clearRoom.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{clearRoom.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{clearRoom.finishTime}}</view>
+  </view>
+   </template>
+
+   <!-- 会员 -->
+       <template name='CLEAN_ROOM'>
+  <view class='header'>
+    <view class='img'>
+      <image src='../../images/clearImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>会员</view>
+    <view class='time'>{{clearRoom.createTime}}</view>
+  </view>
+  <view class='VIPContent'>
+    <view class='type1'>会员类型：</view>
+    <view class='type1'>会员名称：</view>
+    <view class='type1'>身份证：</view>
+    <view class='type1'>手机号码：</view>
+  </view>
+  <view class='room'>房间号：{{clearRoom.roomNum}}</view>
+  <view class='orderTitle'>订单信息：</view>
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{clearRoom.orderNo}}</view>
+    <view class='name num'>姓名：{{clearRoom.customerName}}</view>
+    <view class='connect num'>联系方式:13924595352</view>
+    <view class='downOrderTime num'>下单时间:{{clearRoom.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{clearRoom.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{clearRoom.finishTime}}</view>
+  </view>
+   </template>
+

@@ -1,0 +1,57 @@
+<!--pages/template/ticketMode/ticketMode.wxml-->
+<!-- 付费券未使用 -->
+<template name='payNoUse'>
+<view class='pay-ticket'>
+<view class='content'>
+  <view class='name'>{{item.name}}</view>
+  <view class='par-img'>
+   <view class='ticket-type'>付费券</view>
+  </view>
+</view>
+<view class='exchange-time'><label>兑换：</label><text>{{item.createTime}}</text></view>
+<view class='write-off'><label>核销：</label><text>{{!item.cancelTime ? '--' :item.cancelTime}}</text></view>
+<view class='not-used-img'><image src='../../images/not_use.png' class='not_use'></image></view>
+</view>
+</template>
+<!-- 付费券已核销 -->
+<template name='payUse'>
+<view class='pay-ticket'>
+<view class='content'>
+  <view class='name'>{{item.name}}</view>
+  <view class='par-img'>
+   <view class='ticket-type'>付费券</view>
+  </view>
+</view>
+<view class='exchange-time'><label>兑换：</label><text>{{item.createTime}}</text></view>
+<view class='write-off'><label>核销：</label><text>{{!item.cancelTime ? '--' :item.cancelTime}}</text></view>
+<view class='not-used-img'><image src='../../images/use_writeOff.png' class='not_use'></image></view>
+</view>
+</template>
+<!-- 免费券已核销 -->
+<template name='freeUse'>
+<view class='pay-ticket'>
+<view class='content'>
+  <view class='name'>{{item.name}}</view>
+  <view class='free-img'>
+   <view class='ticket-type'>免费券</view>
+  </view>
+</view>
+<view class='exchange-time'><label>兑换：</label><text>{{item.createTime}}</text></view>
+<view class='write-off'><label>核销：</label><text>{{!item.cancelTime ? '--' :item.cancelTime}}</text></view>
+<view class='not-used-img'><image src='../../images/use_writeOff.png' class='not_use'></image></view>
+</view>
+</template>
+<!-- 免费券未使用 -->
+<template name='freeNoUse'>
+<view class='pay-ticket'>
+<view class='content'>
+  <view class='name'>{{item.name}}</view>
+  <view class='free-img'>
+   <view class='ticket-type'>免费券</view>
+  </view>
+</view>
+<view class='exchange-time'><label>兑换：</label><text>{{item.createTime}}</text></view>
+<view class='write-off'><label>核销：</label><text>{{!item.cancelTime ? '--' :item.cancelTime}}</text></view>
+<view class='not-used-img'><image src='../../images/not_use.png' class='not_use'></image></view>
+</view>
+</template>

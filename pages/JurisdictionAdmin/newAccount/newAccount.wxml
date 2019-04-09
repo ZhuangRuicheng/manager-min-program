@@ -1,0 +1,72 @@
+<!--pages/JurisdictionAdmin/newAccount/newAccount.wxml-->
+<view class='box'>
+<form bindsubmit="formSubmit">
+<view class='header'>
+  <text class='name'>员工姓名：</text>
+  <input bindinput='inputChange' id='name' value='{{name}}'></input>
+  </view>
+ <view class='header'>
+  <text class='name'>职位：</text>
+  <view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{positionList}}">
+    <view class="picker">
+     <view class='text'>{{positionList[index]}}</view>
+     <image src='../../images/lower.png' class='lower'></image>
+    </view>
+  </picker>
+</view>
+  </view>
+ <view class="{{reply?'header':'off'}}">
+  <text class='name'>输入职位：</text>
+  <input bindinput='inputChange' id='position' value='{{position}}' placeholder='请输入想要添加职位' bindblur='addPosition'></input>
+  </view>
+  <view class='header'>
+  <text class='name'>手机号：</text>
+  <input class='phoneInput' bindinput='inputChange' id='phone' value='{{phone}}' type='number'></input>
+  </view>
+  <view class='header'>
+  <text class='name'>密码：</text>
+  <input class='passwordInput' bindinput='inputChange' id='password' value='{{password}}' type='password'></input>
+  </view>
+  <view class='business'>
+    <view class='business-title'>业务权限设置</view>
+    <view class='hotel-data'><label>酒店资料编辑</label><switch bindchange="hotelData" checked='{{checkHotelData}}'></switch></view>
+    <view class='hotel-data'><label>房间授权</label><switch bindchange="roomJurisdiction" checked='{{checkRoomJurisdiction}}'></switch></view>
+    <view class='hotel-data'><label>房型管理</label><switch bindchange="roomType" checked='{{checkRoomType}}'></switch></view>
+    <view class='hotel-data'><label>订单管理</label><switch bindchange="orderManager" checked='{{checkOrderManager}}'></switch></view>
+  </view>
+  <view wx:if="{{checkOrderManager?true:false}}">
+  <view class='order-accep'>
+   <view class='lock-img'><image src='../../images/lock.png' class='lock'></image></view>
+   <view class='order-accep-title'>是否开通订单受理权限</view>
+   <view class='check-box' bindtap='orderSetting'><image src="{{checkOrderSetting?'../../images/check-box.png':'../../images/check-box-n.png'}}" class='check-box-img'></image></view>
+  </view>
+  <view class='jurisdiction'>
+    <view class='jurisdiction-tr1'>
+      <view class='hotel-reservation' bindtap='self'><image src="{{checkSelf?'../../images/self.png':'../../images/self-n.png'}}" class='public-img'></image></view>
+      <view class='hotel-reservation' bindtap='clearRoom'><image src="{{checkClearRoom?'../../images/clearRoom.png':'../../images/clearRoom-n.png'}}" class='public-img'></image></view>
+      <view class='hotel-reservation' bindtap='store'><image src="{{checkStore?'../../images/store.png':'../../images/store-n.png'}}" class='public-img'></image></view>
+      <view class='hotel-reservation' bindtap='checkOut'><image src="{{checkCheckOut?'../../images/checkOut.png':'../../images/checkOut-n.png'}}" class='public-img'></image></view>
+    </view>
+     <view class='jurisdiction-tr2'>
+      <view class='hotel-reservation' bindtap='vip'><image src="{{checkVip?'../../images/vip.png':'../../images/vip-n.png'}}" class='public-img'></image></view>
+      <view class='hotel-reservation' bindtap='invoice'><image src="{{checkInvoice?'../../images/invoice.png':'../../images/invoice-n.png'}}" class='public-img'></image></view>
+      <view class='hotel-reservation' bindtap='advise'><image src="{{checkAdvise?'../../images/advise.png':'../../images/advise-n.png'}}" class='public-img'></image></view>
+      <view class='hotel-reservation' bindtap='hotelReservation'><image src="{{checkHotelReservation?'../../images/hotelReservation.png':'../../images/hotelReservation-n.png'}}" class='public-img'></image></view>
+    </view>
+    <view class='jurisdiction-tr3'>
+     <view class='hotel-reservation' bindtap='meals'><image src="{{checkMeals?'../../images/meals.png':'../../images/meals-n.png'}}" class='public-img'></image></view>
+    </view>
+  </view>
+  </view>
+  <view class='menu'>
+    <view class='hotel-data'><label>菜单管理</label><switch bindchange="menuManager" checked='{{checkMenuManager}}'></switch></view>
+    <view class='hotel-data'><label>运营数据</label><switch bindchange="dataManager" checked='{{checkData}}'></switch></view>
+    <view class='hotel-data'><label>票券核销</label><switch bindchange="writeOff" checked='{{checkWriteOff}}'></switch></view>
+    <view class='hotel-data'><label>财务明细</label><switch bindchange="financialDetails" checked='{{checkFinancialDetails}}'></switch></view>
+    <view class='hotel-data'><label>用户管理</label><switch bindchange="userManager" checked='{{checkUserManger}}'></switch></view>
+    <view class='hotel-data'><label>账号授权</label><switch bindchange="account" checked='{{checkAccount}}'></switch></view>
+  </view>
+  <button class='btn' form-type='submit'>保存</button>
+  </form>
+</view>

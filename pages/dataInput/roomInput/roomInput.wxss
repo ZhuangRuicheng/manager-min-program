@@ -1,0 +1,160 @@
+/* pages/dataInput/roomInput/roomInput.wxss */
+.box1{
+  position: fixed;
+}
+.title{
+  padding: 40rpx 0rpx 30rpx 30rpx;
+  font-size: 34rpx;
+}
+.floor{
+  /* width: 130rpx; */
+  height: 70rpx;
+  border: 1rpx #ea5415 solid;
+  font-size: 32rpx;
+  text-align: center;
+  margin: 0rpx 22rpx 30rpx 30rpx;
+  word-break: keep-all;
+  word-wrap: break-word;
+  display: inline-block;
+
+}
+.roomNum{
+ line-height: 70rpx;
+ color: #ea5415;
+   padding: 0 35rpx 0 35rpx;
+}
+.oneFloor{
+  width: 743rpx;
+}
+.btn{
+  background-color: #ea5415;
+  width: 600rpx;
+  height: 80rpx;
+  color: white;
+  border-radius: 16rpx;
+  margin: 230rpx 74rpx 60rpx 74rpx; 
+}
+/* 弹出层样式 */
+    .buydes-dialog-container{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color:rgba(15, 15, 26, 0.7);
+    position: fixed;
+    z-index: 999;
+    top: 0rpx;
+}
+.buydes-dialog-container-top{
+    flex-grow: 1;
+}
+ 
+.buydes-dialog-container-bottom{
+    display: flex;
+    flex-grow: 0;
+}
+
+.popup{
+  margin: 200rpx 0rpx 80rpx 60rpx;
+  background-color: white;
+}
+.ticketShow{
+  height: 750rpx;
+  width: 640rpx;
+  border-bottom: 1rpx #dfdfdf dotted;
+}
+.cancel{
+  color: #ea5415;
+  font-size: 28rpx;
+  padding: 20rpx 0rpx 28rpx 16rpx;
+}
+.hotelName{
+  font-size: 32rpx;
+  margin: -41rpx 220rpx 26rpx 250rpx;
+  
+}
+.showFloor{
+  display: flex;
+  border-top: 1rpx #cccccc solid;
+  padding-top: 24rpx;
+  font-size: 32rpx;
+  padding-left: 30rpx;
+}
+input{
+  border: 1rpx #cccccc solid;
+}
+.tips{
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  margin-top: 56rpx;
+}
+textarea{
+  width: 580rpx;
+  height: 200rpx;
+  font-size: 32rpx;
+  border: 1rpx #cccccc solid;
+  margin: 30rpx;
+}
+.showBtn{
+  width: 300rpx;
+  height: 80rpx;
+  text-align: center;
+  background-color: #ea5415;
+  color: white;
+  margin-top: 30rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.allBtn{
+  display: flex;
+}
+
+.Qr{
+  width: 350rpx;
+  height: 350rpx;
+  margin-left: 140rpx;
+}
+.Qrs{
+  width: 350rpx;
+  height: 420rpx;
+  margin-left: 140rpx;
+}
+ .QrhotelName{
+  font-size: 32rpx;
+  margin: -41rpx 220rpx 26rpx 250rpx;
+}
+.QrshowFloor{
+  display: flex;
+
+  font-size: 32rpx;
+} 
+.fresh{
+  width: 150rpx;
+  height: 23rpx;
+  margin: -80rpx 0rpx 0rpx 420rpx;
+}
+.moreQr{
+  margin: 0rpx 170rpx  30rpx 170rpx;
+  font-size: 32rpx;
+}
+.More{
+  height: 820rpx;
+}
+.email{
+  display: flex;
+  margin: 30rpx;
+}
+.sendEmail{
+  font-size: 30rpx;
+}
+.emailInput{
+  width: 380rpx;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+.eg{
+  font-size: 32rpx;
+  border-top: 1rpx #cccccc solid;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-left: 30rpx;
+}

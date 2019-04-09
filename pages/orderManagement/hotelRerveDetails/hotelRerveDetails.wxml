@@ -1,0 +1,71 @@
+<!--pages/orderManagement/hotelRerveDetails/hotelRerveDetails.wxml-->
+<import src="../../template/evaluate/evaluate.wxml"/>
+<view class='box'>
+ <view class='header'>
+    <view class='img'>
+      <image src='../../images/hotelReservationImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>酒店预订</view>
+    <view class='time'>{{orderDetail.createTime}}</view>
+  </view>
+  <view class='guide'>
+    <view class='madeGuide'>操作指引:</view>
+    <view class='guideContent'>客人已提交预订信息且支付完成，请提前预留房间，并且与客人联系核实信息后，确认受理订单</view>
+  </view>
+  <view class='content'>
+  <view class='invoiceType'>{{orderInfo.roomTypeName}}</view>
+  <view class='invoiceItem'>入住时间：{{orderInfo.startTime}}</view>
+  <view class='invoiceTitle' wx:if="{{orderInfo.roomUserType == 'DAY_ROOM'?true:false}}">离开时间：{{orderInfo.endTime}}</view>
+  <view class='invoiceTitle' wx:if="{{orderInfo.roomUserType == 'DAY_ROOM'?true:false}}">共{{orderInfo.livingDays}}晚</view>
+      <view class='invoiceAddress' wx:if="{{orderInfo.roomUserType == 'CLOCK_ROOM'?true:false}}">钟点房</view>
+      <view class='invoiceAddress' wx:if="{{orderInfo.roomUserType == 'DAY_ROOM'?true:false}}">日租房</view>
+       <view class='invoiceAddress' wx:if="{{orderInfo.roomUserType == 'HALF_DAY_ROOM'?true:false}}">半日房</view>
+  <view class='invoiceAddress'>入住人：{{orderInfo.name}}</view>
+  <view class='invoicePhone'>手机号：{{orderInfo.phoneNumber}}</view>
+  <view class='invoiceBank'>房费：￥{{!orderInfo.totalFee?'--':orderInfo.totalFee}}</view>
+  <view class='vip-show' wx:if="{{!orderInfo.vipName?false:true}}">
+    <view class='vip-type'><label>会员类型：{{orderInfo.vipName}}</label><text>{{}}</text></view>
+    <view class='ID'><label>身份证号码：{{orderInfo.idCard}}</label><text>{{}}</text></view>
+  </view>
+  <view class='invoiceBankNum'>状态：{{!orderInfo.totalFee?'未支付(会员免押金)':'已支付'}}</view>
+  <input class='remarks' value="备注：{{!orderInfo.remarks ?'--':orderInfo.remarks}}" disabled='disabled'></input>
+   <view class='state' wx-if="{{orderDetail.status == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{orderDetail.status == 'OVERDUE'?true:false}}">已过期</view>
+       <view class='state' wx-if="{{orderDetail.status == 'CANCEL'?true:false}}">已取消</view>
+  </view>
+  <!-- 点评 -->
+    <template is="evaluate" data="{{finishUserInfo,orderDetail,headerImage}}"></template>
+  <!-- 点评 -->
+   <!-- <view class='orderTitle'>订单信息：</view> -->
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{orderDetail.orderNo}}</view>
+    <view class='name num'>姓名：{{orderInfo.name}}</view>
+    <view class='connect num'>联系方式:{{orderInfo.phoneNumber}}</view>
+    <view class='downOrderTime num'>下单时间:{{orderDetail.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{orderDetail.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{orderDetail.finishTime}}</view>
+  </view>
+   <!-- <button class='btn' bindtap='accept' disabled="{{disableds}}" style='background-color:{{color}};'>{{value}}</button> -->
+   <view class='state-btn' wx:if="{{show?true:false}}">
+      <view class='refuse' wx:if="{{orderDetail.status == 'SUBMIT' ?true:false}}">
+       <button class='refuse-btn' bindtap='refuseBtn' data-orderno='{{orderDetail.orderNo}}' disabled="{{orderDetail.status == 'CANCEL' ?'disable':''}}">{{orderDetail.status == 'CANCEL' ?'已拒单':'拒单'}}</button>
+     </view>
+     <view class='refuse' wx:if="{{orderDetail.status == 'CANCEL' ?true:false}}">
+       <button class='refuse-btn' bindtap='refuseBtn' data-orderno='{{orderDetail.orderNo}}' disabled="{{orderDetail.status == 'CANCEL' ?'disable':''}}">{{orderDetail.status == 'CANCEL' ?'已拒单':'拒单'}}</button>
+     </view>
+     <view class='accept' wx:if="{{orderDetail.status == 'CANCEL' ?false:true}}">
+       <button class='accept-btn' bindtap='accept' disabled="{{disableds}}" style='background-color:{{color}};' id='{{orderDetail.orderNo}}'>{{value}}</button>
+     </view>
+   </view>
+   <view class='bottomCss' wx:if="{{show?false:true}}">
+     <view class='refuse-so'>
+      <label>请选择拒绝接单原由</label>
+       <icon type='clear' size='20' bindtap='cancel'></icon>
+     </view>
+     <view class='refuse1' id='{{refuse1}}' bindtap='refuse'>{{refuse1}}</view>
+     <view class='refuse2' id='{{refuse2}}' bindtap='refuse'>{{refuse2}}</view>
+     <view class='refuse1' id='{{refuse3}}' bindtap='refuse'>{{refuse3}}</view>
+   </view>
+</view>

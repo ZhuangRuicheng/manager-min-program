@@ -1,0 +1,48 @@
+<!--pages/orderManagement/InvoiceD/InvoiceD.wxml-->
+<import src="../../template/evaluate/evaluate.wxml"/>
+<view class='box'>
+  <view class='header'>
+    <view class='img'>
+      <image src='../../images/invoiceImg.png' class='clearImg'></image>
+    </view>
+    <view class='text'>发票</view>
+    <view class='time'>{{orderDetail.createTime}}</view>
+  </view>
+   <view class='guide'>
+    <view class='madeGuide'>操作指引:</view>
+    <view class='guideContent'>请核实发票信息无误后，提前为客人准备发票</view>
+  </view>
+  <view class='invoiceContent'>
+    <view class='type1'>发票类型:{{orderInfo.invoiceType}}</view>
+     <view class='type1'>发票项目:{{orderInfo.invoiceItem}}</view>
+    <view class='type1'>发票抬头:{{orderInfo.title}}</view>
+    <view class='type1'>纳税人识别号：{{orderInfo.taxNumber}}</view>
+    <view class='type1'>单位地址:{{orderInfo.companyAddress}}</view>
+    <view class='type1'>电话号码:{{orderInfo.telephone}}</view>
+    <view class='type1'>开户银行:{{orderInfo.bankName}}</view>
+    <view class='type1'>银行账户:{{orderInfo.bankAccount}}</view>
+    <view class='count1'>备注:{{!orderDetail.remarks?'--':orderDetail.remarks}}</view>
+  </view>
+  <view class='allStatus'>
+  <view class='room'>房间号：{{orderDetail.roomNum}}</view>
+   <view class='state' wx-if="{{orderDetail.status == 'SUBMIT'?true:false}}">待受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'ACCEPT'?true:false}}">已受理</view>
+       <view class='state' wx-if="{{orderDetail.status == 'FINISH'?true:false}}">已完成</view>
+       <view class='state' wx-if="{{orderDetail.status == 'OVERDUE'?true:false}}">已过期</view>
+    </view>
+    <!-- 点评 -->
+    <template is="evaluate" data="{{finishUserInfo,orderDetail,headerImage}}"></template>
+    <!-- 点评 -->
+  <!-- <view class='orderTitle'>订单信息：</view> -->
+  <view class='orderInfo'>
+    <view class='num'>订单编号：{{orderDetail.orderNo}}</view>
+    <view class='name num'>姓名：{{orderDetail.customerName}}</view>
+    <view class='connect num'>联系方式:{{orderDetail.phoneNumber}}</view>
+    <view class='downOrderTime num'>下单时间:{{orderDetail.createTime}}</view>
+    <view class='downOrderTime num'>受理时间:{{orderDetail.acceptTime}}</view>
+    <view class='downOrderTime num'>完成时间:{{orderDetail.finishTime}}</view>
+  </view>
+  <view class='state-btn'>
+  <button class='btn' bindtap='accept' disabled="{{disableds}}" style='background-color:{{color}};'>{{value}}</button>
+  </view>
+</view>

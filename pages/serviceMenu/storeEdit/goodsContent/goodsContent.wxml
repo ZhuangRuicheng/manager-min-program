@@ -1,0 +1,127 @@
+<!--pages/hotelInfoEdit/storeEdit/goodsContent/goodsContent.wxml-->
+<view class='box'>
+  <view class='header'>
+  <view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+     <view class='text'>{{array[index]}}</view>
+     <image src='../../../images/lower.png' class='lower'></image>
+    </view>
+  </picker>
+</view>
+ <view class='right' bindtap="showModal" bindload="imageLoad">+添加商品</view>
+  </view>
+  <view class='goods' wx:for='{{goodsList}}' bindtap="actionSheetTap" data-id='{{item.id}}' data-name='{{item.name}}' 
+  data-categoryid='{{item.categoryId}}' data-imgurl='{{item.imgUrl}}' data-price='{{item.price}}' data-stock='{{item.stock}}' data-index='{{index}}'>
+    <image src='{{item.imgUrl}}' class='goodsImg'></image>
+    <view class='goodsName'>{{item.name}}</view>
+    <view class='bottom'>
+      <input class="{{item.isDisable?'col':'state'}}" value="{{item.isDisable?'已下架':'已上架'}}" disabled='disabled'></input>
+      <!-- <text class='state col' wx:if='{{down}}'>已下架</text> -->
+      <text class='remain'>剩余库存：{{item.stock}}</text>
+      <text class='money'>￥{{item.price}}</text>
+    </view>
+  </view>
+  <!-- 弹出层 -->
+<view class="container-column">
+<view animation="{{animationData}}" class="container-column buydes-dialog-container" wx:if="{{showModalStatus}}" catchtouchmove='true'>
+        <view class="buydes-dialog-container-top" bindtap="hideModal"></view>
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+      <view class='cancel' bindtap="hideModal">取消</view>
+      <view class='hotelName'>添加商品</view>
+      <!-- 表单头 -->
+      <form bindsubmit="formSubmit">
+      <view class='type'>
+        <text>商品名称：</text>
+        <input type='text' class='showGoodsName' placeholder='20字以内' bindinput='inputChanged' id='GoodsName' maxlength='20'></input>
+      </view>
+      <view class='type'>
+        <text>商品价格：</text>
+        <input type='digit' class='showGoodsName' placeholder='请输入0~9999的数字' bindinput='inputChanged' id='goodsPrice' step="0.01"></input>
+      </view>
+      <view class='type'>
+        <text class='num'>数量：</text>
+        <input type='number' class='showGoodsName ss' placeholder='商品数量' bindinput='inputChanged' id='goodsNUm'></input>
+      </view>
+      <view class='type'>
+      <text class='num'>分类：</text>
+       <picker bindchange="addBindPickerChange" value="{{addIndex}}" range="{{addArray}}">
+    <view class="showpicker">
+     <view class='text'>{{addArray[addIndex]}}</view>
+     <image src='../../../images/lower.png' class='lower showlower'></image>
+    </view>
+     </picker>
+      </view>
+      <view class='type'>
+        <text>上传图片：</text>
+        <view class='img' bindtap='click' wx:if='{{hide}}'>
+           +添加图片
+           <text class='size'>建议尺寸150*150</text>
+          
+        </view>
+         <image src='{{img}}' class='showImg' wx:if='{{show}}' bindtap='click'></image>
+      </view>
+       <button class='showBtn' form-type='submit'>提交</button>
+         <!-- 表单尾 -->
+    </form>
+    </view>
+  
+    </view>
+        </view>
+    </view>
+</view>
+<!-- 编辑弹出层 -->
+<view class="container-column">
+<view animation="{{animationData}}" class="container-column buydes-dialog-container" wx:if="{{editModalStatus}}" catchtouchmove='true'>
+        <view class="buydes-dialog-container-top" bindtap="hideModal"></view>
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+      <view class='cancel' bindtap="edithideModal">取消</view>
+      <view class='hotelName'>编辑商品</view>
+      <!-- 表单头 -->
+      <form bindsubmit="goodsEdit">
+      <view class='type'>
+        <text>商品名称：</text>
+        <input type='text' class='showGoodsName' placeholder='20字以内' bindinput='inputChanged' id='changeGoodsName' value='{{name}}' maxlength='20'></input>
+      </view>
+      <view class='type'>
+        <text>商品价格：</text>
+        <input type='digit' class='showGoodsName' placeholder='请输入0~9999的数字' bindinput='inputChanged' id='changegoodsPrice' value='{{price}}' step="0.01"></input>
+      </view>
+      <view class='type'>
+        <text class='num'>数量：</text>
+        <input type='text' class='showGoodsName ss' placeholder='20字以内' bindinput='inputChanged' id='changegoodsNUm' value='{{num}}'></input>
+      </view>
+      <view class='type'>
+      <text class='num'>分类：</text>
+       <picker bindchange="addBindPickerChange" value="{{addIndex}}" range="{{addArray}}">
+    <view class="showpicker">
+     <view class='text'>{{addArray[addIndex]}}</view>
+     <image src='../../../images/lower.png' class='lower showlower'></image>
+    </view>
+     </picker>
+      </view>
+      <view class='type'>
+        <text>上传图片：</text>
+         <image src='{{editimg}}' class='showImg' bindtap='click1'></image>
+      </view>
+       <button class='showBtn' form-type='submit'>提交</button>
+         <!-- 表单尾 -->
+    </form>
+    </view>
+  
+    </view>
+        </view>
+    </view>
+</view>
+   <!-- 底部上拉列表 -->
+   <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+    <block wx:for-items="{{actionSheetItems}}">
+        <action-sheet-item bindtap="bind{{item.bindtap}}" class='ll'>{{item.txt}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class='l1'>取消</action-sheet-cancel>
+</action-sheet>
+</view>

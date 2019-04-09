@@ -1,0 +1,43 @@
+<!--pages/orderManagement /orderManagement .wxml-->
+<import src="../template/template.wxml"/>
+<view class='box'>
+   <view class='header'>
+   <view class='business'>
+     <picker bindchange="businessBindPicker" value="{{index}}" range="{{businessType}}">
+    <view class="businessPicker">
+     {{businessType[index]}}
+    </view>
+  </picker>
+   <view class='sign'>
+      <image src='../images/tip.png' class='tip' bindchange="businessBindPicker"></image>
+    </view>
+  </view>
+   <view class='business'>
+     <picker bindchange="stateBindPicker" value="{{stateIndex}}" range="{{stateType}}">
+    <view class="statePicker businessPicker">
+     {{stateType[stateIndex]}}
+    </view>
+  </picker>
+   <view class='sign2'>
+      <image src='../images/tip.png' class='tip2' bindchange="businessBindPicker"></image>
+    </view>
+  </view>
+  <view class='input'>
+    <input type='text' placeholder='请输入房间号' class='inputRoom' id='roomNum' bindinput='inputchange' value='{{input}}'></input>
+  </view>
+  <view class='title' bindtap='search'>搜索</view>
+   </view>
+   <view class='contair'>
+   <view wx:for='{{orders}}'>
+     <template is="{{item.orderType=='CONTINUE_STAY'?'CONTINUE_STAY':''}}" data="{{item}}"></template>
+     <template is="{{item.orderType=='CHECKOUT'?'CHECKOUT':''}}" data="{{item}}" ></template>
+     <template is="{{item.orderType=='INVOICE'?'INVOICE':''}}" data="{{item}}" ></template>
+     <template is="{{item.orderType=='MINI_BAR'?'MINI_BAR':''}}" data="{{item}}" ></template>
+     <template is="{{item.orderType=='FEEDBACK'?'FEEDBACK':''}}" data="{{item}}" ></template>
+     <template is="{{item.orderType=='VIP'?'VIP':''}}" data="{{item}}" ></template>
+     <template is="{{item.orderType=='CLEAN_ROOM'?'CLEAN_ROOM':''}}" data="{{item}}" ></template>
+     <template is="{{item.orderType=='HOTEL_RESERVE'?'HOTEL_RESERVE':''}}" data="{{item}}" ></template>
+     <template is="{{item.orderType=='MEAL'?'MEAL':''}}" data="{{item}}" ></template>
+   </view>
+   </view>
+</view>

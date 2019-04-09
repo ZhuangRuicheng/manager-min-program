@@ -1,0 +1,331 @@
+/* pages/dataStatistics/dataStatistics.wxss */
+.picker{
+  font-size: 28rpx;
+  border: 1rpx #cccccc solid;
+  width: 180rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+  padding-left: 10rpx;
+  background-color: white;
+}
+.header{
+  height: 290rpx;
+  background-color: #ea5415;
+  border-top: 1rpx white solid;
+}
+.count{
+  display: flex;
+  position: absolute;
+  right: 30rpx;
+  top: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: white;
+}
+.explain{
+  width: 32rpx;
+  height: 32rpx;
+  padding-right: 15rpx;
+  padding-top: 5rpx;
+}
+.profit{
+  text-align: center;
+  padding-top: 100rpx;
+  color: white;
+  font-size: 26rpx;
+}
+/* .profitTitle{
+  padding-bottom: 10rpx;
+} */
+.profitMonet{
+  font-size: 72rpx;
+  padding-top: 25rpx;
+  font-weight: bold;
+}
+.customer{
+  display: flex;
+  height: 110rpx;
+  background-color: #ff6600;
+  opacity: 70%;
+  text-align: center;
+  font-size: 32rpx;
+  color: white;
+  padding-top: 20rpx;
+  padding-bottom: 18rpx;
+}
+.flex{
+  flex: 1;
+}
+.hr{
+  width: 2rpx;
+  height: 80rpx;
+  background-color: #ffffff;
+  opacity: 50%;
+  margin-top: 15rpx;
+}
+.visitingCustomers{
+  padding-bottom: 15rpx;
+  font-size: 24rpx;
+}
+.visitingNum{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.share{
+  display: flex;
+  text-align: center;
+  height: 140rpx;
+  background-color: white;
+  font-size: 32rpx;
+  color: #666666;
+}
+.shareFlex{
+  flex: 1;
+}
+.shareForward{
+  position: absolute;
+  left: 58rpx;
+  margin-top: 26rpx;
+  font-size: 26rpx;
+}
+.shareForwardNum{
+  position: absolute;
+  font-size: 48rpx;
+  padding-top: 56rpx;
+  padding-left: 228rpx;
+  color: #ea5415;
+  font-weight: bold;
+}
+.shareHr{
+  width: 2rpx;
+  height: 80rpx;
+  background-color: #cccccc;
+  margin-top: 30rpx;
+}
+.mostForward{
+  position: absolute;
+  right: 165rpx;
+  margin-top: 26rpx;
+  font-size: 26rpx;
+}
+.mostForwardNum{
+  position: absolute;
+  font-size: 48rpx;
+  padding-top: 56rpx;
+  color: #ea5415;
+  right: 60rpx;
+  font-weight: bold;
+}
+.evaluate{
+  margin-top: 30rpx;
+  height: 180rpx;
+  background-color: white;
+  padding: 28rpx 40rpx 48rpx 40rpx;
+}
+.custemsEvaluate{
+  font-size: 32rpx;
+  padding-left: 25rpx;
+  color: #333333;
+}
+.evaluateTitle{
+  font-size: 26rpx;
+  text-align: center;
+}
+.come{
+  width: 122rpx;
+  height: 50rpx;
+  position: absolute;
+  margin-top: -10rpx;
+}
+.textNum{
+  font-size: 48rpx;
+  color: #ea5415;
+  padding-left: 20rpx;
+  font-weight: bold;
+}
+progress{
+  border-radius: 100px;
+  overflow: hidden;
+}
+.frequency{
+  height: 130rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  display: flex;
+  text-align: center;
+  padding-top: 50rpx;
+  font-size: 26rpx;
+  color: #666666;
+  margin-bottom: 30rpx;
+}
+.visitingNums{
+  padding-top: 15rpx;
+  color: #ea5415;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+.hrs{
+  width: 2rpx;
+  height: 80rpx;
+  background-color: #cccccc;
+}
+.left{
+  display: flex;
+  text-align: center;
+  height: 135rpx;
+  border-bottom: 1rpx #cccccc solid;
+  background-color: white;
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  color: #666666;
+  padding-top: 40rpx;
+}
+.payNum{
+  margin-top: 15rpx;
+  color: #ea5415;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+.payHr{
+  width: 2rpx;
+  height: 100rpx;
+  background-color: #cccccc;
+}
+.tip{
+  width: 19rpx;
+  height: 12rpx;
+  position: absolute;
+  top: 55rpx;
+  left: 170rpx;
+}
+
+
+page{
+  background-color: #f7f7f7;
+}
+.business{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: white;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333333;
+}
+.Allbusiness{
+  background-color: white;
+}
+.orderNumber{
+  background-color: white;
+  padding-bottom: 30rpx;
+}
+
+.goodImg{
+  width: 30rpx;
+  height: 30rpx;
+}
+.good{
+  width: 29rpx;
+  height: 30rpx;
+  position: absolute;
+  left: 135rpx;
+}
+.bad{
+   width: 29rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 158rpx;
+  top: 525rpx;
+}
+.long{
+  width: 400rpx;
+  height: 30rpx;
+  background-color: #e8e8e8;
+  position: absolute;
+  left: 165rpx;
+  border-radius: 14rpx;
+  top: 523rpx;
+}
+.longs{
+  height: 30rpx;
+  background: linear-gradient(#33cc66,#99ffcc);
+  position: absolute;
+  left: 165rpx;
+  border-radius: 14rpx;
+  top: 523rpx;
+}
+.satisfied{
+  font-size: 28rpx;
+}
+.percent{
+  font-size: 28rpx;
+}
+.inSatisfied{
+  margin-top: 10rpx;
+  margin-left: 120rpx;
+}
+.inNoSatisfied{
+  position: absolute;
+  right: 130rpx;
+  top: 555rpx;
+}
+.container{
+  width: 100%;
+  height: 500rpx;
+  background-color: white;
+  opacity: 1;
+  pointer-events: none;
+  margin-top: -60rpx;
+}
+/* 弹出层 */
+ .buydes-dialog-container{
+    width: 100%;
+    height: 3000rpx;
+    justify-content: space-between;
+    background-color:rgba(15, 15, 26, 0.7);
+    position: fixed;
+    z-index: 999;
+    /* position: absolute; */
+    top: 0rpx;
+}
+
+.buydes-dialog-container-top{
+    flex-grow: 1;
+}
+ 
+.buydes-dialog-container-bottom{
+    display: flex;
+    flex-grow: 0;
+}
+.useTicket{
+  margin: 50rpx 30rpx 0rpx 30rpx;
+  background-color: white;
+}
+.contents{
+  font-size: 24rpx;
+  color: #999999;
+  padding-left: 45rpx;
+  padding-right: 45rpx;
+  line-height: 47rpx;
+  padding-bottom: 50rpx;
+}
+.cancel{
+  font-size: 56rpx;
+  color: red;
+  position: absolute;
+  right: 60rpx;
+  margin-top: 20rpx;
+}
+.dataTitle{
+  font-size: 32rpx;
+  text-align: center;
+  color: #ea5415;
+  padding-top: 45rpx;
+  padding-bottom: 35rpx;
+}
+.box1{
+  position: fixed;
+  width: 100%;
+}

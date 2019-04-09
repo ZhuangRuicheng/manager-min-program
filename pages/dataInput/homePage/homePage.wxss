@@ -1,0 +1,44 @@
+/* pages/homePage/homePage.wxss */
+.addImages{
+  font-size: 30rpx;
+   margin: 20rpx 30rpx 0rpx 30rpx;
+  border: 1rpx #cccccc solid;
+  border-radius: 6rpx;
+  height: 120rpx;
+  text-align: center;
+}
+.tips1{
+  padding-top: 30rpx;
+}
+.tips2{
+font-size: 28rpx;
+color: #999999;
+}
+.images{
+  background-color: gainsboro;
+  margin: 24rpx 0rpx 34rpx 0rpx;
+  padding-bottom: 68rpx;
+}
+.chooseImg{
+  height: 348rpx;
+  width: 100%;
+}
+.text{
+  font-size: 24rpx;
+  color: red;
+  position: absolute;
+  right: 30rpx;
+  height: 68rpx;
+  padding: 21rpx 0rpx 21rpx 0rpx;
+}
+.time{
+   font-size: 24rpx;
+  color: #666666;
+  position: absolute;
+  left: 30rpx;
+  height: 68rpx;
+  padding: 21rpx 0rpx 21rpx 0rpx;
+}
+page{
+  background-color: #f7f7f7;
+}

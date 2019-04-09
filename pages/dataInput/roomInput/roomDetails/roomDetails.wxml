@@ -1,0 +1,19 @@
+<!--pages/dataInput/roomInput/roomDetails/roomDetails.wxml-->
+<view class='box'>
+  <view class='scavenging' wx:if='{{!QrImg ? true : false}}'>
+   <view class='rooms'>房间号：{{roomNum}}</view>
+    <image src='../../../images/canf.png' class='scavengingImg' bindtap='bindQrCode'></image>
+  </view>
+  <view class='container' wx:if="{{!!QrImg ? true : false}}">
+    <view class='room'>房间号：{{roomNum}}</view>
+    <view class='QR'>
+      <view class='QRImg'>
+        <image class='img' src='{{QrImg}}'></image>
+      </view> 
+       <view class='ID' wx:if="{{disable?true:false}}">此二维码已被禁用</view>  
+    </view>
+    <button class='downLoadQR' bindtap='downImg' disabled="{{disable?'disable':''}}">下载二维码到相册</button>
+    <button class='relieveQR' bindtap="{{disable?'reBindQrCode':'unBindQrCode'}}">{{disable?'重新绑定二维码':'解除绑定二维码'}}</button>
+    <view class='disableQR' bindtap='disable' wx:if="{{disable?false:true}}">禁用此二维码</view>
+  </view>
+</view>

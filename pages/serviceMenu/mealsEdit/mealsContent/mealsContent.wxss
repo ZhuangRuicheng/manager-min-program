@@ -1,0 +1,2 @@
+/* pages/serviceMenu/mealsEdit/mealsContent/mealsContent.wxss */
+@import "../../../template/meals/mealsContent/mealsContent.wxss";

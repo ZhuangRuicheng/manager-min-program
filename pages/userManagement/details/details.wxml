@@ -1,0 +1,10 @@
+<!--pages/userManagement/details/details.wxml-->
+<view class='box'>
+  <view class='header'>
+    累计访问次数：{{loginLogs.total}}次
+  </view>
+  <view class='content' wx:for='{{loginLogs.list}}'>
+    <view class='roomNum'>{{item.roomNum}}</view>
+    <view class='time'>{{item.scanTime}}</view>
+  </view>
+</view>

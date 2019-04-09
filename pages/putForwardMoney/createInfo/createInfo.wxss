@@ -1,0 +1,36 @@
+/* pages/putForwardMoney/createInfo/createInfo.wxss */
+.header{
+  height:100rpx;
+  line-height: 100rpx; 
+  background-color: white;
+  display: flex;
+  border-bottom: 1rpx #cccccc solid;
+}
+.title{
+  font-size: 34rpx;
+  margin-left: 30rpx;
+}
+input{
+  width: 508rpx;
+  height: 56rpx;
+  border: 1rpx #cccccc solid;
+  font-size: 24rpx;
+  margin: 20rpx 0rpx 16rpx 95rpx;
+}
+.pwd{
+  margin-top: 0rpx;
+}
+.password{
+  margin-left: 30rpx;
+}
+.tips{
+  margin: 20rpx 30rpx 0rpx 30rpx;
+  font-size: 24rpx;
+  color: #ea5415;
+  line-height: 45rpx;
+}
+.btn{
+  margin: 110rpx 224rpx 0rpx 224rpx;
+  color: white;
+  background-color: #ea5415;
+}

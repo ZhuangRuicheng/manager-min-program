@@ -1,0 +1,23 @@
+<!--pages/financialManagement/detailed/detailed.wxml-->
+<view class='box'>
+<view class="{{hasData?'NOData':''}}" wx:if="{{hasData?true:false}}">
+ <image src='../../images/noDataShow.png'></image>
+ <view class='test'>暂无数据</view>
+</view>
+<view wx:for='{{billInfo}}'>
+  <view class='header'>
+    <view class='month'>{{item.month}}</view>
+    <view class='total'>总收入：￥{{item.income}}</view>
+    <view class='withdrawCash'>提现:{{item.withdrawCash}}</view>
+  </view>
+  <view class='content' wx:for='{{item.bills}}' wx:for-item="bills"  bindtap="{{bills.money > 0 ? 'incomeDetails':'putForwardDetails'}}" data-id='{{bills.id}}'>
+  <view class='name'>
+    <view class='action'>{{bills.title == 'null'?'--':bills.title}}</view>
+    <!-- <view class='room'>技术(201)</view> -->
+    </view>
+    <view class='income'>{{bills.money}}</view>
+    <view class='time'>{{bills.createTime}}</view>
+  </view>
+  </view>
+    
+</view>

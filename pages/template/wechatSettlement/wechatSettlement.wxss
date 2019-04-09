@@ -1,0 +1,93 @@
+/* pages/template/wechatSettlement/wechatSettlement.wxss */
+.box{
+  padding-bottom: 50rpx;
+}
+.header{
+  height: 88rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #333333;
+  border-bottom: 1rpx solid #efefef;
+  background-color: white;
+  padding-left: 30rpx;
+}
+.wx{
+  padding-top: 100rpx;
+}
+.record-list{
+  background-color: white;
+  margin-bottom: 10rpx;
+}
+.record{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #333333;
+  padding-left: 30rpx;
+}
+.time-money{
+  display: flex;
+  height: 74rpx;
+  line-height: 74rpx;
+  padding-left: 30rpx;
+  border-bottom: 1rpx solid #efefef;
+}
+.day{
+  font-size: 34rpx;
+  color: #333333;
+}
+.month{
+  font-size: 26rpx;
+  color: #999999;
+}
+.line{
+  font-size: 30rpx;
+  color: #999999;
+}
+.money{
+  position: absolute;
+  right: 30rpx;
+}
+.money-label{
+  font-size: 24rpx;
+  color: #999999;
+}
+.price{
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: bold;
+}
+.pay-detail{
+  padding: 30rpx;
+  display: flex;
+}
+.pay-moneys{
+  width: 152rpx;
+  text-align: center;
+}
+.pay-title{
+  font-size: 24rpx;
+  color: #999999;
+  padding-bottom: 20rpx;
+}
+.service-charge{
+  width: 100rpx;
+  text-align: center;
+  margin-left: 140rpx;
+}
+.pay-money{
+  font-size: 30rpx;
+  color: #333333;
+  font-weight: bold;
+}
+.service-charge-title{
+  font-size: 24rpx;
+  color: #999999;
+  padding-bottom: 20rpx;
+}
+.refund{
+  width: 152rpx;
+  text-align: center;
+  position: absolute;
+  right: 30rpx;
+}

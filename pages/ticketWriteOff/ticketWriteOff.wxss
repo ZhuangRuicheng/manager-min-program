@@ -1,0 +1,19 @@
+/* pages/JurisdictionAdmin/ticketWriteOff/ticketWriteOff.wxss */
+.write-off{
+  text-align: center;
+  margin-top: 80rpx;
+}
+.write-count{
+  text-align: center;
+  margin-top: 70rpx;
+}
+image{
+  width: 360rpx;
+  height: 80rpx;
+}
+.tip{
+  font-size:24rpx;
+  color: #ea5415;
+  margin: 60rpx 30rpx 0rpx 30rpx;
+  line-height: 50rpx;
+}

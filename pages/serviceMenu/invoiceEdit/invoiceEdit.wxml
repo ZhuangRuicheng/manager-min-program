@@ -1,0 +1,22 @@
+<!--pages/hotelInfoEdit/invoiceEdit/invoiceEdit.wxml-->
+<view class='box'>
+  <view class='header'>
+    <text class='title'>可开发票类型</text>
+    <button class='btn' bindtap='createInvoice'>+添加发票类型</button>
+  </view>
+  <view class='content'>
+  <view class='hh'>
+  <view class='type' wx:for='{{invoiceTypes}}' bindlongpress="deleteImage" data-index="{{index}}" wx:key="*this">
+    <view class='InvoiceText'>{{item}}</view>
+   <!-- <view class='type' wx:for='{{invoiceTypes}}' bindlongpress="deleteImage" data-index="{{index}}" wx:key="*this">
+    <image src='../../images/choose.png' class='choose'></image>
+    <view class='text'>{{item}}</view> -->
+    </view>
+  </view>
+  </view>
+  <view class='modal'>
+<modal hidden="{{hiddenmodalput}}" title="请输入要添加类型" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text'placeholder="请输入内容" value='{{text}}' bindinput='inputContent' maxlength='6'/>  
+</modal>  
+</view>
+</view>

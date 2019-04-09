@@ -1,0 +1,30 @@
+<!--pages/template/wechatIncome/wechatIncome.wxml-->
+<template name="wechatIncome">
+<view class='box'>
+<view class='header'>
+<view class='title'>账户余额（元）</view>
+<view class='money'>{{money}}</view>
+<view class='num'>
+<view class='yesterday'>
+  <view class='yesterday-title'>昨日收益（元）</view>
+  <view class='yester-money'>{{yesterdayIncome}}</view>
+</view>
+<view class='hr'></view>
+<view class='yesterday'>
+  <view class='yesterday-title'>累计收益（元）</view>
+  <view class='yester-money'>{{totalIncome}}</view>
+</view>
+</view>
+</view>
+
+  <!-- <view class='img'>
+    <image src='{{image}}'></image>
+  </view>
+  <view class='money'>￥{{money}}</view> -->
+  <!-- <button class='btn' bindtap='putForwardMoney'>提现</button> -->
+  <button class='btn1' bindtap='detailed'>查看明细</button>
+  <button class='btn' bindtap='settlement'>对账结算</button>
+</view>
+<view class='wx-tips'>*您的账户暂未开通自动提现功能，当账户余额高于100元时，系统会发起一次结算，3个工作日审核账单无误后，对公转账到指定账户</view>
+</template>
+

@@ -1,0 +1,26 @@
+/* pages/userManagement/details/details.wxss */
+.header{
+  height: 88rpx;
+  background-color: #f7f7f7;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #999999;
+  margin-left: 30rpx;
+}
+.content{
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 36rpx;
+  display: flex;
+  border-bottom: 1rpx #cccccc solid;
+}
+.roomNum{
+  position: absolute;
+  left: 30rpx;
+}
+.time{
+  position: absolute;
+  right: 30rpx;
+  font-size: 30rpx;
+  color: #999999;
+}

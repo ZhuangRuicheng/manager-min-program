@@ -1,0 +1,110 @@
+/* pages/template/meals/mealsEdit/mealsEdit.wxss */
+
+page {
+  background-color: #f7f7f7;
+}
+
+.box {
+  padding-bottom: 50rpx;
+}
+
+.header {
+  font-size: 32rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+  color: #333;
+}
+
+.add-img {
+  margin-top: 30rpx;
+  background-color: white;
+  padding-bottom: 50rpx;
+  padding-top: 30rpx;
+}
+
+.add-title {
+  width: 460rpx;
+  height: 100rpx;
+  color: #333;
+  line-height: 100rpx;
+  text-align: center;
+  border: 2rpx solid #efefef;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  margin: 0 auto;
+}
+
+.img {
+  margin: 30rpx;
+}
+
+.show-img {
+  width: 100%;
+  height: 406rpx;
+}
+
+.catering-title {
+  font-size: 34rpx;
+  color: #333;
+  padding: 30rpx 0rpx 20rpx 0rpx;
+}
+
+.introduce {
+  margin-top: 30rpx;
+  padding: 0 30rpx 30rpx 30rpx;
+  background-color: white;
+}
+
+.introduce-content {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.line1 {
+  margin-top: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: #333;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  border-bottom: 1rpx solid #efefef;
+}
+
+.store-classify {
+  padding-left: 30rpx;
+}
+
+.right-img {
+  position: absolute;
+  right: 30rpx;
+}
+
+.sign-img {
+  width: 15rpx;
+  height: 25rpx;
+}
+
+.line2 {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: #333;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  border-bottom: 1rpx solid #efefef;
+}
+
+textarea {
+  padding-top: 10rpx;
+  padding-left: 15rpx;
+  height: 200rpx;
+  width: 630rpx;
+  margin: 30rpx;
+  border: 1rpx solid #ccc;
+}

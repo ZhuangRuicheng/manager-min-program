@@ -1,0 +1,34 @@
+<!--pages/dataInput/hotelEquipment/hotelEquipment.wxml-->
+<view class="{{showModalStatus ? 'box1':'box'}}">
+<view class='addImages' bindtap="showModal">
+    <view class='tips1'>+添加酒店设施</view>
+  </view>
+  <!-- 酒店设施显示 -->
+    <view class='facilityDisplay'>
+    <view class='facilityAll' wx:for='{{facilitiesList}}' data-id='{{item.id}}' bindlongpress="deleteImage">
+      <view class='publicImgs'><image src='../../images/facilitiesImg.png' class='publicImg'></image></view>
+      <view class='facilityName'>{{item.name}}</view>
+    </view>
+    </view>
+   <!-- 弹出层添加房间  -->
+  <view class="container-column" catchtouchmove='false' wx:if="{{showModalStatus}}">
+<view class="container-column buydes-dialog-container">
+        <view class="buydes-dialog-container-top" bindtap="hideModal"></view>
+        <view class="container-column buydes-dialog-container-bottom">
+        <view class="popup">
+          <view class='ticketShow'>
+      <view class='cancel' bindtap="hideModal">取消</view>
+      <view class='hotelName'>添加酒店设施</view>
+      <!-- 表单头 -->
+      <form bindsubmit="formSubmit">
+       <view class='tips'>酒店设施内容（多个用逗号“，”隔开）</view>
+       <textarea placeholder='请输入酒店设施内容，多个之间用逗号隔开' value='{{inputtextareaValue}}' bindinput='inputChange' catchtouchmove='false'></textarea>
+       <button class='showBtn' form-type='submit'>提交</button>
+       <!-- 表单尾 -->
+       </form>
+    </view>
+    </view>
+        </view>
+    </view>
+</view>
+</view>

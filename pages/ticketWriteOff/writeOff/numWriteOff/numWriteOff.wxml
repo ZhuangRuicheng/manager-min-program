@@ -1,0 +1,17 @@
+<!--pages/serviceMenu/breakfastEdit/breakfastSetting/writeOff/numWriteOff/numWriteOff.wxml-->
+<view class='box'>
+  <view class='title'>请输入客人出示的4位数校验码</view>
+<form bindsubmit="formSubmit">
+  <view class='input-number'>
+   <block wx:for="{{Length}}" wx:key="item">
+     <input type='number' class='input' value="{{Value.length>=index+1?Value[index]:''}}" disabled catchtap='Tap'></input>
+   </block>
+  </view>
+     <input name="password" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" bindinput="Focus" style='margin-left: {{left}}rpx;' type='number' value='{{Value}}'></input> 
+  <view class='tips' wx:if="{{writeOff ? false : true}}">{{writeOffText}}</view>
+  <view class='red' wx:if="{{writeOff ? true : false}}">{{writeOffText}}</view>
+  <view class='btn-view'>
+  <button class='btn' formType="submit">核销</button>
+  </view>
+</form>
+</view>

@@ -1,0 +1,77 @@
+<!--pages/dataInput/dataInput.wxml-->
+<view class='box'>
+  <form bindsubmit="formSubmit">
+  <view class='header'>
+   <view class='hotel-name'>酒店名</view>
+   <view class='input-name'>
+     <input class='hotelNameInput' type='text' value='{{hotelName}}' bindinput='inputChange' id='hotelName'></input>
+   </view>
+   <!-- <view class='img'><image src='../images/right.png' class='right'></image></view> -->
+  </view>
+   <view class='header'>
+   <view class='hotel-name'>酒店电话</view>
+   <view class='input-name'>
+     <input class='hotelNameInput' type='text' value='{{telphone}}' bindinput='inputChange' id='telphone'></input>
+   </view>
+   <!-- <view class='img'><image src='../images/right.png' class='right'></image></view> -->
+  </view>
+  <view class='header' bindtap='roomInput'>
+   <view class='hotel-name'>房间号</view>
+   <view class='input-name ss'>开始录入</view>
+   <view class='img'><image src='../images/right.png' class='right'></image></view>
+  </view>
+   <view class='header' bindtap='hotelEquipment'>
+   <view class='hotel-name'>酒店设施</view>
+   <view class='input-name ss'>开始录入</view>
+   <view class='img'><image src='../images/right.png' class='right'></image></view>
+  </view>
+  <view class='header'>
+   <view class='hotel-name'>酒店详细地址</view>
+   <view class='input-name'>
+     <input  class='hotelNameInput' type='text' value='{{address}}' bindinput='inputChange' id='address'></input>
+   </view>
+   <!-- <view class='img'><image src='../images/right.png' class='right'></image></view> -->
+  </view>
+  <view class='header' bindtap='homePage'>
+   <view class='hotel-name'>首页宣传图</view>
+   <view class='input-name ss'>设置</view>
+   <view class='img'><image src='../images/right.png' class='right'></image></view>
+  </view>
+ <view class='hotel-location'>
+   <view class='hotel-location-tr'><label class='location'>酒店位置</label><view class='loading' bindtap='location'>自动获取</view></view>
+    <view class='header ss1'>
+   <view class='hotel-name'>经度</view>
+   <view class='longitude-input'>
+     <input class='longitude' id='longitude' value='{{longitude}}' bindinput='inputChange'></input>
+   </view>
+   </view>
+   <view class='header ss2'>
+   <view class='hotel-name'>纬度</view>
+   <view class='longitude-input'>
+     <input class='longitude' id='latitude' value='{{latitude}}' bindinput='inputChange'></input>
+   </view>
+   </view>
+ </view>
+  <view class='notice'>
+  <view class='noticeTitle'>入住须知:</view>
+    <textarea class='noticeTextarea' placeholder='请将入住注意事项描述清楚' id='noticeTextarea' bindinput='inputChange' value='{{notification}}'></textarea>
+  </view>
+  <view class='addImages' bindtap='getImage'>
+    <view class='tips1'>+添加图片<text class='tips2'>(3张以内)</text></view>
+    <view class='tips2'>图片尺寸750*348,大小不超过5M</view>
+  </view>
+  <view class='images' bindlongpress="deleteImage"  wx:if="{{image1 != ''? true : false}}" id='image1'>
+    <image src='{{image1}}' class='chooseImg' mode="aspectFill"></image>
+  </view>
+    <view class='images' bindlongpress="deleteImage" wx:if="{{image2 != ''? true: false }}" id='image2'>
+    <image src='{{image2}}' class='chooseImg' mode="aspectFill"></image>
+  </view>
+  <view class='images' bindlongpress="deleteImage" wx:if="{{image3 != '' ? true : false}}" id='image3'>
+    <image src='{{image3}}' class='chooseImg' mode="aspectFill"></image>
+  </view>
+
+  <textarea placeholder='请输入酒店介绍文字描述' placeholder-class='textarea' bindinput='inputChange' id='description' value='{{description}}' maxlength='-1'></textarea>
+  <button class='btn' form-type='submit'>提交</button>
+  </form>
+  <!-- 表单尾 -->
+</view>

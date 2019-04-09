@@ -1,0 +1,15 @@
+<!--pages/template/anSettlement/anSettlement.wxml-->
+<template name="anSettlement">
+<view class='an-box'>
+ <view class='an-header'>
+  <view class='an-title'>结算记录</view>
+  <view class='view-btn' bindtap='viewOrder'>查看对账单</view>
+ </view>
+ <view class='all'>
+ <view class='an-content' wx:for="{{SettleList}}">
+   <view class='day'><label class='day-time'>{{item.day}}</label><label class='month-time'>/{{item.month}}</label></view>
+   <view class='incomes'><label class='an-sign'>入账:</label><label class='an-money'>￥{{item.amount}}</label></view>
+ </view>
+ </view>
+</view>
+</template>

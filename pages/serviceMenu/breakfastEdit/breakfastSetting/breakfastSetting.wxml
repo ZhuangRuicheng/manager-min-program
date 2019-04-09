@@ -1,0 +1,23 @@
+<!--pages/serviceMenu/breakfastEdit/breakfastSetting/breakfastSetting.wxml-->
+<view class='box'>
+  <view class='tr1' bindtap='introduce'>
+    <view class='breakfast-introduce'>早餐介绍</view>
+    <view class='right'><image src='../../../images/right.png' class='rightImg'></image></view>
+  </view>
+  <view class='tr1 tr2' bindtap='setting'>
+    <view class='breakfast-introduce'>餐券设置</view>
+    <view class='right'><image src='../../../images/right.png' class='rightImg'></image></view>
+  </view>
+  <!-- <view class='tr1 tr3'>
+    <view class='breakfast-introduce'>餐券核销</view>
+    <view class='right'><image src='../../../images/right.png' class='rightImg'></image></view>
+  </view>
+   <view class='tr1 tr4'>
+    <view class='breakfast-introduce'>餐券统计</view>
+    <view class='right'><image src='../../../images/right.png' class='rightImg'></image></view>
+  </view> -->
+    <view class='tr1 tr5' bindtap='downQr'>
+    <view class='breakfast-introduce'>早餐券领取二维码</view>
+    <view class='right'><image src='../../../images/right.png' class='rightImg'></image></view>
+  </view>
+</view>

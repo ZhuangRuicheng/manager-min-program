@@ -1,0 +1,63 @@
+/* pages/serviceMenu/breakfastEdit/breakfastSetting/downLoadQr/downLoadQr.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.tips{
+ font-size: 24rpx;
+ color: #ff3333;
+ margin: 30rpx; 
+ line-height: 35rpx;
+}
+.content{
+  background-color: white;
+  width: 640rpx;
+  margin-left: 55rpx;
+}
+.type{
+  font-size: 36rpx;
+  color: #333333;
+  text-align: center;
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+}
+.Qr{
+  text-align: center;
+}
+image{
+  width: 260rpx;
+  height: 260rpx;
+}
+.pay-tips{
+  font-size: 26rpx;
+  color: #999999;
+  text-align: center;
+  padding-top: 20rpx;
+  padding-bottom: 40rpx;
+}
+.downLoad-btn{
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.btn{
+  font-size: 32rpx;
+  background-color: #ea5415;
+  color: white;
+  border-radius: 16rpx;
+  line-height: 80rpx;
+  text-align: center;
+  width: 300rpx;
+  height: 80rpx;
+}
+.reset{
+  font-size: 26rpx;
+  color: #ff3333;
+  padding-left: 473rpx;
+  padding-bottom: 28rpx;
+}
+.content-free{
+  background-color: white;
+  width: 640rpx;
+  margin-left: 55rpx;
+  border-top: 1rpx #dcdcdc solid;
+  margin-bottom: 40rpx;
+}

@@ -1,0 +1,52 @@
+/* pages/login/login.wxss */
+.logo{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 154rpx 175rpx 140rpx 270rpx;
+}
+.row{
+  display: flex;
+  margin: 0rpx 105rpx 40rpx 105rpx;
+}
+.accountSign{
+  width: 40rpx;
+  height: 40rpx;
+}
+.sign{
+  width: 88rpx;
+  height: 88rpx;
+  border-top: 1rpx #cccccc solid;
+  border-left: 1rpx #cccccc solid;
+  border-bottom: 1rpx #cccccc solid;
+  border-bottom-left-radius: 10rpx;
+  border-top-left-radius: 10rpx;
+  text-align: center;
+  line-height: 88rpx;
+}
+input{
+  width: 462rpx;
+  height: 88rpx;
+  border-top: 1rpx #cccccc solid;
+  border-right: 1rpx #cccccc solid;
+  border-bottom: 1rpx #cccccc solid;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  font-size: 30rpx;
+}
+.placeholder{
+  
+  font-size: 30rpx;
+  color: #999999;
+}
+.btn{
+  margin: 60rpx 105rpx 200rpx 105rpx;
+  font-size: 32rpx;
+  color: white;
+  background-color: #ea5415;
+}
+.tips{
+  margin: 0rpx 105rpx 40rpx 105rpx;
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 35rpx;
+}

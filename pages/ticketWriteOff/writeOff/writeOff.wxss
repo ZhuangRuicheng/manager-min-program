@@ -1,0 +1,144 @@
+/* pages/serviceMenu/breakfastEdit/breakfastSetting/writeOff/writeOff.wxss */
+@import "../../template/ticketMode/ticketMode.wxss";
+page{
+  background-color: #f7f7f7;
+}
+.flex{
+  position: fixed;
+  width: 100%;
+  top: 0rpx;
+}
+.header{
+  height: 168rpx;
+  background-color: #ea5415;
+  border-top: 1rpx #ffffff solid;
+  z-index: 99999;
+}
+.receive{
+  font-size: 24rpx;
+  color: white;
+  padding-top: 37rpx;
+  padding-left: 30rpx; 
+}
+.num{
+  font-size: 54rpx;
+  color: white;
+  text-align: center;
+}
+.ticket{
+  height: 135rpx;
+  border-top: 1rpx #ffffff solid;
+  background-color: #ea5415;
+  display: flex;
+  z-index: 99999;
+}
+.cancelled-ticket{
+  flex: 1;
+  border-right: 1rpx #ffffff solid;
+}
+.cancelled{
+  padding-top: 22rpx;
+  padding-left: 30rpx;
+  font-size: 24rpx;
+  color: white;
+}
+.cancelled-num{
+  font-size: 54rpx;
+  color: white;
+  text-align: center;
+  margin-top: -20rpx;
+}
+.not-used{
+  flex: 1;
+}
+.not-used-ticket{
+  font-size: 24rpx;
+  color: white;
+  margin-left: 30rpx;
+  margin-top: 22rpx;
+}
+.not-used-num{
+  font-size: 54rpx;
+  text-align: center;
+  margin-top: -20rpx;
+}
+.record{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f7f7f7;
+  z-index: 99999;
+}
+.ticket-img{
+  display: flex;
+  padding-left: 30rpx;
+}
+.breakfast_img{
+  width: 32rpx;
+  height: 32rpx;
+}
+.record-title{
+  font-size: 30rpx;
+  color: #333333;
+  padding-left: 13rpx;
+
+}
+.tr{
+  margin-top: 383rpx;
+  overflow: hidden;
+  z-index: 1;
+  padding-bottom: 90rpx;
+
+}
+.write-off-btn{
+  
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  background-color: white;
+  position: fixed;
+  bottom: 4rpx;
+  padding-left: 30rpx;
+}
+.number{
+  background-color: #fe9229;
+  border-radius: 16rpx;
+  font-size: 32rpx;
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  margin-right: 90rpx;
+  text-align: center;
+}
+.numImg{
+  width: 30rpx;
+  height: 26rpx;
+  margin-left: 64rpx;
+  margin-right: 6rpx;
+}
+.num-title{
+  color: white;
+}
+.scan{
+  background-color: #fe9229;
+  border-radius: 16rpx;
+  font-size: 32rpx;
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  color: white;
+  text-align: center;
+}
+.scanImg{
+  width: 25rpx;
+  height: 26rpx;
+  margin-left: 64rpx;
+  margin-right: 6rpx;
+}
+.noData{
+  font-size: 32rpx;
+  color: #999999;
+  text-align: center;
+  margin-top: 200rpx;
+}

@@ -1,0 +1,115 @@
+/* pages/hotelInfoEdit/vipEdit/vipEdit.wxss */
+.addImages{
+  font-size: 30rpx;
+  margin: 30rpx 135rpx 60rpx 135rpx;
+  border: 1rpx #cccccc solid;
+  text-align: center;
+  width: 480rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+   border-radius: 16rpx;
+   background-color: white;
+   font-weight: bold;
+}
+.tips1{
+  font-size: 32rpx;
+ 
+}
+.title{
+  font-size: 32rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+  padding-left: 70rpx;
+
+}
+.header{
+  display: flex;
+  /* background-color: wheat; */
+   background-color: white;
+
+   border-bottom: 1rpx #cccccc solid;
+}
+image{
+  width: 15rpx;
+  height: 25rpx;
+  margin: 38rpx 0rpx 30rpx 0rpx;
+}
+.right{
+  position: absolute;
+  right: 40rpx;
+}
+
+.goodsEdit{
+  margin-top: 0rpx;
+}
+page{
+  background-color: #f7f7f7;
+}
+ /* 弹出层样式 */
+    .buydes-dialog-container{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    background-color:rgba(15, 15, 26, 0.7);
+    position: fixed;
+    z-index: 999;
+    /* position: absolute; */
+    top: 0rpx;
+}
+.buydes-dialog-container-top{
+    flex-grow: 1;
+}
+ 
+.buydes-dialog-container-bottom{
+    display: flex;
+    flex-grow: 0;
+}
+
+.popup{
+  margin: 200rpx 0rpx 80rpx 60rpx;
+  background-color: white;
+}
+.ticketShow{
+  height: 750rpx;
+  width: 640rpx;
+  border-bottom: 1rpx #dfdfdf dotted;
+}
+.cancel{
+  color: #ea5415;
+  font-size: 28rpx;
+  padding: 20rpx 0rpx 28rpx 16rpx;
+}
+.hotelName{
+  font-size: 32rpx;
+  margin: -41rpx 210rpx 26rpx 215rpx;
+}
+.type{
+  margin: 30rpx 0rpx 24rpx 34rpx;
+  font-size: 30rpx;
+  display: flex;
+}
+.showGoodsName{
+  width: 360rpx;
+  height: 56rpx;
+  border: 1rpx solid #cccccc;
+  margin-top: -5rpx;
+  padding: 0rpx 0rpx 0rpx 22rpx;
+}
+.vipprice{
+  margin-right: 57rpx;
+}
+textarea{
+  width: 580rpx;
+  height: 280rpx;
+  border: 1rpx #cccccc solid;
+  margin: 0rpx 30rpx 20rpx 30rpx;
+  font-size: 30rpx;
+}
+.showBtn{
+  width: 360rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #ea5415;
+  color: white;
+}

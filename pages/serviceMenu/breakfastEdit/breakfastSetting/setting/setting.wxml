@@ -1,0 +1,28 @@
+<!--pages/serviceMenu/breakfastEdit/breakfastSetting/setting/setting.wxml-->
+<view class='box'>
+  <view class='tr-one'>
+    <view class='price'>早餐券价格</view>
+    <view class='input'><input class='price-input' placeholder='请输入早餐券金额' value='{{price}}' maxlength='5' type='digit' step="0.01" bindinput='priceInput'></input></view>
+  </view>
+  <view class='hr'></view>
+  <view class='tr-two'>
+  <view class='content-one'>
+    <view class='orCharge'>是否收费</view>
+    <view class='tips'>开启后客人需在线购买早餐券</view>
+  </view>
+  <view class='switch'>
+    <switch bindchange="switched" class='breakfas' checked='{{breakfastValue}}' id='Charge'/>
+  </view>
+  </view>
+  <view class='hr-two'></view>
+  <view class='tr-two tr-three'>
+  <view class='content-one'>
+    <view class='orCharge'>是否需要核销餐券</view>
+    <view class='tips'>开启后客人需出示早餐券交给酒店人员核销</view>
+  </view>
+  <view class='switch'>
+    <switch bindchange="switched" class='breakfas' checked='{{breakfastOff}}' id='writeOff'/>
+  </view>
+  </view>
+  <button class='btn' bindtap='formSubmit'>保存设置</button>
+</view>

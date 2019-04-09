@@ -1,0 +1,52 @@
+<!--pages/serviceMenu/breakfastEdit/breakfastSetting/writeOff/writeOff.wxml-->
+<import src="../../template/ticketMode/ticketMode.wxml"/>
+<view class='box'>
+<view class='flex'>
+  <view class='header'>
+    <view class='receive'>昨日领取</view>
+    <view class='num'>{{dataCount.total}}</view>
+  </view>
+  <view class='ticket'>
+  <view class='cancelled-ticket'>
+    <view class='cancelled'>已核销</view>
+    <view class='cancelled-num'>{{dataCount.cancel}}</view>
+  </view>
+  <view class='not-used'>
+    <view class='not-used-ticket'>
+      <view class='title'>待核销</view>
+      <view class='not-used-num'>{{dataCount.noUse}}</view>
+    </view>
+  </view>
+  </view>
+  <view class='record'>
+    <view class='ticket-img'>
+      <view class='img'><image src='../../images/breakfast_img.png' class='breakfast_img'></image></view>
+      <view class='record-title'>领券记录</view>
+    </view>
+  </view>
+  </view>
+   <!-- 票券 -->
+   <view class='tr'>
+   <view class='noData' wx:if="{{vouchers == '' ?true:false}}">暂无数据</view>
+   <view wx:for="{{vouchers}}">
+     <view wx:if="{{item.hasPay ? true : false}}">
+    <template is="{{item.status == 1 ? 'payNoUse' :'payUse'}}" data="{{item}}"></template>
+    </view>
+    <view wx:if="{{!item.hasPay ? true : false}}">
+    <template is="{{item.status == 1 ? 'freeNoUse' :'freeUse'}}" data="{{item}}"></template>
+    </view>
+
+   </view>
+   </view>
+    <!-- 票券 -->
+    <view class='write-off-btn'>
+      <view class='number' bindtap='numWriteOff'>
+        <view class='num-img'><image src='../../images/numImg.png' class='numImg'></image></view>
+        <view class='num-title'>数字核销</view>
+      </view>
+      <view class='scan' bindtap='scanQrCode'>
+        <view class='scan-img'><image src='../../images/scanImg.png' class='scanImg'></image></view>
+        <view class='scan-title'>扫码核销</view>
+      </view>
+    </view>
+</view>

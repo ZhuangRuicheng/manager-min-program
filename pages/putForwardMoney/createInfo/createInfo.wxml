@@ -1,0 +1,29 @@
+<!--pages/putForwardMoney/createInfo/createInfo.wxml-->
+<view class='box'>
+<!-- 表单头 -->
+<form bindsubmit="formSubmit">
+  <view class='header pwd'>
+    <text class='title'>名称:</text>
+    <view class='input'>
+    <input type='text' bindinput='inputChange' id='enterpriseName' value='{{enterpriseName}}'></input>
+    </view>
+  </view>
+  <view class='header'>
+    <text class='title'>开户银行:</text>
+    <view class='input'>
+    <input class='password' type='text' bindinput='inputChange' id='bankName' value='{{bankName}}'></input>
+    </view>
+  </view>
+   <view class='header'>
+    <text class='title'>银行账户:</text>
+    <view class='input' type='text'>
+    <input class='password' bindinput='inputChange' id='bankAccount' value='{{bankAccount}}'></input>
+    </view>
+  </view>
+   <view class='tips'>*为确保提现金额的钱款可以顺利到账，请确认您的账号信息无误后再提交。</view>
+  <button class='btn' form-type='submit'>提交</button>
+ 
+  </form>
+  <!-- 表单尾 -->
+</view>
+
